@@ -6,7 +6,7 @@ layout: chapter
 Stylesheets
 ============
 
-In your HTML documents, your job is to mark up text and images according to its function or purpose. Never its appearance. All the appearance work is done in a separate stylesheet. In the stylesheet, you get to say what a heading marked \<h1\> looks like, for example: what colour, size, font, spacing, and so on. This way, you can change and control the appearance of all the elements in your book in one place, keeping formatting consistent everywhere.
+In your HTML documents, your job is to mark up text and images according to its function or purpose. Never its appearance. All the appearance work is done in a separate file called a stylesheet. In the stylesheet, for instance, you get to say what a heading marked `<h1>` looks like: colour, size, font, spacing, and so on. This way, you can change and control the appearance of all the elements in your book in one place, keeping formatting consistent everywhere.
 
 We create stylesheets in a language called CSS, for Cascading Style Sheets. (Don't worry now about how they cascade: that'll become clear later.) In Sigil, HTML documents are stored in the Text folder of your epub, and CSS documents in the Styles folder.
 

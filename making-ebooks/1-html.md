@@ -104,13 +104,13 @@ The `<html>`, `<head>` and `<body>` elements always appear in this structure:
 <html>
 ~~~
 
-That is, the whole document is wrapped inside the <html> element. And it's divide into two sections: the `<head>` element and a `<body>` element.
+That is, the whole document is wrapped inside the `<html>` element. And that's divided into two sections: the `<head>` element and the `<body>` element.
 
 *   The `<head>` contains information for the device about the document.
 *   The `<body>` contains all the content of the document intended for human readers.
 
-All the tags we discussed earlier (paragraphs, spans, divs, lists, etc.) go inside the `<body>` element. When you're editing ebooks, 99 per cent of your time will be spent there, inside the `<body>` element.
+There is only ever one `<html>`, one `<head>` and one `<body>` element. All the tags we discussed earlier (paragraphs, spans, divs, lists, etc.) go inside the `<body>` element to make up the document's content. When you're editing ebooks, 99 per cent of your time will be spent there, inside the `<body>` element.
 
 ## XHTML
 
-If you're on the ball, you might have noticed that files in your epub are in XHTML, not HTML (see the file extensions in the Text folder). XHTML is essentially a stricter form of HTML, but for our purposes, it's the same thing.
+If you're looking around in Sigil, you might have noticed that files in most epubs are in XHTML, not HTML (see the file extensions in the Text folder). XHTML is essentially a stricter form of HTML, but for our purposes, it's the same thing.
