@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>EBW training: Covers</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/screen.css" />
+</head>
+<body>
+<div id="wrapper">
+
+<div class="close-link non-printing">
+<a href="/ebw-training/" alt="Close" title="Close">×</a>
+</div>
+
+
+<div class="chapter">
+<h1 id="covers">Covers</h1>
+
+<p>There are many ways to create a front cover in an epub ebook. You could just place an image in the first HTML file in the epub. But I find I get better-looking results with some very specific code.</p>
+
+<p>Here are the steps.</p>
+
+<p>First, get the cover image in jpg format, name it cover.jpg, and add it to the Images folder. Right-click it, select Add Semantics, and tick Cover Image. (This helps some ereaders display the cover properly.) </p>
+
+<p>Next, add a new HTML document to your Text folder, and click and drag it so that it’s the first HTML file. Rename the file ‘cover.xhtml’.</p>
+
+<p>Now, in the Code View of that file, replace the head and body elements with this code:</p>
+
+<p>&lt;head&gt;
+   &lt;title&gt;Cover&lt;/title&gt;
+   &lt;link rel=”stylesheet” type=”text/css” href=”../Styles/styles.css” /&gt;
+ &lt;/head&gt;
+ &lt;body class=”cover”&gt;
+   &lt;p class=”cover”&gt;&lt;img class=”cover” alt=”” src=”../Images/cover.jpg” /&gt;&lt;/p&gt;
+ &lt;/body&gt;</p>
+
+<p>Note that you may need to change the name of the CSS file here if yours isn’t called ‘styles.css’.</p>
+
+<p>Finally, add this code to your CSS file:</p>
+
+<p>/* Cover */
+ body.cover {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ }
+ p.cover {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ }
+ img.cover {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ }</p>
+
+<p>That should do the trick. You can find a lot more technical detail about it <a href="http://electricbookworks.com/kb/creating-epub-from-indesign/after-indesign-export-to-epub/add-a-cover/">on the EBW Knowledge Base here</a>.</p>
+
+
+</div><!--.chapter-->
+
+</div><!--#wrapper-->
+</body>
+</html>

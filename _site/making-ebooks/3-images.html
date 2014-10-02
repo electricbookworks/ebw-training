@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>EBW training: Images</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/screen.css" />
+</head>
+<body>
+<div id="wrapper">
+
+<div class="close-link non-printing">
+<a href="/ebw-training/" alt="Close" title="Close">×</a>
+</div>
+
+
+<div class="chapter">
+<h1 id="adding-images">Adding images</h1>
+
+<p>You are going to want to add or edit images in ebooks often. Luckily, this is very simple.</p>
+
+<p>First, add the image to the epub’s Images folder. In Sigil, just right-click the Images folder and select Add Existing Files. Then go find the image on your computer, and Sigil will copy it to that Images folder. Remember, though:</p>
+
+<ul>
+  <li>remove all spaces from image file names;</li>
+  <li>try to use only lowercase letters in file names (for one thing, Sigil alphabetises file names differently according to the case of the letters, bizarrely);</li>
+  <li>only use jpg or gif images (png is usually also okay);</li>
+  <li>before adding, make sure the images are 72 to 150 dpi, large but not larger than 1000px on their longest side, and saved as RGB, not CMYK.</li>
+</ul>
+
+<p>Then, head back to your HTML document to add an image tag where the image must appear. Image tags must always include two attributes:</p>
+
+<ul>
+  <li>src for source, indicating the image file you just added, and</li>
+  <li>alt for alternative text, which appears if the image breaks and is read out loud is reader for the visually impaired.</li>
+</ul>
+
+<p>An image tag can also include a title attribute, which provides more info about the image. Many ereaders show the title as a tooltip when a user mouses over the image.</p>
+
+<p>Finally, the image tag must self-close with a slash.</p>
+
+<p>Here’s an example:</p>
+
+<p>&lt;img src=”../Images/example.jpg” alt=”Example image” title=”An example of an image in an ebook” /&gt;</p>
+
+<p>Which might show like this in the rendered ebook:</p>
+
+<p><img src="../Images/lily_by-arthur-attwell_20130214_194014.jpg" alt="Example image" title="An example of an image in an ebook" /></p>
+
+
+</div><!--.chapter-->
+
+</div><!--#wrapper-->
+</body>
+</html>

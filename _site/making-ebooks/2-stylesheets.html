@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<title>EBW training: Stylesheets</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/screen.css" />
+</head>
+<body>
+<div id="wrapper">
+
+<div class="close-link non-printing">
+<a href="/ebw-training/" alt="Close" title="Close">×</a>
+</div>
+
+
+<div class="chapter">
+<h1 id="stylesheets">Stylesheets</h1>
+
+<p>In your HTML documents, your job is to mark up text and images according to its function or purpose. Never its appearance. All the appearance work is done in a separate stylesheet. In the stylesheet, you get to say what a heading marked &lt;h1&gt; looks like, for example: what colour, size, font, spacing, and so on. This way, you can change and control the appearance of all the elements in your book in one place, keeping formatting consistent everywhere.</p>
+
+<p>We create stylesheets in a language called CSS, for Cascading Style Sheets. (Don’t worry now about how they cascade: that’ll become clear later.) In Sigil, HTML documents are stored in the Text folder of your epub, and CSS documents in the Styles folder.</p>
+
+<p>CSS looks different to HTML, because it’s a different language with its own syntax. Let’s say you want to control the appearance of your default paragraphs. In CSS, you’d start by typing:</p>
+
+<p>p {}</p>
+
+<p>The p refers to the HTML <code>&lt;p&gt;</code> element, obviously. All your formatting instructions will go inside the braces, {}. For instance:</p>
+
+<p>p {
+ font-size: 12pt;
+ font-family: serif;
+ }</p>
+
+<p>I’ve put each instruction on its own, new line to make it easier for us humans to read – the computer doesn’t mind. It’s the same as writing this:</p>
+
+<p>p {font-size: 12pt; font-family: serif;}</p>
+
+<p>But when CSS documents get long and complicated, you really want things laid out neatly.</p>
+
+<p>Now, what about our classes? Like &lt;p class=”greeting”&gt;Hello World!&lt;/p&gt;? In CSS, we use a full-stop to indicate ‘in class’, like this:</p>
+
+<p>p.greeting {
+ color: pink;
+ }</p>
+
+<p>Once we’ve added that, our Hello World! will show in pink in our ebook. (Note the American spelling of color. Same goes for instructions like text-align: center;.)</p>
+
+<p>Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between /* and */.</p>
+
+<h2 id="linking-html-and-css-files">Linking HTML and CSS files</h2>
+
+<p>Once you’ve created a CSS file, you have to tell your HTML file about it. That is, you have to link your HTML to the relevant CSS file. We do this by adding a &lt;link&gt; element inside the &lt;head&gt; section of the HTML document. Let’s say your CSS file is called ‘styles.css’. In Sigil, your &lt;link&gt; tag will look like this:</p>
+
+<p>&lt;link href=”../Styles/styles.css” rel=”stylesheet” type=”text/css” /&gt;</p>
+
+<p>This link element contains three attributes:</p>
+
+<ul>
+  <li>&lt;href=…&gt; (href for ‘hyperlink reference’) says where the stylesheet is, relative to the HTML document: two full-tops mean ‘go up out of the Text folder’, and the /Styles/styles.css means ‘go into the Styles folder and find the ‘styles.css’ file;</li>
+  <li>rel=”stylesheet” says that the file’s relationship to the HTML is that of a stylesheet;</li>
+  <li>type=”text/css” says that the file will be in plain text and in the CSS language.</li>
+</ul>
+
+<p>Note the slash at the end of the tag: the link element needs only one tag, because it doesn’t mark up any text. So it closes itself with a self-closing slash. Two other common HTML elements that close themselves are:</p>
+
+<ul>
+  <li>the line break: &lt;br /&gt;</li>
+  <li>the image tag: &lt;img /&gt;</li>
+</ul>
+
+<p>Right. In the course, we might try a challenge at this point.</p>
+
+<h2 id="challenge">Challenge</h2>
+
+<p>Here are several things you might want to do with CSS. Pick one, get onto Google, and take 5 minutes to have a guess how you’d write the CSS:</p>
+
+<ul>
+  <li>make the background of your whole ebook yellow;</li>
+  <li>put a paragraph in a box;</li>
+  <li>make a paragraph float to one side, with the body text flowing around it;</li>
+  <li>make one word appear in a different font to the surrounding text;</li>
+  <li>make a heading appear in uppercase, without changing the letters to uppercase in your HTML;</li>
+  <li>create a list inside a list (a sub-list);</li>
+  <li>make a numbered list number in roman numerals.</li>
+</ul>
+
+
+</div><!--.chapter-->
+
+</div><!--#wrapper-->
+</body>
+</html>

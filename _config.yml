@@ -1,0 +1,11 @@
+name: "EBW training"
+description: "Training materials in digital publishing"
+
+url: http://localhost:4000
+baseurl: /ebw-training
+
+paginate: 10
+
+markdown: kramdown
+permalink: none
+highlighter: pygments
