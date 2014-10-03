@@ -8,8 +8,8 @@ Links
 
 There are two kinds of links in an ebook:
 
--   external links, which point to websites
--   internal links, which point to other locations in the ebook.
+*   external links, which point to websites
+*   internal links, which point to other locations in the ebook.
 
 In HTML, they look very similar. Let's start with a basic external link:
 

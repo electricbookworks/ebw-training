@@ -3,25 +3,25 @@ title: HTML
 layout: chapter
 ---
 
-# HTML, or 'How to Talk Machine Language'
+# HTML, or 'How to Talk a&nbsp;Machine's Language'
 
 HTML actually stands for 'hypertext markup language', and you'll understand why soon. When you make an ebook you are talking to a machine. That is, you're making a document that a computer will understand.
 
 Look at this:
 
-> Hello World!
+> Hello, World!
 
-What do we humans call this? Words, a sentence, exclamation, line, phrase, paragraph, letters, sign, greeting – and that's just if we're speaking English. To agree on what it is, we need:
+What do we humans call this? Words, a sentence, exclamation, line, phrase, paragraph, letters, sign, greeting – we have dozens of names for it, and that's just if we're speaking English. To agree on what it is, we need:
 
 *   a language (English)
 *   common terms (like the ones I listed above)
 
-When we tell a computer what Hello World! is, we also need a language and a common term. In the ebook world:
+When we tell a computer what Hello, World! is, we also need a language and common terms. In the ebook world:
 
 *   the language is HTML
-*   common terms would be 'paragraph', 'string', 'span'.
+*   common terms include 'paragraph', 'string', and 'span'.
 
-To indicate that to a computer, we surround our phrase with special HTML tags. Tags always appear in elbow brackets, like this:
+To indicate that common term to a computer, we surround our phrase with special HTML tags. Tags always appear in elbow brackets, like this:
 
 `<p>Hello World!</p>`
 

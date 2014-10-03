@@ -25,28 +25,30 @@
 
 <p>CSS looks different to HTML, because it’s a different language with its own syntax. Let’s say you want to control the appearance of your default paragraphs. In CSS, you’d start by typing:</p>
 
-<p>p {}</p>
+<p><code>p {}</code></p>
 
-<p>The p refers to the HTML <code>&lt;p&gt;</code> element, obviously. All your formatting instructions will go inside the braces, {}. For instance:</p>
+<p>The <code>p</code> refers to the HTML <code>&lt;p&gt;</code> element, obviously. All your formatting instructions will go inside the braces, <code>{}</code>. For instance:</p>
 
-<p>p {
- font-size: 12pt;
- font-family: serif;
- }</p>
+<pre><code class="language-css">p {
+	font-size: 12pt;
+	font-family: serif;
+	}
+</code></pre>
 
-<p>I’ve put each instruction on its own, new line to make it easier for us humans to read – the computer doesn’t mind. It’s the same as writing this:</p>
+<p>I’ve put each instruction on its own, new, indented line to make it easier for us humans to read – the computer doesn’t mind. It’s the same as writing this:</p>
 
-<p>p {font-size: 12pt; font-family: serif;}</p>
+<p><code>p {font-size: 12pt; font-family: serif;}</code></p>
 
-<p>But when CSS documents get long and complicated, you really want things laid out neatly.</p>
+<p>But when CSS documents get long and complicated, you really want things laid out neatly so that you can edit them easily.</p>
 
-<p>Now, what about our classes? Like &lt;p class=”greeting”&gt;Hello World!&lt;/p&gt;? In CSS, we use a full-stop to indicate ‘in class’, like this:</p>
+<p>Now, what about our classes? Like the ‘greeting’ class we created in <code>&lt;p class="greeting"&gt;Hello World!&lt;/p&gt;</code>? In CSS, we use a full-stop to indicate ‘in class’, like this:</p>
 
-<p>p.greeting {
- color: pink;
- }</p>
+<pre><code class="language-css">p.greeting {
+	color: pink;
+	}
+</code></pre>
 
-<p>Once we’ve added that, our Hello World! will show in pink in our ebook. (Note the American spelling of color. Same goes for instructions like text-align: center;.)</p>
+<p>Once we’ve added that, our Hello, World! will show in pink in our ebook. (Note the American spelling of <code>color</code>. The same goes for instructions like <code>text-align: center;</code>.)</p>
 
 <p>Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between /* and */.</p>
 

@@ -8,9 +8,9 @@ Metadata
 
 Epub ebooks must store some information about themselves for ereaders to use. At the very least, they must store:
 
--   an identifier (like an ISBN)
--   the publisher
--   a date of publication or creation.
+*   an identifier (like an ISBN)
+*   the publisher
+*   a date of publication or creation.
 
 To add metadata in Sigil, just go to Tools \> Metadata Editor.
 

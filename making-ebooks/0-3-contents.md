@@ -11,8 +11,8 @@ layout: toc
 	{:.non-printing}
 *	[Agenda](0-4-agenda.html)
 
-1.	[HTML, or 'How to Talk Machine Language'](1-html.html)
-2.	[Style sheets](2-stylesheets.html)
+1.	[HTML, or 'How to Talk a Machine's Language'](1-html.html)
+2.	[Stylesheets](2-stylesheets.html)
 3.	[Adding images](3-images.html)
 4.	[Links](4-links.html)
 5.	[Metadata](5-metadata.html)

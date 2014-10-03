@@ -12,28 +12,32 @@ We create stylesheets in a language called CSS, for Cascading Style Sheets. (Don
 
 CSS looks different to HTML, because it's a different language with its own syntax. Let's say you want to control the appearance of your default paragraphs. In CSS, you'd start by typing:
 
-p {}
+`p {}`
 
-The p refers to the HTML `<p>` element, obviously. All your formatting instructions will go inside the braces, {}. For instance:
+The `p` refers to the HTML `<p>` element, obviously. All your formatting instructions will go inside the braces, `{}`. For instance:
 
+~~~ css
 p {
- font-size: 12pt;
- font-family: serif;
- }
+	font-size: 12pt;
+	font-family: serif;
+	}
+~~~
 
-I've put each instruction on its own, new line to make it easier for us humans to read – the computer doesn't mind. It's the same as writing this:
+I've put each instruction on its own, new, indented line to make it easier for us humans to read – the computer doesn't mind. It's the same as writing this:
 
-p {font-size: 12pt; font-family: serif;}
+`p {font-size: 12pt; font-family: serif;}`
 
-But when CSS documents get long and complicated, you really want things laid out neatly.
+But when CSS documents get long and complicated, you really want things laid out neatly so that you can edit them easily.
 
-Now, what about our classes? Like \<p class="greeting"\>Hello World!\</p\>? In CSS, we use a full-stop to indicate 'in class', like this:
+Now, what about our classes? Like the 'greeting' class we created in `<p class="greeting">Hello World!</p>`? In CSS, we use a full-stop to indicate 'in class', like this:
 
+~~~ css
 p.greeting {
- color: pink;
- }
+	color: pink;
+	}
+~~~
 
-Once we've added that, our Hello World! will show in pink in our ebook. (Note the American spelling of color. Same goes for instructions like text-align: center;.)
+Once we've added that, our Hello, World! will show in pink in our ebook. (Note the American spelling of `color`. The same goes for instructions like `text-align: center;`.)
 
 Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between /\* and \*/.
 
