@@ -5,14 +5,14 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/ebw-training/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="/ebw-training/css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/css/screen.css" />
 </head>
 <body>
 <div id="wrapper">
 
 <div class="close-link non-printing">
-<a href="/ebw-training/" alt="Close" title="Close">×</a>
+<a href="/" alt="Close" title="Close">×</a>
 </div>
 
 
@@ -48,32 +48,30 @@
 	}
 </code></pre>
 
-<p>Once we’ve added that, our Hello, World! will show in pink in our ebook. (Note the American spelling of <code>color</code>. The same goes for instructions like <code>text-align: center;</code>.)</p>
+<p>Once we’ve added that, our <code>Hello, World!</code> will show in pink in our ebook. (Note the American spelling of <code>color</code>. The same goes for instructions like <code>text-align: center;</code>.)</p>
 
-<p>Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between /* and */.</p>
+<p>Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between <code>/*</code> and <code>*/</code>.</p>
 
 <h2 id="linking-html-and-css-files">Linking HTML and CSS files</h2>
 
-<p>Once you’ve created a CSS file, you have to tell your HTML file about it. That is, you have to link your HTML to the relevant CSS file. We do this by adding a &lt;link&gt; element inside the &lt;head&gt; section of the HTML document. Let’s say your CSS file is called ‘styles.css’. In Sigil, your &lt;link&gt; tag will look like this:</p>
+<p>Once you’ve created a CSS file, you have to tell your HTML file where to find it. That is, you have to <em>link</em> your HTML to the CSS file.</p>
 
-<p>&lt;link href=”../Styles/styles.css” rel=”stylesheet” type=”text/css” /&gt;</p>
+<p>We do this by adding a <code>&lt;link&gt;</code> element inside the <code>&lt;head&gt;</code> section of the HTML document. Let’s say your CSS file is called <code>styles.css</code>. In Sigil, your <code>&lt;link&gt;</code> tag will look like this:</p>
+
+<p><code>&lt;link href="../Styles/styles.css" rel="stylesheet" type="text/css" /&gt;</code></p>
 
 <p>This link element contains three attributes:</p>
 
-<ul>
-  <li>&lt;href=…&gt; (href for ‘hyperlink reference’) says where the stylesheet is, relative to the HTML document: two full-tops mean ‘go up out of the Text folder’, and the /Styles/styles.css means ‘go into the Styles folder and find the ‘styles.css’ file;</li>
-  <li>rel=”stylesheet” says that the file’s relationship to the HTML is that of a stylesheet;</li>
-  <li>type=”text/css” says that the file will be in plain text and in the CSS language.</li>
-</ul>
+<ol>
+  <li><code>&lt;href=…&gt;</code> (<code>href</code> for ‘hyperlink reference’) says where the stylesheet is, relative to the HTML document (the two full-tops mean ‘go up out of the Text folder’, and the <code>/Styles/styles.css</code> means ‘go into the Styles folder and find the <code>styles.css</code> file);</li>
+  <li><code>rel="stylesheet"</code> says that the file’s relationship to the HTML is that of a stylesheet;</li>
+  <li><code>type="text/css"</code> says that the file will be in plain text and in the CSS language.</li>
+</ol>
 
-<p>Note the slash at the end of the tag: the link element needs only one tag, because it doesn’t mark up any text. So it closes itself with a self-closing slash. Two other common HTML elements that close themselves are:</p>
-
-<ul>
-  <li>the line break: &lt;br /&gt;</li>
-  <li>the image tag: &lt;img /&gt;</li>
-</ul>
-
-<p>Right. In the course, we might try a challenge at this point.</p>
+<dl>
+  <dt>Note: self-closing tags</dt>
+  <dd>The link element needs only one tag, because it doesn’t mark up, or surround, any text. So it <em>closes itself</em> with a ‘self-closing slash’ at the end of the tag. Two other common HTML elements that close themselves are the line break <code>&lt;br /&gt;</code> and the image tag <code>&lt;img /&gt;</code>.</dd>
+</dl>
 
 <h2 id="challenge">Challenge</h2>
 
@@ -88,7 +86,6 @@
   <li>create a list inside a list (a sub-list);</li>
   <li>make a numbered list number in roman numerals.</li>
 </ul>
-
 
 </div><!--.chapter-->
 

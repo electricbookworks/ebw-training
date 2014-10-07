@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 	page-break-after: avoid;
 }
 h1 {
-	font-weight: 300;
 	font-size: 3.5em;
 	max-width: 80%;
 	line-height: 90%;
@@ -95,9 +94,8 @@ dl {
 	padding: 1em;
 }
 dt {
-	font-size: 2em;
 	margin: 0 0 0.25em 0;
-	font-style	: italic;
+	font-weight: 600;
 }
 dd {
 }

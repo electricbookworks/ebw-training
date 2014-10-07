@@ -3,8 +3,7 @@ title: Stylesheets
 layout: chapter
 ---
 
-Stylesheets
-============
+# Stylesheets
 
 In your HTML documents, your job is to mark up text and images according to its function or purpose. Never its appearance. All the appearance work is done in a separate file called a stylesheet. In the stylesheet, for instance, you get to say what a heading marked `<h1>` looks like: colour, size, font, spacing, and so on. This way, you can change and control the appearance of all the elements in your book in one place, keeping formatting consistent everywhere.
 
@@ -37,32 +36,28 @@ p.greeting {
 	}
 ~~~
 
-Once we've added that, our Hello, World! will show in pink in our ebook. (Note the American spelling of `color`. The same goes for instructions like `text-align: center;`.)
+Once we've added that, our `Hello, World!` will show in pink in our ebook. (Note the American spelling of `color`. The same goes for instructions like `text-align: center;`.)
 
-Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between /\* and \*/.
+Open this ebook in Sigil and take a look at the CSS file to see a longer, but still very simple stylesheet. Note that you can add comments for humans that the computer will ignore by putting them between `/*` and `*/`.
 
-Linking HTML and CSS files
---------------------------
+## Linking HTML and CSS files
 
-Once you've created a CSS file, you have to tell your HTML file about it. That is, you have to link your HTML to the relevant CSS file. We do this by adding a \<link\> element inside the \<head\> section of the HTML document. Let's say your CSS file is called 'styles.css'. In Sigil, your \<link\> tag will look like this:
+Once you've created a CSS file, you have to tell your HTML file where to find it. That is, you have to *link* your HTML to the CSS file.
 
-\<link href="../Styles/styles.css" rel="stylesheet" type="text/css" /\>
+We do this by adding a `<link>` element inside the `<head>` section of the HTML document. Let's say your CSS file is called `styles.css`. In Sigil, your `<link>` tag will look like this:
+
+`<link href="../Styles/styles.css" rel="stylesheet" type="text/css" />`
 
 This link element contains three attributes:
 
-*   \<href=…\> (href for 'hyperlink reference') says where the stylesheet is, relative to the HTML document: two full-tops mean 'go up out of the Text folder', and the /Styles/styles.css means 'go into the Styles folder and find the 'styles.css' file;
-*   rel="stylesheet" says that the file's relationship to the HTML is that of a stylesheet;
-*   type="text/css" says that the file will be in plain text and in the CSS language.
+1.   `<href=…>` (`href` for 'hyperlink reference') says where the stylesheet is, relative to the HTML document (the two full-tops mean 'go up out of the Text folder', and the `/Styles/styles.css` means 'go into the Styles folder and find the `styles.css` file);
+2.   `rel="stylesheet"` says that the file's relationship to the HTML is that of a stylesheet;
+3.   `type="text/css"` says that the file will be in plain text and in the CSS language.
 
-Note the slash at the end of the tag: the link element needs only one tag, because it doesn't mark up any text. So it closes itself with a self-closing slash. Two other common HTML elements that close themselves are:
+Note: self-closing tags
+:	The link element needs only one tag, because it doesn't mark up, or surround, any text. So it *closes itself* with a 'self-closing slash' at the end of the tag. Two other common HTML elements that close themselves are the line break `<br />` and the image tag `<img />`.
 
-*   the line break: \<br /\>
-*   the image tag: \<img /\>
-
-Right. In the course, we might try a challenge at this point.
-
-Challenge
----------
+## Challenge
 
 Here are several things you might want to do with CSS. Pick one, get onto Google, and take 5 minutes to have a guess how you'd write the CSS:
 
@@ -73,5 +68,3 @@ Here are several things you might want to do with CSS. Pick one, get onto Google
 *   make a heading appear in uppercase, without changing the letters to uppercase in your HTML;
 *   create a list inside a list (a sub-list);
 *   make a numbered list number in roman numerals.
-
-
