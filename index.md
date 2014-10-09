@@ -1,6 +1,6 @@
 ---
 title: EBW training
-layout: default
+layout: index
 ---
 
 # EBW training

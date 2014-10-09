@@ -1,4 +1,5 @@
 ---
+book: Making ebooks with Sigil, HTML and CSS
 title: On advanced tricks and bug fixing
 layout: chapter
 ---

@@ -1,4 +1,5 @@
 ---
+book: Making ebooks with Sigil, HTML and CSS
 title: Tables of contents
 layout: chapter
 ---

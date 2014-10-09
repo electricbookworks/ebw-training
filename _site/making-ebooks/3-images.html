@@ -9,49 +9,69 @@
 	<link rel="stylesheet" type="text/css" href="/css/screen.css" />
 </head>
 <body>
-<div id="wrapper">
 
-<div class="close-link non-printing">
-<a href="/" alt="Close" title="Close">×</a>
-</div>
+
+		<div id="nav-bar" class="non-printing">
+			<a href="/" alt="Close" title="Close" class="nav-bar-close">×</a>
+		</div>
+
+	<div id="wrapper">
 
 
 <div class="chapter">
-<h1 id="adding-images">Adding images</h1>
+<h1 id="working-with-images">Working with images</h1>
 
-<p>You are going to want to add or edit images in ebooks often. Luckily, this is very simple.</p>
+<p>You are going to want to add or edit images in ebooks often. Luckily, this is very simple. You can just use Sigil’s <code>Insert &gt; Files…</code> menu. But if you want to understand what’s going on in your code, here is the more manual method. To troubleshoot, you’ll need to know this stuff.</p>
 
-<p>First, add the image to the epub’s Images folder. In Sigil, just right-click the Images folder and select Add Existing Files. Then go find the image on your computer, and Sigil will copy it to that Images folder. Remember, though:</p>
+<h2 id="add-the-image-file">Add the image file</h2>
+
+<p>First, add the image to the epub’s <code>Images</code> folder. In Sigil, just right-click the <code>Images</code> folder and select <code>Add Existing Files</code>. Then go find the image on your computer, and Sigil will copy it to that <code>Images</code> folder. Remember, though:</p>
 
 <ul>
   <li>remove all spaces from image file names;</li>
-  <li>try to use only lowercase letters in file names (for one thing, Sigil alphabetises file names differently according to the case of the letters, bizarrely);</li>
+  <li>try to use only lowercase letters in file names (for one thing, Sigil alphabetises file names differently according to the case of the letters);</li>
   <li>only use jpg or gif images (png is usually also okay);</li>
-  <li>before adding, make sure the images are 72 to 150 dpi, large but not larger than 1000px on their longest side, and saved as RGB, not CMYK.</li>
+  <li>before adding, make sure the images are 72 to 150 dpi, large but not larger than 1000px on their longest side, and saved in RGB colours, not CMYK.</li>
 </ul>
 
-<p>Then, head back to your HTML document to add an image tag where the image must appear. Image tags must always include two attributes:</p>
+<h2 id="add-an-image-tag">Add an image tag</h2>
+
+<p>Now, head back to your HTML document to add an <code>&lt;img&gt;</code> image tag where the image must appear. Image tags must always include two attributes:</p>
 
 <ul>
-  <li>src for source, indicating the image file you just added, and</li>
-  <li>alt for alternative text, which appears if the image breaks and is read out loud is reader for the visually impaired.</li>
+  <li><code>src</code> for source, indicating the image file you just added, and</li>
+  <li><code>alt</code> for alternative text, which appears if the image breaks and is read out loud is reader for the visually impaired.</li>
 </ul>
 
-<p>An image tag can also include a title attribute, which provides more info about the image. Many ereaders show the title as a tooltip when a user mouses over the image.</p>
+<p>An image tag can also include a <code>title</code> attribute, which provides more info about the image. Many ereaders show the title as a tooltip when a user mouses over the image.</p>
 
 <p>Finally, the image tag must self-close with a slash.</p>
 
 <p>Here’s an example:</p>
 
-<p>&lt;img src=”../Images/example.jpg” alt=”Example image” title=”An example of an image in an ebook” /&gt;</p>
+<pre><code class="language-html">&lt;img src="../Images/example.jpg" alt="Example image" title="An example of an image in an ebook" /&gt;
+</code></pre>
 
-<p>Which might show like this in the rendered ebook:</p>
+<p>Done! Switch back to book view to check that it’s displaying correctly.</p>
 
-<p><img src="../Images/lily_by-arthur-attwell_20130214_194014.jpg" alt="Example image" title="An example of an image in an ebook" /></p>
+<h2 id="image-sizes-and-styles">Image sizes and styles</h2>
 
+<p>Images vary in size and are portrait or landscape or square. So are the screens they appear on. This means you will need to experiment with CSS styling for your images to make sure they display reliably on various screen sizes and orientations. Usually, this means working with <code>max-width</code> and <code>max-height</code> rules in your CSS.</p>
+
+<p>Sometimes you’ll need to create a couple of classes for different kinds of images in your book. For instance, little marginal decorations might be in a <code>margin-decor</code> class, while big, important graphics might be in an <code>important-graphic</code> class. Remember to create class names that describe the <em>purpose</em> of a given kind of image, not its appearance.</p>
 
 </div><!--.chapter-->
 
-</div><!--#wrapper-->
+	</div><!--#wrapper-->
+	
+
+	<div id="footer" class="non-printing">
+		<div class="footer-content">
+			<a href="http://electricbookworks.com" alt="Electric Book Works" title="Electric Book Works">Electric Book Works</a> &bull; 
+			EBW training &bull; <em>Making ebooks with Sigil, HTML and CSS</em> &bull; Images<br />
+		</div><!--.footer-content-->
+	</div><!--#footer-->
+
+	
 </body>
 </html>
