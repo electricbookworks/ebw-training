@@ -74,12 +74,25 @@ We could have called the class anything we liked:
 
 But of course it's best to use class names that are easy to remember and describe their purpose clearly.
 
-Attribute structure:
-	An attribute in a tag always takes the same form: the kind of attribute (e.g. class), an equals sign, and the attribute value in quote marks. Another kind of attribute is an ID, which we cover [here in Links, later](4-links.html#about-ids).)
+Attribute structure
+:	An attribute in a tag always takes the same form: the kind of attribute (e.g. class), an equals sign, and the attribute value in quote marks. Another kind of attribute is an ID, which we cover [in Links, later](4-links.html#about-ids).)
 
 > If you're sharp, you'll have noticed that none of these elements or classes describe what the text or image they mark up *looks like*. They only describe its *function or purpose*. 
 
 All appearance or formatting is managed separately, in another file called a stylesheet. We'll get to that later.
+
+## IDs
+
+Elements can have IDs as attributes, too. An ID identifies that particular element uniquely. 
+
+~~~ html
+<p id="jiminycricket">This paragraph is the only one about Jiminy Cricket.</p>
+~~~
+
+IDs are especially useful when we want to link to specific elements, like a given paragraph or image. We cover this in the ['Links'](4-links.html) chapter.
+
+In its HTML, this paragraph has an `id` of `bobsyouruncle`. [We link to it from the Links chapter here](4-links.html#backtobob).
+{:#bobsyouruncle .non-printing}
 
 ## HTML document structure
 

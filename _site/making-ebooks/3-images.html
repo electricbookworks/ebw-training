@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>EBW training: Images</title>
+	<title>EBW training: Working with images</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,6 +60,27 @@
 
 <p>Sometimes you’ll need to create a couple of classes for different kinds of images in your book. For instance, little marginal decorations might be in a <code>margin-decor</code> class, while big, important graphics might be in an <code>important-graphic</code> class. Remember to create class names that describe the <em>purpose</em> of a given kind of image, not its appearance.</p>
 
+<h2 id="captions-and-figures">Captions and figures</h2>
+
+<p>If your images have captions, you should have two options:</p>
+
+<ul>
+  <li>Make the captions paragraphs immediately before or after the image (you can make them <code>&lt;p class="caption"&gt;</code> to style them); or</li>
+  <li>Use the HTML for a <code>&lt;figure&gt;</code> element.</li>
+</ul>
+
+<p>But the second option, using <code>&lt;figure&gt;</code> doesn’t work in Sigil. Still, it’s useful to know about it, in case Sigil allows for it in future, or in the event that you use another epub editor that does allow it.</p>
+
+<p>The <code>&lt;figure&gt;</code> element wraps an image and its caption together. This is useful for styling, and also for keeping the image and its caption, marked up with <code>&lt;figcaption&gt;</code>, on the same page. The HTML for a figure looks like this:</p>
+
+<pre><code class="language-html">&lt;figure&gt;
+    &lt;img src="../Images/myimage.jpg" alt="My pretty image" /&gt;  
+    &lt;figcaption&gt;This is a beautiful picture.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+<p>But if your ebook files are XHTML (rather than HTML), the <code>&lt;figure&gt;</code> element is not allowed. By default, Sigil uses XHTML, so <code>&lt;figure&gt;</code> doesn’t validate. (And, no, in Sigil you can’t manually change your DOCTYPE (to <code>&lt;!DOCTYPE html&gt;</code>) because Sigil likes to clean your code, and changes it back.) When Sigil supports EPUB3 in future, this won’t be an issue.</p>
+
 </div><!--.chapter-->
 
 	</div><!--#wrapper-->
@@ -68,7 +89,7 @@
 	<div id="footer" class="non-printing">
 		<div class="footer-content">
 			<a href="http://electricbookworks.com" alt="Electric Book Works" title="Electric Book Works">Electric Book Works</a> &bull; 
-			EBW training &bull; <em>Making ebooks with Sigil, HTML and CSS</em> &bull; Images<br />
+			EBW training &bull; <em>Making ebooks with Sigil, HTML and CSS</em> &bull; Working with images<br />
 		</div><!--.footer-content-->
 	</div><!--#footer-->
 

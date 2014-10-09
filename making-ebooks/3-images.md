@@ -1,6 +1,6 @@
 ---
 book: Making ebooks with Sigil, HTML and CSS
-title: Images
+title: Working with images
 layout: chapter
 ---
 
@@ -41,3 +41,23 @@ Done! Switch back to book view to check that it's displaying correctly.
 Images vary in size and are portrait or landscape or square. So are the screens they appear on. This means you will need to experiment with CSS styling for your images to make sure they display reliably on various screen sizes and orientations. Usually, this means working with `max-width` and `max-height` rules in your CSS.
 
 Sometimes you'll need to create a couple of classes for different kinds of images in your book. For instance, little marginal decorations might be in a `margin-decor` class, while big, important graphics might be in an `important-graphic` class. Remember to create class names that describe the *purpose* of a given kind of image, not its appearance.
+
+## Captions and figures
+
+If your images have captions, you should have two options:
+
+*	Make the captions paragraphs immediately before or after the image (you can make them `<p class="caption">` to style them); or
+*	Use the HTML for a `<figure>` element.
+
+But the second option, using `<figure>` doesn't work in Sigil. Still, it's useful to know about it, in case Sigil allows for it in future, or in the event that you use another epub editor that does allow it.
+
+The `<figure>` element wraps an image and its caption together. This is useful for styling, and also for keeping the image and its caption, marked up with `<figcaption>`, on the same page. The HTML for a figure looks like this:
+
+~~~ html
+<figure>
+    <img src="../Images/myimage.jpg" alt="My pretty image" />  
+    <figcaption>This is a beautiful picture.</figcaption>
+</figure>
+~~~
+
+But if your ebook files are XHTML (rather than HTML), the `<figure>` element is not allowed. By default, Sigil uses XHTML, so `<figure>` doesn't validate. (And, no, in Sigil you can't manually change your DOCTYPE (to `<!DOCTYPE html>`) because Sigil likes to clean your code, and changes it back.) When Sigil supports EPUB3 in future, this won't be an issue.

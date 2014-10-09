@@ -8,8 +8,8 @@ layout: chapter
 
 Ebooks should be thoroughly checked, sometimes even proofread, just like print books. There are two parts to checking ebooks:
 
-1.	Validating the code, and
-2.	checking on ereaders.
+1.	validating the code, and
+2.	checking the ebook on ereaders.
 
 ## Validating the code
 

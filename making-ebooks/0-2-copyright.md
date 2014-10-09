@@ -9,7 +9,7 @@ layout: frontmatter
 *Making ebooks with Sigil, HTML and CSS*
 
 *	First published by Electric Book Works on 4 March 2014
-*	Revised 2 October 2014
+*	Revised 9 October 2014
 
 © Arthur Attwell 2014
 

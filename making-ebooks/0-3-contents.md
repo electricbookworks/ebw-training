@@ -12,7 +12,7 @@ layout: toc
 
 1.	[HTML, or 'How to Talk a Machine's Language'](1-html.html)
 2.	[Stylesheets](2-stylesheets.html)
-3.	[Adding images](3-images.html)
+3.	[Working with images](3-images.html)
 4.	[Links](4-links.html)
 5.	[Metadata](5-metadata.html)
 6.	[Tables of Contents](6-contents.html)

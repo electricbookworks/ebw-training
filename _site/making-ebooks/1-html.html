@@ -99,14 +99,27 @@
 
 <p>But of course it’s best to use class names that are easy to remember and describe their purpose clearly.</p>
 
-<p>Attribute structure:
-	An attribute in a tag always takes the same form: the kind of attribute (e.g. class), an equals sign, and the attribute value in quote marks. Another kind of attribute is an ID, which we cover <a href="4-links.html#about-ids">here in Links, later</a>.)</p>
+<dl>
+  <dt>Attribute structure</dt>
+  <dd>An attribute in a tag always takes the same form: the kind of attribute (e.g. class), an equals sign, and the attribute value in quote marks. Another kind of attribute is an ID, which we cover <a href="4-links.html#about-ids">in Links, later</a>.)</dd>
+</dl>
 
 <blockquote>
   <p>If you’re sharp, you’ll have noticed that none of these elements or classes describe what the text or image they mark up <em>looks like</em>. They only describe its <em>function or purpose</em>. </p>
 </blockquote>
 
 <p>All appearance or formatting is managed separately, in another file called a stylesheet. We’ll get to that later.</p>
+
+<h2 id="ids">IDs</h2>
+
+<p>Elements can have IDs as attributes, too. An ID identifies that particular element uniquely. </p>
+
+<pre><code class="language-html">&lt;p id="jiminycricket"&gt;This paragraph is the only one about Jiminy Cricket.&lt;/p&gt;
+</code></pre>
+
+<p>IDs are especially useful when we want to link to specific elements, like a given paragraph or image. We cover this in the <a href="4-links.html">‘Links’</a> chapter.</p>
+
+<p id="bobsyouruncle" class="non-printing">In its HTML, this paragraph has an <code>id</code> of <code>bobsyouruncle</code>. <a href="4-links.html#backtobob">We link to it from the Links chapter here</a>.</p>
 
 <h2 id="html-document-structure">HTML document structure</h2>
 
