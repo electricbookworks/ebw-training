@@ -5,10 +5,8 @@ layout: toc
 
 # Contents
 
-*	[Title page](0-1-titlepage.html)
-	{:.non-printing}
-*	[Copyright](0-2-copyright.html)
-	{:.non-printing}
+*	[Title page](0-1-titlepage.html){:.non-printing}
+*	[Copyright](0-2-copyright.html){:.non-printing}
 *	[Agenda](0-4-agenda.html)
 
 1.	[HTML, or 'How to Talk a Machine's Language'](1-html.html)
