@@ -21,10 +21,31 @@
 <div class="chapter">
 <h1 id="testing-and-validation">Testing and validation</h1>
 
-<p>Ebooks should be thoroughly checked, sometimes even proofread, just like print books.</p>
+<p>Ebooks should be thoroughly checked, sometimes even proofread, just like print books. There are two parts to checking ebooks:</p>
 
-<p>Sigil includes a useful tool that checks the technical correctness of your epub file. It’s called ‘FlightCrew’. Just go to Tools &gt; Validate EPUB with FlightCrew. If there are technical errors, Sigil will give you a list, and you can click on the items in the list to jump to the problem.</p>
+<ol>
+  <li>Validating the code, and</li>
+  <li>checking on ereaders.</li>
+</ol>
 
+<h2 id="validating-the-code">Validating the code</h2>
+
+<p>Sigil includes a useful validation tool that checks the technical correctness (validity) of your epub file. (It’s called ‘FlightCrew’.) Go to <code>Tools &gt; Validate EPUB with FlightCrew</code> or hit the green tick button. If there are technical errors, Sigil will give you a list of them, and you can click on the items in the list to jump to the problem.</p>
+
+<h2 id="checking-on-ereaders">Checking on ereaders</h2>
+
+<p>Always, always test on a few different ereaders, and scroll through the whole book for a visual check. We recommend that you try to test on:</p>
+
+<ul>
+  <li>a good reading app on a tablet and/or phone like iBooks, Google Play Books, Aldiko;</li>
+  <li>a web-based reader like Google Play Books or Ibis Reader, or in Firefox using the EpubReader addon;</li>
+  <li>Adobe Digital Editions on a computer (ADE has lots of problems, but it’s still the biggest computer-screen ereader next to Kindle);</li>
+  <li>an e-ink reader (e.g. Sony, COOL-ER, BeBook, etc.).</li>
+</ul>
+
+<p>These tests should include a device with a small screen (less than, say, 5” diagonal; this can detect various formatting problems) and one with a large screen (above, say, 19”; this can detect low-res covers and missing page breaks).</p>
+
+<p>A range of options like this will usually also include a device with an Adobe engine (i.e. one based on the Adobe Reader Mobile SDK, such as Sony Readers and B&amp;N Nook), and a device with a WebKit engine (e.g. Ibis Reader, iBooks).</p>
 
 </div><!--.chapter-->
 

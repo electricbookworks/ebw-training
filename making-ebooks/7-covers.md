@@ -4,47 +4,60 @@ title: Covers
 layout: chapter
 ---
 
-Covers
-======
+# Covers
 
-There are many ways to create a front cover in an epub ebook. You could just place an image in the first HTML file in the epub. But I find I get better-looking results with some very specific code.
+There are many ways to create a cover in an epub ebook. You could just place an image in the first HTML file in the epub. But we generally get better-looking results with some very specific code.
 
-Here are the steps.
+## Prepare the image
 
-First, get the cover image in jpg format, name it cover.jpg, and add it to the Images folder. Right-click it, select Add Semantics, and tick Cover Image. (This helps some ereaders display the cover properly.) 
+Get the front cover as a jpg image, name it cover.jpg, and add it to the `Images` folder of your epub. 
 
-Next, add a new HTML document to your Text folder, and click and drag it so that it's the first HTML file. Rename the file 'cover.xhtml'.
+To tell ereaders that it's the cover image, right-click it, select `Add Semantics`, and tick `Cover Image`. (Some ereaders won't display the cover in their library view unless you do this.) 
 
-Now, in the Code View of that file, replace the head and body elements with this code:
+## Create the cover HTML
 
-\<head\>
-   \<title\>Cover\</title\>
-   \<link rel="stylesheet" type="text/css" href="../Styles/styles.css" /\>
- \</head\>
- \<body class="cover"\>
-   \<p class="cover"\>\<img class="cover" alt="" src="../Images/cover.jpg" /\>\</p\>
- \</body\>
+Next, add a new HTML document to your `Text` folder, and click-and-drag it so that it's the first HTML file in the list. Name the file 'cover.xhtml'.
 
-Note that you may need to change the name of the CSS file here if yours isn't called 'styles.css'.
+Now, in the Code View of that file, replace the `<head>` and `<body>` elements with this code:
+
+~~~ html
+<head>
+	<title>Cover</title>
+	<link rel="stylesheet" type="text/css" href="../Styles/styles.css" />
+</head\>
+
+<body class="cover">
+	<p class="cover">
+		<img class="cover" alt="Cover" src="../Images/cover.jpg" />
+	</p>
+</body>
+~~~
+
+Change the name of the CSS file here if yours isn't called `styles.css`.
+
+## Add the cover to CSS
 
 Finally, add this code to your CSS file:
 
-/\* Cover \*/
- body.cover {
-    margin: 0;
-    padding: 0;
-    text-align: center;
- }
- p.cover {
-    margin: 0;
-    padding: 0;
-    text-align: center;
- }
- img.cover {
-    height: 100%;
-    margin: 0;
-    padding: 0;
- }
+~~~ css
+\* Styles for cover.xhtml \*
+body.cover {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+p.cover {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+img.cover {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+~~~
 
-That should do the trick. You can find a lot more technical detail about it [on the EBW Knowledge Base here](http://electricbookworks.com/kb/creating-epub-from-indesign/after-indesign-export-to-epub/add-a-cover/).
+That should do the trick on most good ereaders. Like every piece cover code I've found, it won't work perfectly everywhere.
 
+You can find more technical detail about covers [on the EBW Knowledge Base](http://electricbookworks.com/kb/creating-epub-from-indesign/after-indesign-export-to-epub/add-a-cover/).

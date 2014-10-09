@@ -21,10 +21,39 @@
 <div class="chapter">
 <h1 id="tables-of-contents">Tables of Contents</h1>
 
-<p>Epubs store clickable tables of contents in a special file called toc.ncx. You can see it in Sigil, but you do not want to edit it directly. Rather use Sigil’s easy TOC generator to create and edit tables of contents. Go to Tools &gt; Table Of Contents.</p>
+<p>In an ebook, the table of contents can take two forms:</p>
 
-<p>Note that Sigil generates the TOC by collating all heading elements, from &lt;h1&gt; to &lt;h6&gt;. You can edit this manually in the TOC editor, but try to keep edits to a minimum. Ideally your heading levels should be so well-constructed that editing isn’t necessary.</p>
+<ul>
+  <li>a ‘Contents’ page among the book’s opening pages, as in a print book;</li>
+  <li>a navigation list displayed by the ereading software (e.g. a menu in a slide-out panel or navigation screen).</li>
+</ul>
 
+<p>It’s optional whether to include a ‘Contents’ page. I generally avoid it, because it’s extra work and an ereader’s navigation menu is usually easier to use while reading. If you do create one, it’s essentially a list of headings in the book, each hyperlinked to the relevant point in the book.</p>
+
+<p>The navigation list, however, is mandatory. You store this list in a special file listing links to chapter or other headings in the book. Each ereader displays this table-of-contents list in a different way: for instance, as a navigation bar, a slide-out panel, a menu list, and so on.</p>
+
+<p>At this point, the way we create the navigation list depends on whether we’re creating epubs according to the EPUB2 or EPUB3 spec. Right now, Sigil only supports EPUB2. So we’ll start there.</p>
+
+<h2 id="epub2-tables-of-contents">EPUB2 tables of contents</h2>
+
+<p>In EPUB2, you store the navigation list in a <code>toc.ncx</code> file (<code>toc</code> for Table of Contents, of course). You can see this file in Sigil, but <em>you do not want to edit it yourself</em>. The syntax is a real headache. Let Sigil code the <code>toc.ncx</code> file for you: use <code>Tools &gt; Table Of Contents &gt; Generate Table Of Contents…</code> to create and edit it.</p>
+
+<p>Note that Sigil generates the TOC by collating all heading elements, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. You can edit this manually in the TOC editor, but try to keep edits to a minimum. Ideally your heading levels should be so well-constructed that editing isn’t necessary.</p>
+
+<h2 id="epub3-table-of-contents">EPUB3 table of contents</h2>
+
+<p>In EPUB3 you store the navigation list in a dedicated XHTML file with any name you like. It’s common to call it <code>nav.xhtml</code>, and to refer to it as the <code>toc nav</code>. You can then choose whether or not to include this XHTML file as content in your book – that is, as a ‘Contents’ page among the book’s opening pages. (Technically speaking, the file is always listed in the OPF <code>manifest</code>, but only included in the <code>spine</code> if it must appear in the book content.)</p>
+
+<p>We aren’t going to go into detail about how to create that file here, since we’re focusing on EPUB2 with Sigil. But you can <a href="http://epubzone.org/news/epub-3-navigation">read up about it online</a> if you’re curious.</p>
+
+<dl>
+  <dt>Technical note: EPUB3 with EPUB2 fallback</dt>
+  <dd>The EPUB3 specification allows for an epub to include a <a href="http://www.idpf.org/epub/30/spec/epub30-publications.html#ncx-superseded">toc.ncx file as a fallback</a> for ereaders that don’t support EPUB3’s EPUB Navigation Document. Hopefully, when Sigil becomes EPUB3 capable, it’ll provide this fallback automatically.</dd>
+</dl>
+
+<h3 id="further-reading-epub-3-best-practices">Further reading: <em>EPUB 3 Best Practices</em></h3>
+
+<p>If you want a great reference book, go get <em><a href="http://shop.oreilly.com/product/0636920024897.do">EPUB 3 Best Practices</a></em> from O’Reilly Media.</p>
 
 </div><!--.chapter-->
 
