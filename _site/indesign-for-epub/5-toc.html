@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>EBW training: The table of contents</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/screen.css" />
+</head>
+<body>
+
+
+		<div id="nav-bar" class="non-printing">
+			<a href="/ebw-training/" alt="Close" title="Close" class="nav-bar-close">×</a>
+		</div>
+
+	<div id="wrapper">
+
+
+<div class="chapter">
+<h1 id="the-table-of-contents">The table of contents</h1>
+
+<p>Creating an automatic Table of Contents in your InDesign document gets you a Table of Contents in your exported epub file. So always create one, even if you don’t include it on any page in the document. You can just put it on the pasteboard. It doesn’t even need page numbers. It just needs to list all the headings you want in your epub’s clickable Table of Contents.</p>
+
+<p>When creating your TOC in InDesign:</p>
+
+<ul>
+  <li>Create the TOC style and save it.</li>
+  <li>If you’re working in an InDesign Book, create the Table of Contents in your style-source document. This is not necessarily the first document in your Book.</li>
+</ul>
+
+<p>Note: If you’re working in InDesign CS4 or later, this is doubly important for another reason: upon export to epub, InDesign will then use proper heading tags for your headings, not just <code>&lt;p&gt;</code> tags, in the XHTML. Make sure you include all levels of heading in your TOC style in order for InDesign to tag them all as XHTML headings, not paragraphs.</p>
+
+<h2 id="a-toc-on-the-book-page">A TOC on the ‘book page’</h2>
+
+<p>In a reflowable ebook, you really don’t need a TOC on the actual ‘pages’ of the book, since it’s part of the software’s navigation system. That said, if you really want a TOC on the pages of the ebook, you can follow <a href="http://www.adobe.com/products/indesign/epub/howto/">Adobe’s advice</a> on this:</p>
+
+<blockquote>
+  <p>If you have used the InDesign Table of Contents feature to generate a TOC at the beginning of the book, it is discarded in the exported EPUB file. To create a TOC that appears at the start of an eBook, manually insert the text for the entries and then turn each entry into a hyperlink that jumps to a specific section in the eBook. With InDesign CS4, you can use cross-references instead of hyperlinks to create the TOC. When you use cross-references, each TOC entry is generated from its destination text, so if the destination text is modified, you can easily update its corresponding TOC entry with the new text.</p>
+</blockquote>
+
+</div><!--.chapter-->
+
+	</div><!--#wrapper-->
+	
+
+	<div id="footer" class="non-printing">
+		<div class="footer-content">
+			<a href="http://electricbookworks.com" alt="Electric Book Works" title="Electric Book Works">Electric Book Works</a> &bull; 
+			EBW training &bull; <em>InDesign best practice for print and ebooks</em> &bull; The table of contents<br />
+		</div><!--.footer-content-->
+	</div><!--#footer-->
+
+	
+</body>
+</html>
