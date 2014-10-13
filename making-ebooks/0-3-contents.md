@@ -19,3 +19,4 @@ layout: toc
 7.	[Covers](7-covers.html)
 8.	[Testing and validation](8-testing.html)
 9.	[On advanced tricks and bug fixing](9-bugs.html)
+10.	[Your feedback](10-feedback.html)
