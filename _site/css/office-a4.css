@@ -379,6 +379,9 @@ blockquote p {
 	margin: 0;
 	padding: 0;
 }
+blockquote ul {
+	padding-left: 2em;
+}
 dl {
 	color: #666;
 	font-size: 90%;
