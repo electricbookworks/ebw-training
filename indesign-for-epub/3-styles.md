@@ -6,9 +6,9 @@ layout: chapter
 
 # Thinking ahead about styles and tag names
 
-When exporting to epub, InDesign uses your style names as part of the tags in the ebook’s XHTML code.
+When exporting to epub, InDesign uses your style names as part of the tags in the ebook’s XHTML code. Specifically, as class names. This means it is very important to use paragraph and character style names that describe the *purpose* or function of the given style, not its appearance (since appearance might change on screen). This will also make it easier for those who work on the book after you to understand how your book works.
 
-CS3 provides very basic HTML tagging. It gives every paragraph a `<p>` tag, and then includes with that tag a description of what kind of paragraph it is, based on your style name. If your style name for first-level headings is `head_a`, InDesign CS3 will tag those headings like this:
+If your style name for first-level headings is `head_a`, InDesign will tag those headings like this:
 
 ~~~ html
 <p class="head_a">
@@ -16,7 +16,7 @@ CS3 provides very basic HTML tagging. It gives every paragraph a `<p>` tag, and 
 </p>
 ~~~
 
-From CS4 this is a better. If you’ve correctly used a Table of Contents in InDesign, CS4 will give every heading (if included in your TOC style) a heading tag, e.g. `<h1>`, `<h2>` etc., with a class named for your style name. For instance:
+Since CS4, if you’ve correctly used a [Table of Contents](5-toc.html), InDesign will give every heading (if included in the saved TOC style used when you export to epub) a heading tag, e.g. `<h1>`, `<h2>` etc., with a class named for your style name. For instance:
 
 ~~~ html
 <h1 class="head_a">
@@ -24,8 +24,9 @@ From CS4 this is a better. If you’ve correctly used a Table of Contents in InD
 </h1>
 ~~~
 
-Technical note
-:	We are assuming here that you’re not using any of InDesign’s XML-tagging features. For advanced users, these are worth exploring. In InDesign, tags are separate from style names, and require that you follow a set DTD/Schema for your XML tags.
+InDesign versions
+:	From CS6, you can add or override class names for any style in the Export Tags.
+:	CS3 doesn't add heading tags, only `<p>` tags for everything, and you have to change the tags manually in the epub after export.
 
 ## Local formatting
 
