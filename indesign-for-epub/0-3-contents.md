@@ -19,3 +19,4 @@ layout: toc
 7. 	[The cover](7-cover.html)
 8. 	[Exporting to epub](8-export.html)
 9. 	[Tips](9-tips.html)
+10.	[Feedback](10-feedback.html)

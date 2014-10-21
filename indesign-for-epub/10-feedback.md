@@ -1,5 +1,5 @@
 ---
-book: Making ebooks with Sigil, HTML and CSS
+book: InDesign best practice for print and ebooks
 title: Feedback
 layout: default
 ---

@@ -374,13 +374,16 @@ blockquote {
 	margin: 0.5em 0 0.5em 0;
 	padding: 0.5em 1em 0.5em 1em;
 	border-left: 5px solid #ddd;
+	max-width: 35em;
+	line-height: 120%;
+}
+blockquote.shout {
+	max-width: 20em;
+	font-size: 1.5em;
 }
 blockquote p {
 	margin: 0;
 	padding: 0;
-}
-blockquote ul {
-	padding-left: 2em;
 }
 dl {
 	color: #666;

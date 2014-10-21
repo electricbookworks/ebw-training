@@ -5,14 +5,15 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="/css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/ebw-training/css/screen.css" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
 
 		<div id="nav-bar" class="non-printing">
-			<a href="/" alt="Close" title="Close" class="nav-bar-close">×</a>
+			<a href="/ebw-training/" alt="Close" title="Close" class="nav-bar-close"><span class="fa fa-home"></span></a>
 		</div>
 
 	<div id="wrapper">
@@ -23,7 +24,16 @@
 
 <p>Metadata is information about information. For instance, your driver’s licence is metadata about you.</p>
 
-<p>Epub ebooks must store some information about themselves so that machines know how to deal with them. You have to provide some of this metadata. At the very least:</p>
+<p>Epub ebooks must store some information about themselves so that machines know how to deal with them. You have to provide some of this metadata. Some metadata applies to the epub as a whole, some to specific files, and some even to specific elements inside files.</p>
+
+<dl>
+  <dt>Technical note</dt>
+  <dd>Book-level and document-level metadata is actually stored in a special file called <code>content.opf</code>. Sigil will let you edit that file directly (just double-click it on the left), but editing it directly is not a good idea. You do not want to break something. Rather use Sigil’s metadata editing tools.</dd>
+</dl>
+
+<h2 id="book-level-metadata">Book-level metadata</h2>
+
+<p>Just to be a valid epub, epub-level metadata must include:</p>
 
 <ul>
   <li>an identifier (like an ISBN)</li>
@@ -31,9 +41,35 @@
   <li>a date of publication or creation.</li>
 </ul>
 
-<p>To add metadata in Sigil, just go to <code>Tools &gt; Metadata Editor.</code></p>
+<p>It’s also best practice to include:</p>
 
-<p>The metadata is actually stored in a special file called <code>content.opf</code>. Sigil will let you edit that file directly (just double-click it on the left), but editing it directly is not a good idea. You do not want to break something.</p>
+<ul>
+  <li>the title</li>
+  <li>an author.</li>
+</ul>
+
+<p>To add this metadata in Sigil, just go to <code>Tools &gt; Metadata Editor</code>. </p>
+
+<h2 id="document-level-metadata">Document-level metadata</h2>
+
+<p>In your epub you’ll have a bunch of HTML files, and each will likely correspond to a part of a book: cover, title page, copyright page, preface, and so on. If an ereader knows which HTML file represents each book part, it can do useful things. For instance, the first time you open an ebook, most good ereaders will jump you straight to the first chapter, skipping all the frontmatter. That’s if it knows which HTML file is the first chapter.</p>
+
+<p>Sigil lets us set this information as document-level metadata. Just right-click each HTML file and go to <code>Add Semantics…</code> then tick the book-part that corresponds to that chapter.</p>
+
+<p>Only one file can correspond to each book part. And the most important semantic tag is the one Sigil calls ‘Text’. That’s the file that ereaders will jump to on first opening a new ebook.</p>
+
+<p>In addition to adding semantics for HTML files, you <em>must</em> also add semantics for the cover image, usually <code>cover.jpg</code>, in your <code>Images</code> folder. Right-click the image file and select <code>Add Semantics &gt; Cover Image</code>. This tells ereaders to use that image in its Library display, which is very important to users.</p>
+
+<h2 id="element-level-metadata">Element-level metadata</h2>
+
+<p>It’s rare that you’d deliberately add metadata to elements within files, such as specific paragraphs or phrases, because you really don’t have time or a clear need for it. But do keep in mind that it’s possible, so that you can experiment with possibilities. For instance, imagine if you were creating a travel guide, and you marked up each phone number – for guest houses, museums, restaurants – <a href="http://schema.org/telephone">like this</a>:</p>
+
+<pre><code class="language-html">&lt;span itemprop="telephone"&gt;+27 21 671 1278&lt;/span&gt;
+</code></pre>
+
+<p>Ereaders could use this tagging to recognise phone numbers and let you dial them from your smartphone with a single click. </p>
+
+<p>If you’re curious about the possibilities, <a href="http://en.wikipedia.org/wiki/Microdata_(HTML)">read up online about ‘microdata’</a>.</p>
 
 </div><!--.chapter-->
 
