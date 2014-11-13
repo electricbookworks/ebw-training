@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 	line-height: 120%;
 	page-break-after: avoid;
+	color: #666;
 }
 h1 {
 	font-size: 3.5em;
@@ -151,6 +152,11 @@ a.button {
 }
 a.button:hover {
 	background-color: silver;
+}
+em.highlight {
+	font-style: normal;
+	background-color: #e3e8df;
+	padding: 0 0.2em 0 0.2em;
 }
 
 /*
