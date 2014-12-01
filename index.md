@@ -7,22 +7,42 @@ layout: index
 
 [Electric Book Works](http://electricbookworks.com) offers training in digital publishing. We keep some of our training material here using the [EBW book framework](https://github.com/electricbookworks/book-framework).
 
+To see if we have training courses coming up, please visit [our events page on Facebook](https://www.facebook.com/pages/Electric-Book-Works/531070060272349?sk=events).
 
-## [Making ebooks with Sigil, HTML and CSS](making-ebooks/0-3-contents.html)
+Pre-designed courses:
+
+*	[Starting out with HTML and CSS](#starting-out-with-html-and-css)
+*	[InDesign best practice for print and ebooks](#indesign-best-practice-for-print-and-ebooks)
+*	[Making ebooks with Sigil, HTML and CSS](#making-ebooks-with-sigil-html-and-css)
+*	[Digital Decisions](#digital-decisions)
+*	[Developing books for the digital age](#developing-books-for-the-digital-age)
+*	[Kick-off for sales teams](#kick-off-for-sales-teams)
+
+For courses customised to your team, [please chat to us](http://electricbookworks.com/contact).
+
+## Starting out with HTML and CSS
+
+*Starting out with HTML and CSS* is an introduction to the building blocks of all websites and ebooks. You'll learn how to write basic HTML and make it look great with CSS stylesheets, even if you've never seen computer code before. Whether you work in writing, editing, publishing or sales, knowing the basics of HTML and CSS will open up a whole new world.
+
+This is a one-day course that costs R3200 ex VAT per person, with a minimum of four people and a maximum of seven. 
+
+## InDesign best practice for print and ebooks
+
+This course is for *editors and designers who work in InDesign*{:.highlight} and need to set up documents for reliable export to epub. It can be offered on its own, and is included in *Making ebooks with Sigil, HTML and CSS*.
+
+This is a one-day course that costs R3200 ex VAT per person, with a minimum of five people. 
+
+[Read the course notes](indesign-for-epub/0-3-contents.html){:.button}
+
+## Making ebooks with Sigil, HTML and CSS
 
 *Making ebooks with Sigil, HTML and CSS* is an in-depth, practical crash course in ebook production, ideal for *editorial and production staff familiar with InDesign.*{:.highlight} The aim is to provide your organisation with in-house technical expertise for quality assurance and production-process decisions. We teach basic HTML and CSS (stylesheets) to enable participants to create, evaluate and fix basic epubs, and to know how to tackle problems when they arise. Participants work mostly in Sigil and a little InDesign, learning how best to edit content and control layout. 
+
+This course includes slightly condensed versions of our *Starting out with HTML and CSS* and *InDesign best practice for print and ebooks* courses.
 
 This is a four-morning course over two weeks, and costs R6400 ex VAT per person, with a minimum of five people. 
 
 [Read the course notes](making-ebooks/0-3-contents.html){:.button}
-
-## [InDesign best practice for print and ebooks](indesign-for-epub/0-3-contents.html)
-
-This course is for *editors and designers who work in InDesign*{:.highlight} and need to set up documents for reliable export to epub. It can be offered on its own, and is included in *Making ebooks with Sigil, HTML and CSS*.
-
-This is a one-day course over two weeks, and costs R3200 ex VAT per person, with a minimum of five people. 
-
-[Read the course notes](indesign-for-epub/0-3-contents.html){:.button}
 
 ## Digital Decisions
 
