@@ -5,32 +5,26 @@ layout: index
 
 # EBW training
 
-[Electric Book Works](http://electricbookworks.com) offers training in digital publishing. We keep some of our training material here using the [EBW book framework](https://github.com/electricbookworks/book-framework).
+[Electric Book Works](http://electricbookworks.com) offers pre-designed and customised training courses for publishing teams.
 
-To see if we have training courses coming up, please visit [our events page on Facebook](https://www.facebook.com/pages/Electric-Book-Works/531070060272349?sk=events).
+To see if we have scheduled training courses coming up, please visit [our events page on Facebook](https://www.facebook.com/pages/Electric-Book-Works/531070060272349?sk=events). To set up in-house or customised courses for your team, [please chat to us](http://electricbookworks.com/contact).
 
-Pre-designed courses:
+This open training-materials repository is built with the [EBW Book Framework](https://github.com/electricbookworks/book-framework).
 
-*	[Starting out with HTML and CSS](#starting-out-with-html-and-css)
-*	[InDesign best practice for print and ebooks](#indesign-best-practice-for-print-and-ebooks)
-*	[Making ebooks with Sigil, HTML and CSS](#making-ebooks-with-sigil-html-and-css)
-*	[Digital Decisions](#digital-decisions)
-*	[Developing books for the digital age](#developing-books-for-the-digital-age)
-*	[Kick-off for sales teams](#kick-off-for-sales-teams)
-
-For courses customised to your team, [please chat to us](http://electricbookworks.com/contact).
+*	List of headings here
+{:toc}
 
 ## Starting out with HTML and CSS
 
-*Starting out with HTML and CSS* is an introduction to the building blocks of all websites and ebooks. You'll learn how to write basic HTML and make it look great with CSS stylesheets, even if you've never seen computer code before. Whether you work in writing, editing, publishing or sales, knowing the basics of HTML and CSS will open up a whole new world.
+*Starting out with HTML and CSS* is a practical introduction to the building blocks of all websites and ebooks. You'll learn how to write basic HTML and make it look great with CSS stylesheets, even if you've never seen computer code before. Whether you work in *writing, editing, publishing or sales,*{:.highlight} knowing the basics of HTML and CSS will open up a whole new world.
 
-This is a one-day course that costs R3200 ex VAT per person, with a minimum of four people and a maximum of seven. 
+This is a one-day course that costs R3200 ex VAT per person, with a minimum of four people and a maximum of seven. It is included in condensed form in *Making ebooks with Sigil, HTML and CSS*.
 
 ## InDesign best practice for print and ebooks
 
-This course is for *editors and designers who work in InDesign*{:.highlight} and need to set up documents for reliable export to epub. It can be offered on its own, and is included in *Making ebooks with Sigil, HTML and CSS*.
+This course is for *editors and designers who work in InDesign*{:.highlight} and need to set up documents for reliable export to epub. It is included in condensed form in *Making ebooks with Sigil, HTML and CSS*.
 
-This is a one-day course that costs R3200 ex VAT per person, with a minimum of five people. 
+This is a one-day course that costs R3200 ex VAT per person, with a minimum of four people and a maximum of seven.
 
 [Read the course notes](indesign-for-epub/0-3-contents.html){:.button}
 
@@ -38,9 +32,9 @@ This is a one-day course that costs R3200 ex VAT per person, with a minimum of f
 
 *Making ebooks with Sigil, HTML and CSS* is an in-depth, practical crash course in ebook production, ideal for *editorial and production staff familiar with InDesign.*{:.highlight} The aim is to provide your organisation with in-house technical expertise for quality assurance and production-process decisions. We teach basic HTML and CSS (stylesheets) to enable participants to create, evaluate and fix basic epubs, and to know how to tackle problems when they arise. Participants work mostly in Sigil and a little InDesign, learning how best to edit content and control layout. 
 
-This course includes slightly condensed versions of our *Starting out with HTML and CSS* and *InDesign best practice for print and ebooks* courses.
+This course includes condensed versions of *Starting out with HTML and CSS* and *InDesign best practice for print and ebooks*.
 
-This is a four-morning course over two weeks, and costs R6400 ex VAT per person, with a minimum of five people. 
+This is a four-morning course over two weeks, and costs R6400 ex VAT per person, with a minimum of four people and a maximum of seven. *Participants must be regular ebook users*{:.highlight} themselves, so that they are already familiar with the products they are learning to create.
 
 [Read the course notes](making-ebooks/0-3-contents.html){:.button}
 
@@ -52,8 +46,7 @@ This is a four-morning course over two weeks, and costs R6400 ex VAT per person,
 *	rights and royalty decisions (territory, calculating royalties), 
 *	product decisions (backlist conversions vs frontlist plans, publishing vs software development), 
 *	administrative decisions (identifiers, reporting and tracking sales and costs), 
-*	workflow decisions (editorial and design processes, managing in-house learning and knowledge, expertise and functional authority, format-agnostic
-workflows), and 
+*	workflow decisions (editorial and design processes, managing in-house learning and knowledge, expertise and functional authority, format-agnostic workflows), and 
 *	sales and marketing decisions (pricing models, partners and findability, sales and delivery processes).
 
 The workshop can be held over one or two days, depending how much time you can devote to these issues, and how much depth you need your team to get into. Over one day, the workshop is a useful introduction to the many issues your team has to consider when making decisions. Over two days, the workshop can serve as a strategy session, getting everyone on the same page.
