@@ -5,11 +5,7 @@ layout: index
 
 # EBW training
 
-[Electric Book Works](http://electricbookworks.com) offers pre-designed and customised training courses for publishing teams.
-
-To see if we have scheduled training courses coming up, please visit [our events page on Facebook](https://www.facebook.com/pages/Electric-Book-Works/531070060272349?sk=events). To set up in-house or customised courses for your team, [please chat to us](http://electricbookworks.com/contact).
-
-This open training-materials repository is built with the [EBW Book Framework](https://github.com/electricbookworks/book-framework).
+[Electric Book Works](http://electricbookworks.com) has from time to time designed training courses for publishing teams. Most of our notes are published on our [Knowledge Base](http://electricbookworks.com/kb). We use this site to publish notes for some courses using the [EBW Book Framework](https://github.com/electricbookworks/book-framework).
 
 *	List of headings here
 {:toc}
@@ -20,12 +16,8 @@ This open training-materials repository is built with the [EBW Book Framework](h
 
 This material is included in condensed form in *Making ebooks with Sigil, HTML and CSS*.
 
-Booking details:
-
 *	Duration: one day
-*	Cost: R3200 ex VAT per person (R3648 incl VAT)
 *	Participants: minimum four, maximum seven
-*	Venue: EBW-arranged training lab
 
 ## InDesign best practice for print and ebooks
 
@@ -46,14 +38,10 @@ Booking details:
 
 This course includes condensed versions of *Starting out with HTML and CSS* and *InDesign best practice for print and ebooks*.
 
-Booking details:
-
 *	Duration: four mornings over two weeks
-*	Cost: R6400 ex VAT per person (R7296 incl VAT)
 *	Participants: minimum four, maximum seven
-*	Venue: EBW-arranged training lab
 
-This is a four-morning course over two weeks, and costs R6400 ex VAT per person, with a minimum of four people and a maximum of seven. *Participants must be regular ebook users*{:.highlight} themselves, so that they are already familiar with the products they are learning to create.
+*Participants must be regular ebook users*{:.highlight} themselves, so that they are already familiar with the products they are learning to create.
 
 [Read the course notes](making-ebooks/0-3-contents.html){:.button}
 
@@ -72,14 +60,14 @@ The workshop can be held over one or two days, depending how much time you can d
 
 Over two days, the workshop can serve as a strategy session, getting everyone on the same page. For the two-day version, we include a second facilitator to keep notes of key discussions and decisions and write up a report for you of key decisions, issues for further investigation and action points from the workshop. 
 
-Booking details:
-
 *	Duration: one or two days
-*	Cost: R3200 ex VAT per person (R3648 incl VAT) per day
 *	Participants: minimum six, maximum fifteen
-*	Venue: arranged by EBW, or 15% discount at your premises
 
-## Developing books for the digital age 
+[Course notes on the EBW Knowledge Base](http://electricbookworks.com/kb/digital-decisions-what-book-publishers-should-know-about-ebooks/){:.button}
+
+## Courses in development
+
+### Developing books for the digital age 
 
 *Developing books for the digital age* is a closely facilitated, one-day workshop for your in-house *authors and commissioning editors*{:.highlight} on planning and compiling books that will become both print and digital products. We guide participants through a range of key issues, encouraging them to develop their ideas for developing a next generation of an existing series. This lets us build on existing material, while re-thinking the way that that material might be recast for digital use. It also lets participants think about both frontlist plans and what could be done with backlist titles.
 
@@ -89,23 +77,9 @@ For teams new to digital concepts, our process includes:
 *	an introduction to designing and commissioning interactive components (video, quizzes, simple games), and 
 *	discussion of nitty-gritty editorial issues (from hyphenation to pageless cross-references).
 
-Booking details:
-
-*	Duration: one day
-*	Cost: R3200 ex VAT per person (R3648 incl VAT)
-*	Participants: minimum six, maximum fifteen
-*	Venue: arranged by EBW, or 15% discount at your premises
-
-## Kick-off for sales teams
+### Kick-off for sales teams
 
 Print-oriented *sales and marketing teams*{:.highlight} can struggle with digital products: hardware, software, competition and customer needs are different. Even when you're training teams in-house already, an outside perspective helps teams appreciate the new, broader ecosystem they're now part of. Our short kick-off workshops for sales teams aim to boost their confidence and identify deeper training needs. In a two-hour session, we cover two areas:
 
 *	Introduce key concepts and issues in digital textbook products that customers want or need to know about. These may include user experience, hardware options, websites vs apps, DRM, connectivity (WIFI, 3G), offline/online, local/cloud. If you need us to cover specific apps (yours or competitors’) let us know.
 *	Facilitate an open discussion about the team's experience to date and their vision for selling digital products, with a view to understanding what further training and support they’ll need to sell digital products in future.
-
-Booking details:
-
-*	Duration: two hours
-*	Cost: R5000 ex VAT flat fee (R5700 incl VAT)
-*	Participants: we recommend three to ten people per session
-*	Venue: your premises
