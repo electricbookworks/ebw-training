@@ -23,12 +23,8 @@ This material is included in condensed form in *Making ebooks with Sigil, HTML a
 
 This course is for *editors and designers who work in InDesign*{:.highlight} and need to set up documents for reliable export to epub. It is included in condensed form in *Making ebooks with Sigil, HTML and CSS*.
 
-Booking details:
-
 *	Duration: one day
-*	Cost: R3200 ex VAT per person (R3648 incl VAT)
 *	Participants: minimum four, maximum seven
-*	Venue: EBW-arranged training lab
 
 [Read the course notes](indesign-for-epub/0-3-contents.html){:.button}
 
