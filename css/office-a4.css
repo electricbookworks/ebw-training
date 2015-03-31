@@ -227,13 +227,12 @@ div.frontmatter, div.toc, div.chapter {
 }
 .toc ul, .toc ol {
 	list-style-type: none;
-	page-break-inside: avoid;
 } 
 .toc li {
 	margin: 0 0 0.5em 0;
 }
 .toc li li {
-	margin: 0;
+	margin-left: 0.5em;
 }
 .toc ol li::marker {
 	content: counter(list-item);
@@ -429,4 +428,31 @@ pre, code {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+/*
+ * Cover-page styling. Creates a single-page low-res cover for web PDFs.
+ */
+
+@page cover {
+	margin: 0;
+	padding: 0;
+}
+
+@prince-pdf {
+    prince-pdf-page-layout: single-page;
+}
+
+body.cover, div.cover {
+	margin: 0;
+	padding: 0;
+}
+p.cover {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+img.cover {
+	height: 100%;
+	width: 100%;
 }

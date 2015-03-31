@@ -144,6 +144,9 @@
 .toc {
 	page: toc;
 }
+.cover {
+	page: cover;
+}
 
 /* Let's set running heads and footers for chapter pages only (add more if add other layouts)*/
 @page chapter:left {
@@ -158,7 +161,7 @@
 }
 @page chapter:right {
   @bottom-right {
-    content: string(section-title, last) "\2003" counter(page);
+    content: string(chapter-title, last) "\2003" counter(page);
     text-align: right;
     font-size: 9pt;
 	text-transform: lowercase;
@@ -167,9 +170,19 @@
   }
 }
 
+/* But don't put footers on blank pages of a chapter (e.g. a blank verso opposite the opening recto) */
+@page chapter:blank {
+	@bottom-right {
+		content: normal;
+	}
+	@bottom-left {
+		content: normal;
+	}
+}
+
 /* We want mandatory page breaks before some layouts */
-div.frontmatter, div.toc, div.chapter { 
-	page-break-before: always;
+div.frontmatter, div.toc, div.chapter, div.titlepage { 
+	page-break-before: right;
 }
 
 /* For manual page breaks, apply this class to a the first element on the new page */
@@ -197,7 +210,8 @@ div.frontmatter, div.toc, div.chapter {
 	line-height: 100%;
 }
 .titlepage-subtitle {
-	font-size: 2.5em;
+	font-size: 1.5em;
+	font-style: italic;
 	margin: 1em 0 1em 0;
 	line-height: 100%;
 }
@@ -230,13 +244,12 @@ div.frontmatter, div.toc, div.chapter {
 }
 .toc ul, .toc ol {
 	list-style-type: none;
-	page-break-inside: avoid;
 } 
 .toc li {
 	margin: 0 0 0.5em 0;
 }
 .toc li li {
-	margin: 0;
+	margin-left: 0.5em;
 }
 .toc ol li::marker {
 	content: counter(list-item);
@@ -350,6 +363,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 	page-break-after: avoid;
+	line-height: 110%;
 }
 h1 {
 	font-weight: 300;
@@ -429,4 +443,30 @@ pre, code {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+/*
+ * Cover-page styling. Creates a single-page low-res cover for web PDFs.
+ */
+
+@page cover {
+	margin: 0;
+}
+
+@prince-pdf {
+    prince-pdf-page-layout: single-page;
+}
+
+body.cover, div.cover {
+	margin: 0;
+	padding: 0;
+}
+p.cover {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+img.cover {
+	max-height: 100%;
+	max-width: 100%;
 }
