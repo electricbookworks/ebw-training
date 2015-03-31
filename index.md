@@ -10,6 +10,14 @@ layout: index
 *	List of headings here
 {:toc}
 
+## Designing for Digital
+
+*Designing for Digital* is a short book, originally created as notes for a practical course on ebook-friendly book production. You can [get the PDF version from our Knowledge Base](http://electricbookworks.com/kb/designing-for-digital-what-print-book-designers-should-know-about-ebooks).
+
+This short book is for designers, editors and production managers in book-publishing companies. Most publishers are looking to use their content in ebooks or on websites, and this practical introduction helps production teams understand how to work in ebook-friendly ways, even when their books are destined for print.
+
+[Read the course notes](designing-for-digital/0-3-contents.html){:.button}
+
 ## Starting out with HTML and CSS
 
 *Starting out with HTML and CSS* is a practical introduction to the building blocks of all websites and ebooks. You'll learn how to write basic HTML and make it look great with CSS stylesheets, even if you've never seen computer code before. Whether you work in *writing, editing, publishing or sales,*{:.highlight} knowing the basics of HTML and CSS will open up a whole new world.
