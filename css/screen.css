@@ -145,7 +145,7 @@ a {
 	color: #5f738c;
 }
 a.button {
-	display: block;
+	display: inline-block;
 	max-width: 10em;
 	text-align: center;
 	padding: 0.5em;
