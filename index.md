@@ -16,7 +16,8 @@ layout: index
 
 This short book is for designers, editors and production managers in book-publishing companies. Most publishers are looking to use their content in ebooks or on websites, and this practical introduction helps production teams understand how to work in ebook-friendly ways, even when their books are destined for print.
 
-[Read the course notes](designing-for-digital/0-3-contents.html){:.button} [Download the PDF]({{ site.baseurl}}/downloads/designing-for-digital.pdf)
+[Read the course notes](designing-for-digital/0-3-contents.html){:.button} 
+[Download the PDF]({{ site.baseurl}}/downloads/designing-for-digital.pdf){:.button.light}
 
 ## Starting out with HTML and CSS
 
@@ -34,7 +35,8 @@ This course is for *editors and designers who work in InDesign*{:.highlight} and
 *	Duration: one day
 *	Participants: minimum four, maximum seven
 
-[Read the course notes](indesign-for-epub/0-3-contents.html){:.button} [Download the PDF]({{ site.baseurl}}/downloads/indesign-best-practice.pdf)
+[Read the course notes](indesign-for-epub/0-3-contents.html){:.button} 
+[Download the PDF]({{ site.baseurl}}/downloads/indesign-best-practice.pdf){:.button.light}
 
 ## Making ebooks with Sigil, HTML and CSS
 
@@ -47,7 +49,8 @@ This course includes condensed versions of *Starting out with HTML and CSS* and 
 
 *Participants must be regular ebook users*{:.highlight} themselves, so that they are already familiar with the products they are learning to create.
 
-[Read the course notes](making-ebooks/0-3-contents.html){:.button} [Download the PDF]({{ site.baseurl}}/downloads/making-ebooks-with-sigil-html-css.pdf)
+[Read the course notes](making-ebooks/0-3-contents.html){:.button} 
+[Download the PDF]({{ site.baseurl}}/downloads/making-ebooks-with-sigil-html-css.pdf){:.button.light}
 
 ## Digital Decisions
 

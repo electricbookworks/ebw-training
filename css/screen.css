@@ -157,6 +157,10 @@ a.button {
 a.button:hover {
 	background-color: silver;
 }
+a.button.light {
+	background-color: white;
+	color: #5f738c;
+}
 em.highlight {
 	font-style: normal;
 	background-color: #e3e8df;
