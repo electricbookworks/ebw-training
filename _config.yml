@@ -10,4 +10,4 @@ paginate: 10
 
 markdown: kramdown
 permalink: none
-highlighter: pygments
+highlighter: rouge
