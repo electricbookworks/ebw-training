@@ -1,0 +1,111 @@
+{% comment %}
+Mathjax configuration
+Note that configs are different for pdf, epub and web.
+{% endcomment %}
+
+{% if site.output == "print-pdf" or site.output == "screen-pdf" %}
+
+<script id="MathJax"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG">
+</script>
+<script id="MathJaxConfig" type="text/x-mathjax-config" >
+MathJax.Hub.Config({
+    messageStyle: "none",
+    "SVG": {
+        scale: 75,
+        font: "{% if page.mathjax-font %}{{ page.mathjax-font }}{% else %}{{ site.mathjax-font }}{% endif %}",
+        matchFontHeight: false,
+        styles: {
+            ".MathJax [style*=border-top-width]": {
+                "border-top-width": "0.5pt ! important"
+            }
+        }
+    }
+});
+MathJax.Hub.Queue(
+    // fires after MathJax is done
+    function () {
+        if (typeof window.callPhantom === 'function') {
+            window.callPhantom({ mathJaxDone: true});
+        }
+    }
+);
+</script>
+
+{% elsif site.output == "epub" %}
+
+<!--See https://www.peterkrautzberger.org/0129/ -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","input/MathML","output/SVG"],
+  extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
+  TeX: {
+    extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
+  },
+  MathMenu: {
+    showRenderer: false
+  },
+  menuSettings: {
+    zoom: "Click"
+  },
+  messageStyle: "none",
+  SVG: {
+    scale: 90,
+    linebreaks: {
+      automatic: true,
+      width: "container",
+    },
+  },
+});
+</script>
+<script type="text/javascript" src="{{ path-to-book-directory }}mathjax/MathJax.js"></script>
+
+{% elsif site.output == "app" %}
+
+<!--See https://www.peterkrautzberger.org/0129/ -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","input/MathML","output/SVG"],
+  extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
+  TeX: {
+    extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
+  },
+  MathMenu: {
+    showRenderer: false
+  },
+  menuSettings: {
+    zoom: "Click"
+  },
+  messageStyle: "none",
+  SVG: {
+    scale: 90,
+    linebreaks: {
+      automatic: true,
+      width: "container",
+    },
+  },
+});
+</script>
+<script type="text/javascript" src="{{ path-to-root-directory }}assets/js/mathjax/MathJax.js"></script>
+
+{% else %}
+
+<script id="MathJax"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script id="MathJaxConfig" type="text/x-mathjax-config" >
+MathJax.Hub.Config({
+    "HTML-CSS": {
+        availableFonts: [], // force use of webFont
+        webFont: "{% if page.mathjax-font %}{{ page.mathjax-font }}{% else %}{{ site.mathjax-font }}{% endif %}",
+        scale: 90,
+        styles: {
+            ".MathJax [style*=border-top-width]": {
+                "border-top-width": "0.5pt ! important"
+            }
+        }
+    }
+});
+</script>
+
+{% endif %}

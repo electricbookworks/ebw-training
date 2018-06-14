@@ -1,32 +1,24 @@
 ---
 title: EBW training
-layout: index
 ---
 
 # EBW training
+{:.no_toc}
 
-[Electric Book Works](http://electricbookworks.com) has from time to time designed training courses for publishing teams. Most of our notes are published on our [Knowledge Base](http://electricbookworks.com/kb). We use this site to publish notes for some courses using the [EBW Book Framework](https://github.com/electricbookworks/book-framework).
+[Electric Book Works](http://electricbookworks.com) has from time to time designed training courses for publishing teams. We have also shared our notes on our [Knowledge Base](http://electricbookworks.com/kb).
 
 *	List of headings here
 {:toc}
 
 ## Designing for Digital
 
-*Designing for Digital* is a short book, originally created as notes for a practical course on ebook-friendly book production. You can [get the PDF version from our Knowledge Base](http://electricbookworks.com/kb/designing-for-digital-what-print-book-designers-should-know-about-ebooks).
+*Designing for Digital* is a practical course on ebook-friendly book production for designers, editors and production managers. Most publishers are looking to use their content in ebooks or on websites, and this practical introduction helps production teams understand how to work in ebook-friendly ways, even when their books are destined for print.
 
-This short book is for designers, editors and production managers in book-publishing companies. Most publishers are looking to use their content in ebooks or on websites, and this practical introduction helps production teams understand how to work in ebook-friendly ways, even when their books are destined for print.
+*   Duration: one day
+*   Participants: minimum four, maximum seven
 
-[Read the course notes](designing-for-digital/0-3-contents.html){:.button} 
+[Read the course notes](designing-for-digital/text/0-3-contents.html){:.button} 
 [Download the PDF]({{ site.baseurl}}/downloads/designing-for-digital.pdf){:.button.light}
-
-## Starting out with HTML and CSS
-
-*Starting out with HTML and CSS* is a practical introduction to the building blocks of all websites and ebooks. You'll learn how to write basic HTML and make it look great with CSS stylesheets, even if you've never seen computer code before. Whether you work in *writing, editing, publishing or sales,*{:.highlight} knowing the basics of HTML and CSS will open up a whole new world.
-
-This material is included in condensed form in *Making ebooks with Sigil, HTML and CSS*.
-
-*	Duration: one day
-*	Participants: minimum four, maximum seven
 
 ## InDesign best practice for print and ebooks
 
@@ -35,7 +27,7 @@ This course is for *editors and designers who work in InDesign*{:.highlight} and
 *	Duration: one day
 *	Participants: minimum four, maximum seven
 
-[Read the course notes](indesign-for-epub/0-3-contents.html){:.button} 
+[Read the course notes](indesign-for-epub/text/0-3-contents.html){:.button} 
 [Download the PDF]({{ site.baseurl}}/downloads/indesign-best-practice.pdf){:.button.light}
 
 ## Making ebooks with Sigil, HTML and CSS
@@ -49,44 +41,34 @@ This course includes condensed versions of *Starting out with HTML and CSS* and 
 
 *Participants must be regular ebook users*{:.highlight} themselves, so that they are already familiar with the products they are learning to create.
 
-[Read the course notes](making-ebooks/0-3-contents.html){:.button} 
+[Read the course notes](making-ebooks/text/0-3-contents.html){:.button} 
 [Download the PDF]({{ site.baseurl}}/downloads/making-ebooks-with-sigil-html-css.pdf){:.button.light}
+
+## Multi-format editing (in development)
+
+This is a one-day course for publishing and editorial staff, and curious authors, on how to edit content for multi-format output. Increasingly, we're producing content that will be read on paper and on devices large and small, fast and slow, online and offline. How do we make sure our content makes sense in these different contexts?
+
+*   Duration: one day
+*   Participants: minimum three, maximum twenty
+
+[Read the course notes](multiformat-editing/text/0-3-contents.html){:.button} 
 
 ## Digital Decisions
 
 *Digital Decisions* is a closely facilitated *workshop for middle and senior managers.*{:.highlight} We cover a range of nitty gritty issues, including:
 
-*	technology decisions (file formats, data-asset-management systems, metadata, DRM), 
-*	rights and royalty decisions (territory, calculating royalties), 
-*	product decisions (backlist conversions vs frontlist plans, publishing vs software development), 
-*	administrative decisions (identifiers, reporting and tracking sales and costs), 
-*	workflow decisions (editorial and design processes, managing in-house learning and knowledge, expertise and functional authority, format-agnostic workflows), and 
-*	sales and marketing decisions (pricing models, partners and findability, sales and delivery processes).
+*   technology decisions (file formats, data-asset-management systems, metadata, DRM), 
+*   rights and royalty decisions (territory, calculating royalties), 
+*   product decisions (backlist conversions vs frontlist plans, publishing vs software development), 
+*   administrative decisions (identifiers, reporting and tracking sales and costs), 
+*   workflow decisions (editorial and design processes, managing in-house learning and knowledge, expertise and functional authority, format-agnostic workflows), and 
+*   sales and marketing decisions (pricing models, partners and findability, sales and delivery processes).
 
 The workshop can be held over one or two days, depending how much time you can devote to these issues, and how much depth you need your team to get into. Over one day, the workshop is a useful introduction to the many issues your team has to consider when making digital decisions. 
 
 Over two days, the workshop can serve as a strategy session, getting everyone on the same page. For the two-day version, we include a second facilitator to keep notes of key discussions and decisions and write up a report for you of key decisions, issues for further investigation and action points from the workshop. 
 
-*	Duration: one or two days
-*	Participants: minimum six, maximum fifteen
+*   Duration: one or two days
+*   Participants: minimum six, maximum fifteen
 
-[Course notes on the EBW Knowledge Base](http://electricbookworks.com/kb/digital-decisions-what-book-publishers-should-know-about-ebooks/){:.button}
-
-## Courses in development
-
-### Developing books for the digital age 
-
-*Developing books for the digital age* is a closely facilitated, one-day workshop for your in-house *authors and commissioning editors*{:.highlight} on planning and compiling books that will become both print and digital products. We guide participants through a range of key issues, encouraging them to develop their ideas for developing a next generation of an existing series. This lets us build on existing material, while re-thinking the way that that material might be recast for digital use. It also lets participants think about both frontlist plans and what could be done with backlist titles.
-
-For teams new to digital concepts, our process includes:
-
-*	an overview of important digital concepts (source content vs print and screen output formats, chunking, spreads vs reflow, enhancements, online vs offline, markup and metadata), 
-*	an introduction to designing and commissioning interactive components (video, quizzes, simple games), and 
-*	discussion of nitty-gritty editorial issues (from hyphenation to pageless cross-references).
-
-### Kick-off for sales teams
-
-Print-oriented *sales and marketing teams*{:.highlight} can struggle with digital products: hardware, software, competition and customer needs are different. Even when you're training teams in-house already, an outside perspective helps teams appreciate the new, broader ecosystem they're now part of. Our short kick-off workshops for sales teams aim to boost their confidence and identify deeper training needs. In a two-hour session, we cover two areas:
-
-*	Introduce key concepts and issues in digital textbook products that customers want or need to know about. These may include user experience, hardware options, websites vs apps, DRM, connectivity (WIFI, 3G), offline/online, local/cloud. If you need us to cover specific apps (yours or competitors’) let us know.
-*	Facilitate an open discussion about the team's experience to date and their vision for selling digital products, with a view to understanding what further training and support they’ll need to sell digital products in future.
+[Course notes](http://electricbookworks.com/kb/digital-decisions-what-book-publishers-should-know-about-ebooks/){:.button}  on the EBW Knowledge Base

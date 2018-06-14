@@ -1,9 +1,17 @@
+{% unless site.output == "epub" %}
+	<script src="{{ path-to-root-directory }}assets/js/bundle.js"></script>
+{% endunless %}
 
-	<script src="{{ site.baseurl }}/js/anchor.js"></script>
-	<script>
-	if (typeof Prince  === "undefined") {
-		addAnchors('h2, h3, h4, h5, h6');
-	}
-	</script>	
+{% if site.output == "web" or site.output == "app" %}
+    {% if is-project-search or is-book-search %}
+        <script src="{{ path-to-root-directory }}assets/js/search-engine.js"></script>
+        <script src="{{ path-to-root-directory }}assets/js/search-index.js"></script>
+        <script src="{{ path-to-root-directory }}assets/js/search-results.js"></script>
+    {% endif %}
+{% endif %}
+
+{% include end-elements %}
+
+</div><!--#wrapper-->
 </body>
 </html>

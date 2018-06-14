@@ -1,0 +1,84 @@
+{% capture this-figure %}
+{% comment %}
+To do: create HTML5 <figure> option here based on site.output
+{% endcomment %}
+
+{% include metadata %}
+
+{% comment %}
+Get the list of images, whether included as `image` or `images`
+and remove spaces that might be around commas.
+Put the comma-separated images into an array.
+Then get the total number of images in the array.
+{% endcomment %}
+{% capture image-list %}{{ include.image | remove: " " }}{% if include.image and include.images %},{% endif %}{{ include.images | remove: " " }}{% endcapture %}
+
+{% assign figure-images = image-list | split: "," %}
+{% assign number-of-images = figure-images | size %}
+
+{% comment %}
+Then create our figure, using multiple images if necessary.
+We have to do funky remove: '<p>' | remove: '</p>' | strip_newlines
+because https://github.com/jekyll/jekyll/issues/2248.
+{% endcomment %}
+
+<div class="figure{% if include.class %} {{ include.class }}{% endif %}"{% if include.reference %} id="{{ include.reference | slugify }}"{% endif %}>
+
+<div class="figure-body">
+
+{% if include.image or include.images %}
+<div class="figure-images contains-{{ number-of-images }}">
+    {%for image in figure-images %}
+        {% if include.link %}<a href="{{ include.link }}">{% elsif site.output == "web" %}<a href="{{ images }}/{{ image }}">{% endif %}
+            <img src="{{ images }}/{{ image }}" alt="{% capture figure-image-alt-text %}{% if include.title %}{{ include.title }}: {% endif %}{% if include.description %}{{ include.description }}{% else %}{{ include.caption }}{% endif %}{% endcapture %}{{ figure-image-alt-text | replace: "&nbsp;", " " | replace: "&shy;", "" | markdownify | strip_html }}" {% if include.image-height != nil %}class="height-{{ include.image-height }}"{% endif %}/>
+        {% if include.link or site.output == "web" %}</a>{% endif %}
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if include.html and include.html != "" %}
+<div class="figure-html">
+{{ include.html }}
+</div>
+{% endif %}
+
+{% if include.markdown and include.markdown != "" %}
+<div class="figure-md">
+{{ include.markdown | markdownify }}
+</div>
+{% endif %}
+
+{% if include.title and include.title != "" %}
+<p class="title">
+{{ include.title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
+</p>
+{% endif %}
+
+{% if include.description and include.description != "" %}
+<p class="description">
+{{ include.description | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
+</p>
+{% endif %}
+
+{% if include.caption and include.caption != "" %}
+<p class="caption">
+{% if include.reference %}<span class="figure-reference">{{ include.reference }} </span>{% endif %}
+{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
+</p>
+{% endif %}
+
+</div><!--.figure-body-->
+
+{% if include.source and include.source != "" %}
+
+<div class="figure-source">
+<p class="source">
+{{ include.source | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
+</p>
+</div><!--.figure-source-->
+
+{% endif %}
+
+</div>
+{% endcapture %}
+{{ this-figure }}

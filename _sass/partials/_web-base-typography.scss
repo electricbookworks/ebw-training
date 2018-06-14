@@ -1,0 +1,185 @@
+$web-base-typography: true !default;
+@if $web-base-typography {
+
+    // General typography
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: $color-text-main;
+        background-color: $footer-background-color; // See -wrappers for content background-color
+        font-family: $font-text-main;
+        font-size: $font-size-default;
+        line-height: $line-height-default;
+        overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-text-secondary;
+        font-size: $font-size-default;
+        font-weight: bold;
+        line-height: $line-height-default;
+        page-break-after: avoid;
+        margin: $line-height-default 0 0 0;
+    }
+    h1 {
+        font-family: $font-display-main;
+        font-size: $font-size-default * $font-size-bigger;
+        line-height: 1;
+        margin: ($line-height-default) 0 ($line-height-default * 0.5) 0;
+    }
+    h2 {
+        font-size: $font-size-default * ($font-size-bigger * 0.75);
+        line-height: 1;
+        margin: ($line-height-default) 0 ($line-height-default * 0.5) 0;
+    }
+    h3 {}
+    h4 {
+        font-style: italic;
+        font-weight: inherit;
+    }
+    h5 {
+        font-family: $font-text-main;
+        font-style: italic;
+        font-weight: inherit;
+    }
+    h6 {
+        font-family: $font-text-main;
+        font-weight: inherit;
+    }
+    p {
+        margin: 0;
+        & + p {
+            text-indent: $line-height-default;
+        }
+    }
+
+    // Lists
+
+    ol, ul {
+        list-style-position: outside;
+        margin: 0 0 $line-height-default $line-height-default;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ul ul, ol ol, blockquote ul ul, blockquote ol ol {
+        margin-bottom: 0;
+    }
+    ol ol {
+        list-style-type: lower-alpha;
+    }
+
+    // Blockquotes
+
+    blockquote {
+        margin: $line-height-default 0;
+        padding: 0 $line-height-default;
+        p:first-of-type {
+            text-indent: 0;
+        }
+        p:last-child, & ol:last-child, & ul:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // Definition lists
+
+    dl {
+        margin: $line-height-default 0;
+    }
+    dt {}
+    dd {
+        margin: 0 0 $line-height-default 0;
+    }
+
+    // Horizontal rules
+    // Using <hr> as a divider (in markdown created with ***)
+
+    $text-divider: "" !default;
+    
+    hr {
+        border: 0;
+        font-family: $font-display-main;
+        text-align: center;
+        margin: $line-height-default 0;
+        &:after {
+            content: $text-divider;
+        }
+        & + p {
+            text-indent: 0;
+        }
+    }
+
+    // Superscripts and subscripts
+
+    sup, sub {
+        line-height: 100%;
+        font-size: 1em * $font-size-smaller;
+    }
+    sup {
+        vertical-align: super;
+    }
+    sub {
+        vertical-align: sub;
+    }
+
+    // Links
+
+    a {
+        text-decoration: none;
+        color: $color-links;
+    }
+
+    // Bold and italic
+    em {
+        font-style: italic;
+    }
+    strong {
+        font-weight: bold;
+    }
+
+    // Forms
+
+    input,
+    textarea {
+        padding: 0.75em 0.75em;
+        font-family: $font-text-secondary;
+        font-size: inherit;
+        color: inherit;
+        border: $rule-thickness solid $color-mid;
+        display: block;
+        margin: $line-height-default 0;
+        width: 100%;
+        box-sizing: border-box;
+        &[type="submit"] {
+            width: auto;
+        }
+    }
+    textarea {
+        min-height: $line-height-default * 3;
+    }
+
+    // Images
+    // Also see -figures partial
+
+    // Standalone images
+    // (Markdown default puts images on their own line 
+    // into paragraphs like this.)
+    p img:only-child {
+        margin: $line-height-default auto;
+        display: block;
+    }
+
+    // An option to change the default text-indented paragraphs
+    // and close-up lists etc. to have space-between instead.
+    @if $spaced-paras {
+        p, p + p {
+            margin-bottom: $line-height-default;
+            text-indent: 0;
+        }
+    }
+
+}
