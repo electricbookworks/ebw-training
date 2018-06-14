@@ -11,9 +11,9 @@ project:
   # The default contact email address
   email: "support@electricbook.works"
   # The name of the project of books in this folder.
-  name: "Electric Book"
+  name: "Electric Book Works course notes"
   # A one-liner about this project. Useful for Open Graph metadata.
-  description: "Books created with the Electric Book workflow"
+  description: "Training materials created at Electric Book Works"
   # The logo of the organisation, saved web-ready in /assets
   logo: "publisher-logo.jpg"
   # An image in /assets that stands for the project
