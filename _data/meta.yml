@@ -616,7 +616,7 @@ works:
               - label: "Accuracy and consistency"
                 file: "02-connecting-humans-and-machines"
                 id: "accuracy-and-consistency"
-          - label: "Tools"
+          - label: "Choosing tools"
             file: "03-tools"
             id: "tools"
             children:
@@ -792,7 +792,7 @@ works:
               - label: "Accuracy and consistency"
                 file: "02-connecting-humans-and-machines"
                 id: "accuracy-and-consistency"
-          - label: "Tools"
+          - label: "Choosing tools"
             file: "03-tools"
             id: "tools"
             children:
