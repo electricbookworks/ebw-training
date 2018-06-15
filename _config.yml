@@ -42,7 +42,7 @@ repository: "electricbookworks/ebw-training"
 # Web navigation source: select either files or nav
 # files: navigation will be taken from the web files list in `meta.yml`
 # nav: navigation will be taken from the web nav tree in `meta.yml` (allows submenu nesting)
-nav-source: files
+nav-source: nav
 
 # Enable MathJax to render mathematics. MathJax adds a large script to your pages,
 # so this is off (false) by default. Change to true to load MathJax.

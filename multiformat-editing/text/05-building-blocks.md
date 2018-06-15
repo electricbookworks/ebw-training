@@ -1,8 +1,8 @@
 ---
-title: Building blocks
+title: Building blocks of books
 ---
 
-# Building blocks
+# Building blocks of books
 {:.no_toc}
 
 * TOC here

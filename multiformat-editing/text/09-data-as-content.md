@@ -11,3 +11,4 @@ title: Data as content
     -   Glossaries and bibliographies
     -   Directories
     -   Search indexes
+    -   Manuscripts as spreadsheets
