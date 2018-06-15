@@ -3,6 +3,10 @@ title: Text
 ---
 
 # Text
+{:.no_toc}
+
+* TOC here
+{:toc}
 
     -   Special characters: fonts, unicode glyphs and markup
     -   Links and linking (visible links, implicit links, explicit links)

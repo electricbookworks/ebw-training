@@ -3,6 +3,10 @@ title: "Context"
 ---
 
 # Context
+{:.no_toc}
+
+* TOC here
+{:toc}
 
 If you're publishing anything today, there is always a good reason to publish it in more than one format. In this course, we'll be talking about publishing books, though pretty much everything here also applies to any kind of publication, including magazines, journals, brochures, papers, and more.
 
@@ -89,3 +93,9 @@ It is very easy – even tempting – to cut costs during production by neglecti
 In digital publishing, the term 'accessibility' most often refers to making content accessible to people with disabilities. It's valuable to extend this to include anyone who might struggle to access content: people who can't afford data; who have small, cheap phones; who live in rural areas; or who live in oppressive regimes.
 
 As you work in digital publishing, you will have more and more opportunities to make accessibility decisions.
+
+## Further reading
+
+- [Better than Free](http://kk.org/thetechnium/better-than-fre/){:.show-url} by Kevin Kelly
+- [Ebooks for All: Building digital libraries in Ghana with Worldreader](https://craigmod.com/essays/worldreader/){:.show-url} by Craig Mod
+- [The Once and Future Ebook](https://electricbookworks.com/kb/abcs/the-once-and-future-e-book-by-john-siracusa/) by John Siracusa
