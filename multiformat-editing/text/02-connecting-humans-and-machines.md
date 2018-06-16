@@ -114,13 +114,7 @@ When we're working in simple English, this means almost nothing. Just keep going
 
 But as soon as you start working with special characters, it's critical that you use unicode characters.
 
-Let's say you want to insert a degrees symbol, '°'. That symbol is not on your keyboard, and you're not sure ho to insert it. Authors will often insert an o (the lowercase letter 'oh'), and make it superscript using formatting tools. That is a Very Bad Idea!
-
-Let's say you send the file to someone else, who copies and pastes your `30°C` into a different software program. Their program handles superscript differently, or doesn't support it at all. Now they have an o where you intended a degree symbol: `30oC`!
-
-This is just one common example. As you work, you'll find many cases where authors misuse incorrect characters, rather than the correct unicode character.
-
-**So how do you find the correct character?** There are a host of clever software programs for this that you can use or install, but often the simplest technique is to search online for, say, 'unicode degrees symbol'. That will show you several official unicode pages you can copy and paste from.
+We'll cover this is more detail later in the [Text section](06-text.html#special-characters-fonts-unicode-glyphs-and-markup){:.show-page-number}.
 
 ## Separating content and design
 
