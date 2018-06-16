@@ -29,7 +29,7 @@ While we were doing that, around the world people were doing the same thing for 
 
 There were many attempts to create markup languages. The technique that really caught involved wrapping text in angle-bracket tags (like `<box>`). Your team could create and extend its own markup language for any kind of content. This technique became known as 'extensible markup language', or XML for short. 
 
-There are probably tens of thousands of markup languages created using the XML technique. The most popular by far is HTML, or hypertext markup language. ALmost every web page you visit is delivered to your computer in HTML, and your web browser reads the HTML and 'typesets' the page for you automatically.
+There are probably tens of thousands of markup languages created using the XML technique. The most popular by far is HTML, or hypertext markup language. Almost every web page you visit is delivered to your computer in HTML, and your web browser reads the HTML and 'typesets' the page for you automatically.
 
 If well constructed, that HTML markup lets browsers lay out the same content differently, but readably, on an infinite number of viewport shapes and sizes, including printable pages.
 

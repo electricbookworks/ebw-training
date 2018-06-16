@@ -59,7 +59,7 @@ works:
     language: "en" # use ISO 639-1, 639-2, or 639-3 codes (in that order of preference)
     relation: "" # e.g. other edition ISBN
     coverage: "" # e.g. geographic place or chronological time span
-    rights: "All rights reserved. No part of this book may be reproduced or transmitted in any form or by any electronic or mechanical means, including photocopying and recording, or any other information storage or retrieval system, without written permission from the publisher." # e.g. a copyright statement
+    rights: "This work is licenced under a Creative Commons Attribution licence. See [creativecommons.org/licenses/by/3.0/za/](https://creativecommons.org/licenses/by/3.0/za/)"
     image: "cover.jpg"
     products: # Metadata for each product for this title (only use values that override parent metadata)
       print-pdf: 
@@ -136,7 +136,7 @@ works:
       epub:
         date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
-        identifier: "9780000000000" # e.g. ISBN or UUID
+        identifier: "c2760442-c43c-4876-afab-0a81acc8ab03" # e.g. ISBN or UUID
         image: "cover.jpg"
         start-page: "0-3-contents"
         contents-page: "0-3-contents"
@@ -217,7 +217,7 @@ works:
     language: "en" # use ISO 639-1, 639-2, or 639-3 codes (in that order of preference)
     relation: "" # e.g. other edition ISBN
     coverage: "" # e.g. geographic place or chronological time span
-    rights: "All rights reserved. No part of this book may be reproduced or transmitted in any form or by any electronic or mechanical means, including photocopying and recording, or any other information storage or retrieval system, without written permission from the publisher." # e.g. a copyright statement
+    rights: "This work is licenced under a Creative Commons Attribution licence. See [creativecommons.org/licenses/by/3.0/za/](https://creativecommons.org/licenses/by/3.0/za/)"
     image: "cover.jpg"
     products: # Metadata for each product for this title (only use values that override parent metadata)
       print-pdf: 
@@ -298,7 +298,7 @@ works:
       epub:
         date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
-        identifier: "9780000000000" # e.g. ISBN or UUID
+        identifier: "a4bad00e-aa9f-4321-a06c-b45299ff9b68" # e.g. ISBN or UUID
         image: "cover.jpg"
         start-page: "0-3-contents"
         contents-page: "0-3-contents"
@@ -387,7 +387,7 @@ works:
     language: "en" # use ISO 639-1, 639-2, or 639-3 codes (in that order of preference)
     relation: "" # e.g. other edition ISBN
     coverage: "" # e.g. geographic place or chronological time span
-    rights: "All rights reserved. No part of this book may be reproduced or transmitted in any form or by any electronic or mechanical means, including photocopying and recording, or any other information storage or retrieval system, without written permission from the publisher." # e.g. a copyright statement
+    rights: "This work is licenced under a Creative Commons Attribution licence. See [creativecommons.org/licenses/by/3.0/za/](https://creativecommons.org/licenses/by/3.0/za/)"
     image: "cover.jpg"
     products: # Metadata for each product for this title (only use values that override parent metadata)
       print-pdf: 
@@ -466,7 +466,7 @@ works:
       epub:
         date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
-        identifier: "9780000000000" # e.g. ISBN or UUID
+        identifier: "cdefbe68-a169-45a9-b4a6-a599e3bda6e3" # e.g. ISBN or UUID
         image: "cover.jpg"
         start-page: "0-3-contents"
         contents-page: "0-3-contents"
@@ -532,7 +532,7 @@ works:
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
   - directory: "multiformat-editing"
     title: "Multi-format editing"
-    subtitle: "How to prepare content for life in a multi-format world"
+    subtitle: "Preparing content for a print-and-digital world"
     creator: "Arthur Attwell" # E.g. the author
     contributor: "" # E.g. other contributors
     subject: "Publishing" # E.g. BISAC terms (https://bisg.org/page/BISACEdition) or BIC (http://editeur.dyndns.org/bic_categories)
@@ -550,7 +550,7 @@ works:
     language: "en" # use ISO 639-1, 639-2, or 639-3 codes (in that order of preference)
     relation: "" # e.g. other edition ISBN
     coverage: "" # e.g. geographic place or chronological time span
-    rights: "All rights reserved. No part of this book may be reproduced or transmitted in any form or by any electronic or mechanical means, including photocopying and recording, or any other information storage or retrieval system, without written permission from the publisher." # e.g. a copyright statement
+    rights: "This work is licenced under a Creative Commons Attribution licence. See [creativecommons.org/licenses/by/3.0/za/](https://creativecommons.org/licenses/by/3.0/za/)"
     image: "cover.jpg"
     products: # Metadata for each product for this title (only use values that override parent metadata)
       print-pdf: 
@@ -562,7 +562,7 @@ works:
           - "0-1-titlepage"
           - "0-2-copyright"
           - "0-3-contents"
-          - "0-4-intro.md"
+          - "0-4-intro"
           - "01-context"
           - "02-connecting-humans-and-machines"
           - "03-tools"
@@ -574,11 +574,11 @@ works:
           - "09-data-as-content"
         toc: # For each menu item, include at least label and file. Optionally add id (for deep linking) and children.
           - label: "Introduction"
-            file: "0-5-introduction"
+            file: "0-4-intro"
             id: "introduction"
             children:
               - label: "What we'll cover"
-                file: "0-5-introduction"
+                file: "0-4-intro"
                 id: "what-we-ll-cover"
           - label: "Context"
             file: "01-context"
@@ -743,7 +743,7 @@ works:
           - "0-1-titlepage"
           - "0-2-copyright"
           - "0-3-contents"
-          - "0-4-intro.md"
+          - "0-4-intro"
           - "01-context"
           - "02-connecting-humans-and-machines"
           - "03-tools"
@@ -755,11 +755,11 @@ works:
           - "09-data-as-content"
         nav: # For each menu item, include at least label and file. Optionally add id (for deep linking) and children.
           - label: "Introduction"
-            file: "0-5-introduction"
+            file: "0-4-intro"
             id: "introduction"
             children:
               - label: "What we'll cover"
-                file: "0-5-introduction"
+                file: "0-4-intro"
                 id: "what-we-ll-cover"
           - label: "Context"
             file: "01-context"
@@ -919,7 +919,7 @@ works:
       epub:
         date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
-        identifier: "9780000000000" # e.g. ISBN or UUID
+        identifier: "5ab091d5-49e6-4506-bc5a-b3fed31e70a1" # e.g. ISBN or UUID
         image: "cover.jpg"
         start-page: "0-3-contents"
         contents-page: "0-3-contents"
@@ -928,7 +928,7 @@ works:
           - "0-1-titlepage": "title-page"
           - "0-2-copyright": "copyright"
           - "0-3-contents": "toc"
-          - "0-4-intro.md": "text"
+          - "0-4-intro": "text"
           - "01-context"
           - "02-connecting-humans-and-machines"
           - "03-tools"
@@ -948,7 +948,7 @@ works:
           - "0-1-titlepage"
           - "0-2-copyright"
           - "0-3-contents"
-          - "0-4-intro.md"
+          - "0-4-intro"
           - "01-context"
           - "02-connecting-humans-and-machines"
           - "03-tools"

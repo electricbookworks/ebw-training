@@ -28,10 +28,10 @@
 $edition-suffix: null;
 
 // First, we set several variables related to overall page setup.
-$page-width: 152mm;
-$page-height: 229mm;
-$margin-top: 60pt; // by setting this in points, you align with your baseline grid
-$margin-bottom: 60pt;
+$page-width: 210mm;
+$page-height: 297mm;
+$margin-top: 75pt; // by setting this in points, you align with your baseline grid
+$margin-bottom: 75pt;
 $margin-outside: 20mm;
 $margin-inside: 20mm;
 $bleed: 0;
@@ -75,13 +75,13 @@ $font-display-secondary: "Crimson", prince-no-fallback;
 $font-code: "Ubuntu Mono", prince-no-fallback;
 
 // Finally, we set variables related to text flow.
-$font-size-default: 11pt;
+$font-size-default: 12pt;
 $line-height-default: 15pt; // Set in points. For consistent baselines, all other line heights and vertical spaces are based on this.
 $font-size-smaller: 0.8; // How much smaller than font-size-default for features like sidenotes and footers?
 $font-size-bigger: 2; // How many times bigger than font-size-default for features like headings and pullquotes? Use whole numbers to preserve baseline grid.
 $text-align: justify; // left or right or inside or outside or justify or center
-$orphans: 1; // Minimum number of lines that must be left at the bottom of the first page
-$widows: 1; // Minimum number of lines that must be left at the top of the second page
+$orphans: 2; // Minimum number of lines that must be left at the bottom of the first page
+$widows: 2; // Minimum number of lines that must be left at the top of the second page
 $letter-spacing-text: 0em; // Default letter-spacing for p, ul, ol, dl. Set in ems, e.g. 0.01em for 10/1000s of an em.
 
 // Do you want space between paragraphs, rather than a text-indent? true or false
@@ -290,3 +290,23 @@ $print-page-headers-footers-style: true; // Sets styling for headers and footers
 
 // Add any custom Sass or CSS here.
 
+// Title page
+.title-page {
+	.title-page-title {
+		font-size: 5em;
+		line-height: 1;
+		padding-top: $start-depth;
+	}
+	.title-page-logo {
+		max-width: 3em;
+	}
+}
+.chapter {
+	// Make space for notes
+	margin-right: 50mm;
+}
+.sidenote {
+	& * {
+		text-align: left;
+	}
+}

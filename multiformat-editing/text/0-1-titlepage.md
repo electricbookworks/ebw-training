@@ -14,5 +14,5 @@ style: title-page
 {{ creator }}
 {:.title-page-author}
 
-{{ publisher }}
-{:.title-page-publisher}
+{% include image file="publisher-logo.jpg" %}
+{:.title-page-logo}

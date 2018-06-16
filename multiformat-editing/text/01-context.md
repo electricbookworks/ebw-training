@@ -98,4 +98,4 @@ As you work in digital publishing, you will have more and more opportunities to 
 
 - [Better than Free](http://kk.org/thetechnium/better-than-fre/){:.show-url} by Kevin Kelly
 - [Ebooks for All: Building digital libraries in Ghana with Worldreader](https://craigmod.com/essays/worldreader/){:.show-url} by Craig Mod
-- [The Once and Future Ebook](https://electricbookworks.com/kb/abcs/the-once-and-future-e-book-by-john-siracusa/) by John Siracusa
+- [The Once and Future Ebook](https://electricbookworks.com/kb/abcs/the-once-and-future-e-book-by-john-siracusa/){:.show-url} by John Siracusa

@@ -14,6 +14,4 @@ style: copyright-page
 *{{ title }}*\\
 Text © {{ creator }}
 
-{% include identifiers scheme="ISBN" %}
-
 {{ rights }}
