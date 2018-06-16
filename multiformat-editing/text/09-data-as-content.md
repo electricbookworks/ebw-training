@@ -8,7 +8,19 @@ title: Data as content
 * TOC here
 {:toc}
 
-    -   Glossaries and bibliographies
-    -   Directories
-    -   Search indexes
-    -   Manuscripts as spreadsheets
+## Glossaries and bibliographies
+
+
+
+## Directories
+
+
+
+## Search indexes
+
+
+
+## Manuscripts as spreadsheets
+
+
+
