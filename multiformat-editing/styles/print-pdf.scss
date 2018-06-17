@@ -291,3 +291,19 @@ $print-page-setup-lightning-source: false; // Removes crop marks and sets 3mm tr
 
 // Add any custom Sass or CSS here.
 
+// Title page
+.title-page {
+	.title-page-logo {
+		max-width: 3em;
+	}
+}
+.copyright-page {
+	& * {
+		text-align: left;
+	}
+}
+.sidenote {
+	& * {
+		text-align: left;
+	}
+}

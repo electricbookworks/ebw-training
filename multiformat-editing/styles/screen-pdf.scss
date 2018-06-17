@@ -301,6 +301,11 @@ $print-page-headers-footers-style: true; // Sets styling for headers and footers
 		max-width: 3em;
 	}
 }
+.copyright-page {
+	& * {
+		text-align: left;
+	}
+}
 .chapter {
 	// Make space for notes
 	margin-right: 50mm;
