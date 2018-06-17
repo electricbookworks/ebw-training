@@ -90,7 +90,7 @@ In print, cross-references are done in two ways:
 
 On the web, cross references are almost always text as clickable links, where the text is the word that names the thing you're link to, and you're linking to a location in your book. That is, you use an *internal link*.
 
-For instance, we might just write, 'To read more, [see the Further reading section](#further-reading),' the phrase 'see the Further reading section' is the clickable, linked text.
+For instance, we might just write, 'To see how indexes work, [see the Indexing section](#indexing),' the phrase 'see the Indexing section' is the clickable, linked text.
 
 Page numbers are super useful to readers, but in multi-format publications, we certainly don't want page numbers showing on screen, where they are meaningless because pages are not fixed.
 
