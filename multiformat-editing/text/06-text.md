@@ -67,13 +67,13 @@ In our stylesheets at Electric Book Works, we let editors add a `show-url` tag t
 
 If working in markdown, a link might look like this:
 
-```
+``` md
 You can search on [Google](https://google.com).
 ```
 
 To make that URL appear in print, we add a tag:
 
-```
+``` md
 You can search on [Google](https://google.com){:.show-url}.
 ```
 
@@ -98,7 +98,7 @@ So it's usually best to name the section you're referring readers to, rather tha
 
 In some PDF software, it's possible to get the software to detect the page on which a link target appears and insert the page number automatically. When we use PrinceXML to create PDFs, our stylesheets tell PrinceXML to insert a page reference when we add a `show-page-number` tag to a link. For instance, we might write this in markdown:
 
-```
+``` md
 The [introduction](0-4-intro.html){:.show-page-number} lists some possible output formats.
 ```
 
