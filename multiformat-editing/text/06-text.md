@@ -36,6 +36,22 @@ Some fonts *look* like they provide glyphs for special characters, but their cha
 
 Many fonts do not include glyphs for many less common unicode characters. If the font you are using in your editor does not show a character you have inserted, you might see a little box instead, as a [substitute character](https://en.wikipedia.org/wiki/Substitute_character) (sometimes called 'tofu'). You may need to set the font you are editing in to one that supports a bigger glyph set. A good option is [Noto](https://www.google.com/get/noto/){:.show-url}. 
 
+## Non-breaking spaces
+
+If you text will reflow every time it appears on someone's screen, you can't control where lines will break. A line may break, for instance, in the space in `100 mm`, or the number `100 000`, or before an `…` ellipsis. To avoid this, use a non-breaking space.
+
+A non-breaking space is a unicode character.
+
+In many Mac programs, you type a non-breaking space with Alt + Space. On Windows they shortcut varies between programs. If you're editing in markdown (or actually editing raw HTML), you represent a non-breaking space by typing `&nbsp;`.
+
+## Discretionary hyphens
+
+If you need to break a long word with a hyphen, never use an actual hyphen character. While it may look fine on your screen, when that text reflows the hyphen might appear in the middle of a line.
+
+Instead, insert a discretionary hyphen, also called a soft hyphen. A soft hyphen is a character that remains hidden until it's needed. If a word has a soft hyphen in it, you won't notice the hyphen unless the word can't fit at the end of a line, at which point the soft hyphen will show, and the word will break over the line.
+
+A soft hyphen is a unicode character. If you're editing markdown or raw HTML, type `&shy;` to represent a soft hyphen. (This is easy to remember, because a soft hyphen is shy.)
+
 ## Links and linking
 
 A common dilemma for editors is how to handle links to websites in multi-format books. 
