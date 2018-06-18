@@ -79,7 +79,7 @@ Plain-text markdown is one useful way to do this, because markdown forces us to 
 
 ## Constraints versus creativity
 
-As you can tell by now, working with new editing tools means navigating new kinds of constraints on your creativity. Picking the right tool can be about deciding what constraints do you *want* for a given job.
+As you can tell by now, working with new editing tools means navigating new kinds of constraints on your creativity. Picking the right tool can be about deciding what constraints you *want* for a given job.
 
 For instance, if you're doing heavy development editing, you want to be in a creative headspace, not thinking about the technicalities of perfect structure and tagging. Working in Google Docs is probably best, especially if you're collaborating with others.
 
