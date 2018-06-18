@@ -60,7 +60,7 @@ Note that, in this structure, each front- and endmatter element is a *sibling* o
 - Bibliography `h1`
 - Index `h1`
 
-Now we can apply that structure to how we organise our documents. We might create a separate file for element in this list. That would make each element a single web page, when the book exists as a website.
+Now we can apply that structure to how we organise our documents. We might create a separate file for each element in this list. That would make each element a single web page, when the book exists as a website.
 
 ## Double-page spreads
 
