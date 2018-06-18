@@ -23,7 +23,7 @@ Anyone who worked in publishing twenty years ago remembers marking up manuscript
 > Today it's extremely rare for a book to be final at third pages. Later in this course we'll talk about how the publishing industry lost these skills when MS Word ruined everything, and how we might relearn them.
 {:.sidenote}
 
-In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for manuscript markup in a team, was not unusual for a book to be final at the third round of page proofs.
+In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for manuscript markup in a team, it was not unusual for a book to be final at the third round of page proofs.
 
 While we were doing that, around the world people were doing the same thing for web pages. Though rather than marking up content for typesetters, they were marking up content for web browsers: machines that would 'typeset' on the fly, on screen, on a user's computer.
 
