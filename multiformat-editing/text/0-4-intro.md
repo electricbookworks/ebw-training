@@ -21,7 +21,7 @@ Faced with such a plethora of options, publishing teams can struggle to make dec
 
 A good way to make decisions is to use personas. Personas are people you invent, with names, ages, backgrounds, and interests; and with specific devices, connectivity, and available money. They represent your target readers.
 
-Creating personas can seem like hard work. One reason is'a hard is because you really want your book to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
+Creating personas can seem like hard work. One reason it's hard is because you really want your book to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
 
 > ### Activity: Create a persona
 > 
