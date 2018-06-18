@@ -137,7 +137,9 @@ In multi-format book production, then, we aim to create:
 - One master version of all content.
 - Any number of design stylesheets for different formats and contexts.
 
-What does this mean for day-to-day editing? Here are some examples:
+**One master version of content** is especially important, because we *never* want to be maintaining the same content in more than one place. Imagine if, every time you made a reprint correction, you had to make it to the paperback, the large-print edition, the ebook, your website and your app? You'd be doing far more menial work than necessary, and very soon those versions could get out of sync.
+
+What does separating content and design mean for day-to-day editing? Here are some examples:
 
 1. **Be on the lookout for subtle mixing up of content and design.** For instance, referring to the colours in a graph is risky: what if that graph appears in a black-and-white book? What if a reader is using a high-contrast display that changes colours?
 2. **Avoid using design features for semantic purposes.** For instance, in a textbook don't write 'learn the words in bold', because in some viewports those words might appear italic, or pink, or highlighted instead. Rather say 'learn the words emphasised *like this*', and tag the phrase in the same way you'd tag a word to learn.

@@ -37,7 +37,7 @@ Once we've decided how video and audio will work in our screen formats, we have 
 
 In educational material, a key question is whether the videos are crucial to a learning process. If they are, you can include a big screenshot of the video in the body text area, followed by a short URL that users can type into a web browser. If they are not crucial, you could omit videos completely or make them sidenotes.
 
-When choosing or developing your production workflow and software, investigate whether they allow for automating these kinds of choices. For instance, in our Electric Book Workflow, we can create alternative snippets for each output format, so that the same source files produce different treatments of videos in, say, print, epub and web versions.
+When choosing or developing your production workflow and software, investigate whether they allow for automating these alternative layouts. For instance, in our Electric Book workflow, we can create alternative snippets for each output format, so that the same source files produce different treatments of videos in, say, print, epub and web versions.
 
 Some publishers have tried putting video and audio material on CDs or flash drives distributed with print copies. Anecdotal evidence suggests that this is not effective. Readers may not go to the effort of loading the CD or flash drive, or their devices might not accommodate CDs (like many small, new computers) or flash drives (like phones).
 

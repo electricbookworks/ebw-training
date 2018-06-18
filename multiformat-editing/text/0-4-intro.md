@@ -97,7 +97,7 @@ Let's get to work.
 
 4. [**Collaboration**](04-collaboration.html)
 
-    When we plug our work into the Internet, we get two big new tools: easier collaboration and proper version-control. We'll talk about how your editorial team might change, and about different approaches to version control.
+    When we plug our work into the Internet, our new tools give us easier collaboration and proper version-control. We'll talk about how your editorial team might change, and about different approaches to version control.
 
 5. [**Building blocks of books**](05-building-blocks.html)
 
