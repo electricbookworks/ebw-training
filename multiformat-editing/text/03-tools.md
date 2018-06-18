@@ -53,7 +53,7 @@ What are the major pros of collaborative editing?
 
 - It lets others **watch while you work.** And you can watch while others work. Publishing is weird because it’s always been a team sport played by lonely freelancers from their own home offices. Collaborative editing instantly makes the team aspect real and useful.
 - You can use **commenting for feedback and discussion.** Track changes isn’t the same as actual live annotation. No more emailing documents with increasing repetitions of the word ‘final’ in the file name.
-- **Instant delivery** of work and **real-time review.** As soon as you’re ready for your colleagues to check something, share the doc and the ball’s in their court. A lot editing is just problem solving, and collaborative editing means the publisher–editor–designer are basically always in the room together at the same time.
+- **Instant delivery** of work and **real-time review.** As soon as you’re ready for your colleagues to check something, share the doc and the ball’s in their court. A lot of editing is just problem solving, and collaborative editing means the publisher–editor–designer are basically always in the room together at the same time.
 
 It's amazing that Google Docs has been around for years and editors are still editing in MS Word.
 
