@@ -216,7 +216,7 @@ But to a computer, and in terms of the tree structure here, those info boxes are
 
 The real solution here is to use `h3` as the correct *content structure*, and to make those info-box headings look less prominent in our *design stylesheets*.
 
-Maintaining a consisten tree structure is harder than it looks in theory. Keep your eyes peeled for broken tree structures in the documents you edit!
+Maintaining a consistent tree structure is harder than it looks in theory. Keep your eyes peeled for broken tree structures in the documents you edit!
 
 ## Accuracy and consistency
 
