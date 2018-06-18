@@ -12,7 +12,7 @@ So far, we've covered a lot of big theory. Now we need some tools for putting th
 
 ## Thank you and goodbye, MS Word
 
-The most important step in multi-format editing is to start using something other than MS Word for editing. Pretty much anything else is an improvement. Good software is designed carefully and deliberately for a specific use. MS Word has not bee designed as much as assembled by committee into an usuable monster of terrying proportions.
+The most important step in multi-format editing is to start using something other than MS Word for editing. Pretty much anything else is an improvement. Good software is designed carefully and deliberately for a specific use. MS Word has not been designed as much as assembled by a committee into an usuable monster of terrying proportions.
 
 ## Choosing editing software, online and offline
 
