@@ -97,7 +97,7 @@ When choosing your tools, you should also consider:
 
 Open-source software is software that others can copy and modify without permission from the owner.
 
-Open-source software has had a bad reputation in the past, because most earl open software was created by volunteers or academics without much investment of money.
+Open-source software has had a bad reputation in the past, because most early open software was created by volunteers or academics without much investment of money.
 
 These days, open-source software is important to all of the biggest technology companies in the world, and open-source products are increasingly the best you'll find.
 
