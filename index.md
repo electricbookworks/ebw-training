@@ -44,7 +44,7 @@ This course includes condensed versions of *Starting out with HTML and CSS* and 
 [Read the course notes](making-ebooks/text/0-3-contents.html){:.button} 
 [Download the PDF]({{ site.baseurl}}/downloads/making-ebooks-with-sigil-html-css.pdf){:.button.light}
 
-## Multi-format editing (in development)
+## Multi-format editing
 
 This is a one-day course for publishing and editorial staff, and curious authors, on how to edit content for multi-format output. Increasingly, we're producing content that will be read on paper and on devices large and small, fast and slow, online and offline. How do we make sure our content makes sense in these different contexts?
 
