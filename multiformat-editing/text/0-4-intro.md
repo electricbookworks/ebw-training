@@ -117,4 +117,4 @@ Let's get to work.
 
 9. [**Data as content**](09-data-as-content.html)
 
-    Books often contain little databases, like glossaries, bibliographies, lists of abbreviations. Some books are big databases, like dictionaries and catalogues. We'll talk briefly about what this means for preparing and structuring manuscripts.
+    Books often contain little databases, like glossaries, bibliographies, and lists of abbreviations. Some books are big databases, like dictionaries and catalogues. We'll talk briefly about what this means for preparing and structuring manuscripts.
