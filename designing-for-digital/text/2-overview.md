@@ -205,7 +205,7 @@ directly analogous to the printed page. This makes it a nice, safe
 choice for designers. And it’s easy to create with existing tools (like
 InDesign, Acrobat Pro, Word and OpenOffice).
 
-PDF is actually a package for various file format, which gives it its
+PDF is actually a package for various file formats, which gives it its
 power. It stores both vector and bitmap images, can embed subsets of
 fonts, contains XML metadata, and can contain flash video and
 interactive forms that communicate with a remote server. It’s far more
