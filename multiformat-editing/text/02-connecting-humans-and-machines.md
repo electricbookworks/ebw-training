@@ -47,7 +47,7 @@ A paragraph marked up with `<p></p>` tags is an 'element'. The word 'element' is
 
 #### Elements
 
-HTML includes about a hundren standard elements. In publishing, these are the most important ones:
+HTML includes about a hundred standard elements. In publishing, these are the most important ones:
 
 > As in everything, HTML gets more complicated than this. There are different kinds of HTML with slightly different tags. As en editor you will almost never have to worry about that.
 {:.sidenote}
