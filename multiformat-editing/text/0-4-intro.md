@@ -85,7 +85,7 @@ Let's get to work.
 
 1. [**Context**](01-context.html)
 
-    The first section sets out some big, important features of multi-format world that we need to know about.
+    The first section sets out some big, important features of the multi-format world that we need to know about.
 
 2. [**Connecting humans and machines**](02-connecting-humans-and-machines.html)
 
