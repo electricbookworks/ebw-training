@@ -59,7 +59,7 @@ A few years ago, we could write 'Turn to page 10' or 'Write notes at the back of
 
 ## Viewports on paper and devices
 
-While a paper book might only ever appear as, say, a 6 × 9 inch paperback, an ebook or a website might appear in an infinite number of sizes and aspect ratios, on a dizzying number of screens, each with their own settings. One every screen, font sizes, colours, margins, brightness, line length and more might differ.
+While a paper book might only ever appear as, say, a 6 × 9 inch paperback, an ebook or a website might appear in an infinite number of sizes and aspect ratios, on a dizzying number of screens, each with their own settings. On every screen, font sizes, colours, margins, brightness, line length and more might differ.
 
 We have to completely set aside any fixed notion of 'the page' or 'the screen'.
 
