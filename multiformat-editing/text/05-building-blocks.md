@@ -78,7 +78,7 @@ Your minds makes a map of the book that is informed largely by the fixed, physic
 
 On screen everything is fluid, and separated from us by a cold sheet of glass. We are literally at a greater distance from the shifting text. It is almost impossible to form a mental map of the book. As such, digital books have no topography.
 
-When you're designing and edit multi-format books, look for opportunities to make up for that. Here are some techniques you might use.
+When you're designing and editing multi-format books, look for opportunities to make up for that. Here are some techniques you might use.
 
 - Break up the text into smaller sections, defined by headings and features like pullquotes, boxes and sidenotes.
 - Create detailed, deep navigation, which might show on screen as a visible, tree-structure menu, where the section being read currently is highlighted.
