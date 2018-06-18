@@ -15,7 +15,7 @@ your job.
 We know ebooks are a very important part of the publishing landscape
 right now, especially as publishers try to recover a share of people’s
 attention from digital devices currently used mostly for music, video
-and games. But there there is another, much more important process
+and games. But there is another, much more important process
 happening: ebooks are a by-product of a great human enterprise, the
 digitisation of literature. Digitised literature will be more easily
 shared and sold, and in time it will make education and storytelling
