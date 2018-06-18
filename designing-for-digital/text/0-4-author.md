@@ -21,8 +21,7 @@ entry](http://www.britannica.com/EBchecked/topic/1235205/e-book).
 He worked in educational and scholarly publishing for two multinational
 publishers before starting EBW in 2006. He has presented at conferences
 in South Africa, India, Europe and the US, and was runner-up for the
-British Council’s International Young Publishing Entrepreneur award in
-2009. He won ‘Most Entrepreneurial Startup’ with Paperight at O’Reilly
+British Council’s International Young Publishing Entrepreneur award in 2009. He won ‘Most Entrepreneurial Startup’ with Paperight at O’Reilly
 Tools of Change for Publishing in New York in 2013.
 
 He lives in Cape Town with his wife Michelle Matthews and their son

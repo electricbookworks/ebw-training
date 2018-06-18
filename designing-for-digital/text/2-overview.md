@@ -15,7 +15,7 @@ your job.
 We know ebooks are a very important part of the publishing landscape
 right now, especially as publishers try to recover a share of people’s
 attention from digital devices currently used mostly for music, video
-and games. But there there is another, much more important process
+and games. But there is another, much more important process
 happening: ebooks are a by-product of a great human enterprise, the
 digitisation of literature. Digitised literature will be more easily
 shared and sold, and in time it will make education and storytelling
@@ -205,7 +205,7 @@ directly analogous to the printed page. This makes it a nice, safe
 choice for designers. And it’s easy to create with existing tools (like
 InDesign, Acrobat Pro, Word and OpenOffice).
 
-PDF is actually a package for various file format, which gives it its
+PDF is actually a package for various file formats, which gives it its
 power. It stores both vector and bitmap images, can embed subsets of
 fonts, contains XML metadata, and can contain flash video and
 interactive forms that communicate with a remote server. It’s far more

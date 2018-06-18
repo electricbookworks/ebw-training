@@ -27,7 +27,7 @@ If we **embed** the actual file, it will always be available to our readers, eve
 
 If we include an **iframe** (such as from YouTube, Vimeo or Soundcloud), our readers must be online to watch or listen. And we have to rely on the host site always being available. The iframe includes the controls.
 
-If we decide to simply provide a **link** to a websit that hosts the video or track, we're hoping our users' devices can follow links, and that they are online.
+If we decide to simply provide a **link** to a website that hosts the video or track, we're hoping our users' devices can follow links, and that they are online.
 
 Of these three options, we recommend the **iframe,** but you will need to make a case-by-case decision in your personas' best interests.
 
