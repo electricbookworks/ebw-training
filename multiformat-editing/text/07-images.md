@@ -30,7 +30,7 @@ Most conversations about good images focus on pixels. When you buy a camera, the
 
 First we must understand what '300 DPI' means, since it's the most commonly requested image setting.
 
-DPI stands for dots per inch. This phrase comes from printing, because printing presses fill colour by printing thousands of tiny dots. High quality printing often fits 300 dots into an inch. (Note that that means 300 × 300 dots per square inch, or 90&nbsp;000 dots.) These dots are round, so there are actually tiny white spaces between them (unless on absorbant papers the ink soaks beyond the width of the dots).
+DPI stands for dots per inch. This phrase comes from printing, because printing presses fill colour by printing thousands of tiny dots. High quality printing often fits 300 dots into an inch. (Note that that means 300 × 300 dots per square inch, or 90&nbsp;000 dots.) These dots are round, so there are actually tiny white spaces between them (unless on absorbent papers the ink soaks beyond the width of the dots).
 
 Sometimes you'll hear the term PPI, for pixels per inch. This is the screen equivalent of DPI, and a more accurate measurement for digital images.
 
