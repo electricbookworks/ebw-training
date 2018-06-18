@@ -66,7 +66,7 @@ The *original* image must be at least 2490 pixels across. *There is no way to ad
 
 The term 'quality' has a special meaning when we're talking about image settings. Specifically, 'quality' matters when we're converting images from one format to another, or reducing their file size. The quality setting determines how much information in the original image to discard when we convert or reduce it.
 
-- In vector images, reducing quality means discarding strokes (lines), fills (areas of colour), and image metadata (information the image and its elements).
+- In vector images, reducing quality means discarding strokes (lines), fills (areas of colour), and image metadata (information about the image and its elements).
 - In bitmap images, reducing quality means discarding information about colours. Some file formats *automatically* lose colour information every time you save them, especially JPEG, which is called a 'lossy' format as a result.
 
 You should keep your master versions of images in a lossless format. The best format for this is TIFF. You would then convert the TIFF into JPEG for output, carefully choosing pixel numbers, resolution, and quality for each format you're publishing in.
