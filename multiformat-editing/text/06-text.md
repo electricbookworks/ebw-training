@@ -20,7 +20,7 @@ When we're working in simple English, this means almost nothing. Just keep going
 
 But as soon as you start working with special characters, it's critical that you use unicode characters.
 
-Let's say you want to insert a degrees symbol, '°'. That symbol is not on your keyboard, and you're not sure ho to insert it. Authors will often insert an o (the lowercase letter 'oh'), and make it superscript using formatting tools. That is a Very Bad Idea!
+Let's say you want to insert a degrees symbol, '°'. That symbol is not on your keyboard, and you're not sure how to insert it. Authors will often insert an o (the lowercase letter 'oh'), and make it superscript using formatting tools. That is a Very Bad Idea!
 
 Let's say you send the file to someone else, who copies and pastes your `30°C` into a different software program. Their program handles superscript differently, or doesn't support it at all. Now they have an o where you intended a degree symbol: `30oC`!
 
@@ -104,7 +104,7 @@ In print, cross-references are done in two ways:
 - we name the section we're referring to (e.g. 'See Chapter 1') or
 - we refer to a page number (e.g. 'See page 50').
 
-On the web, cross references are almost always text as clickable links, where the text is the word that names the thing you're link to, and you're linking to a location in your book. That is, you use an *internal link*.
+On the web, cross references are almost always text as clickable links, where the text is the word that names the thing you're linking to, and you're linking to a location in your book. That is, you use an *internal link*.
 
 For instance, we might just write, 'To see how indexes work, [see the Indexing section](#indexing),' the phrase 'see the Indexing section' is the clickable, linked text.
 
@@ -140,7 +140,7 @@ In our books, we keep all book parts in files in the same folder. This makes int
 
 ## Capitalisation
 
-A simple rule to follow: never use all-lowercase or all-uppercase letters for your text, because that choice is almost always a *design* consideration. Use only normal sentence case, and title case when appropriate for titles (if thta's your house style for titles).
+A simple rule to follow: never use all-lowercase or all-uppercase letters for your text, because that choice is almost always a *design* consideration. Use only normal sentence case, and title case when appropriate for titles (if that's your house style for titles).
 
 If in a given format the designer wants certain features to display all lowercase or all uppercase, they can program that into their stylesheets.
 
@@ -163,7 +163,7 @@ Each entry and subentry is followed by one or more locators. While most locators
 
 In PDF output, locators should be page numbers (in our case page numbers are generated from links by PrinceXML when we create PDFs). In ebooks and on the web, the locators should be a sequence of numbers from 1, each linking to a point in the book's text. Where print might have 'geek 5, 12–16' in its page-based index, an ebook might have 'geek 1, 2–3', where the numbers only refer to the order in which geeks appear in the text.
 
-So in our markup, need to do two things:
+So in our markup, we need to do two things:
 
 1. Create IDs in the body text, so we can link to those places
 2. Manually write the index, linking numbers to those places.

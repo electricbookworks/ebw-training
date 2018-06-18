@@ -30,7 +30,7 @@ Most conversations about good images focus on pixels. When you buy a camera, the
 
 First we must understand what '300 DPI' means, since it's the most commonly requested image setting.
 
-DPI stands for dots per inch. This phrase comes from printing, because printing presses fill colour by printing thousands of tiny dots. High quality printing often fits 300 dots into an inch. (Note that that means 300 × 300 dots per square inch, or 90&nbsp;000 dots.) These dots are round, so there are actually tiny white spaces between them (unless on absorbant papers the ink soaks beyond the width of the dots).
+DPI stands for dots per inch. This phrase comes from printing, because printing presses fill colour by printing thousands of tiny dots. High quality printing often fits 300 dots into an inch. (Note that that means 300 × 300 dots per square inch, or 90&nbsp;000 dots.) These dots are round, so there are actually tiny white spaces between them (unless on absorbent papers the ink soaks beyond the width of the dots).
 
 Sometimes you'll hear the term PPI, for pixels per inch. This is the screen equivalent of DPI, and a more accurate measurement for digital images.
 
@@ -66,7 +66,7 @@ The *original* image must be at least 2490 pixels across. *There is no way to ad
 
 The term 'quality' has a special meaning when we're talking about image settings. Specifically, 'quality' matters when we're converting images from one format to another, or reducing their file size. The quality setting determines how much information in the original image to discard when we convert or reduce it.
 
-- In vector images, reducing quality means discarding strokes (lines), fills (areas of colour), and image metadata (information the image and its elements).
+- In vector images, reducing quality means discarding strokes (lines), fills (areas of colour), and image metadata (information about the image and its elements).
 - In bitmap images, reducing quality means discarding information about colours. Some file formats *automatically* lose colour information every time you save them, especially JPEG, which is called a 'lossy' format as a result.
 
 You should keep your master versions of images in a lossless format. The best format for this is TIFF. You would then convert the TIFF into JPEG for output, carefully choosing pixel numbers, resolution, and quality for each format you're publishing in.
@@ -79,7 +79,7 @@ As you may know, colour printing uses four inks to create colours: cyan, magenta
 
 Screens are different. When a screen is off, it's black. So colours on screen are made of three colours of light: red, green and blue light. This is called the RGB colour space. Colours are expressed as a combination of these, in increments from 0 to 255. So a light, bright purple would be `200, 0, 200`, and pure white is `255, 255, 255`.
 
-That sounds simple enough, but there's a catch! A colour on one machine may look quite different from the same colour on another machine. This applies across printing presses and computers. If you open your organisation's website on two different computers, you will see that the same colours look different. On reason for this is that the range from, say, 'zero yellow' to 'maximum yellow' will differ: some screens will be able to show a wider range, or gamut, of yellows than another. And some printers, inks, and papers can create a wider gamut than others.
+That sounds simple enough, but there's a catch! A colour on one machine may look quite different from the same colour on another machine. This applies across printing presses and computers. If you open your organisation's website on two different computers, you will see that the same colours look different. One reason for this is that the range from, say, 'zero yellow' to 'maximum yellow' will differ: some screens will be able to show a wider range, or gamut, of yellows than another. And some printers, inks, and papers can create a wider gamut than others.
 
 To reduce these differences, we use colour profiles. Most colour profiles are files (usually with a `.icc` or `.icm` extension) that define colour gamuts. An image can, and should, contain a colour profile. That way, it should look almost the same across devices. At least, it will be as consistent as possible.
 

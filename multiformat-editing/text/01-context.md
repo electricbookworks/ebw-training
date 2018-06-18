@@ -51,7 +51,7 @@ Most importantly, they let us shift the costs of development from many end-users
 
 When we work on a book, one of the first things we do is decide who will read it. Ideally, we decide this consciously. If we think carefully, we'll also imagine the contexts in which people will read our book: at their desk, in bed, on holiday, in the classroom, and so on.
 
-Some years ago, the non-profit Perinatal Education Programme asks nurses in South Africa where they found time to read their textbooks. The most common answers were 'on the bus' and 'on the toilet'. That information is now always front-of-mind when the PEP team make publishing decisions.
+Some years ago, the non-profit Perinatal Education Programme asked nurses in South Africa where they found time to read their textbooks. The most common answers were 'on the bus' and 'on the toilet'. That information is now always front-of-mind when the PEP team make publishing decisions.
 
 Knowing potential **reading contexts** can have a significant effect on how we write and edit. Our readers might be standing in queues, sitting on planes, or herding cattle. They may be using big tablets or cheap phones, or even reading a paper print-out from the office.
 
@@ -59,7 +59,7 @@ A few years ago, we could write 'Turn to page 10' or 'Write notes at the back of
 
 ## Viewports on paper and devices
 
-While a paper book might only ever appear as, say, a 6 × 9 inch paperback, an ebook or a website might appear in an infinite number of sizes and aspect ratios, on a dizzying number of screens, each with their own settings. One every screen, font sizes, colours, margins, brightness, line length and more might differ.
+While a paper book might only ever appear as, say, a 6 × 9 inch paperback, an ebook or a website might appear in an infinite number of sizes and aspect ratios, on a dizzying number of screens, each with their own settings. On every screen, font sizes, colours, margins, brightness, line length and more might differ.
 
 We have to completely set aside any fixed notion of 'the page' or 'the screen'.
 

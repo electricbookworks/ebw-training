@@ -24,7 +24,7 @@ This book’s in four parts:
     and how traditional book files are converted to ebook files.
 2.  An intro to code: Just like you once learned how litho printing
     works, now you need some technical knowledge, especially about major
-    ebook file formats, and how HTML and CSS code works.
+    ebook file formats, and how HTML and CSS code work.
 3.  Converting ebooks: Practically, how are print books converted into
     ebooks? This is a quick primer of the basics.
 4.  Practical typesetting: When you get to your office, you should be

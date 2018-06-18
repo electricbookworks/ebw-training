@@ -12,7 +12,7 @@ So far, we've covered a lot of big theory. Now we need some tools for putting th
 
 ## Thank you and goodbye, MS Word
 
-The most important step in multi-format editing is to start using something other than MS Word for editing. Pretty much anything else is an improvement. Good software is designed carefully and deliberately for a specific use. MS Word has not bee designed as much as assembled by committee into an usuable monster of terrying proportions.
+The most important step in multi-format editing is to start using something other than MS Word for editing. Pretty much anything else is an improvement. Good software is designed carefully and deliberately for a specific use. MS Word has not been designed as much as assembled by a committee into an usuable monster of terrying proportions.
 
 ## Choosing editing software, online and offline
 
@@ -53,7 +53,7 @@ What are the major pros of collaborative editing?
 
 - It lets others **watch while you work.** And you can watch while others work. Publishing is weird because it’s always been a team sport played by lonely freelancers from their own home offices. Collaborative editing instantly makes the team aspect real and useful.
 - You can use **commenting for feedback and discussion.** Track changes isn’t the same as actual live annotation. No more emailing documents with increasing repetitions of the word ‘final’ in the file name.
-- **Instant delivery** of work and **real-time review.** As soon as you’re ready for your colleagues to check something, share the doc and the ball’s in their court. A lot editing is just problem solving, and collaborative editing means the publisher–editor–designer are basically always in the room together at the same time.
+- **Instant delivery** of work and **real-time review.** As soon as you’re ready for your colleagues to check something, share the doc and the ball’s in their court. A lot of editing is just problem solving, and collaborative editing means the publisher–editor–designer are basically always in the room together at the same time.
 
 It's amazing that Google Docs has been around for years and editors are still editing in MS Word.
 
@@ -79,7 +79,7 @@ Plain-text markdown is one useful way to do this, because markdown forces us to 
 
 ## Constraints versus creativity
 
-As you can tell by now, working with new editing tools means navigating new kinds of constraints on your creativity. Picking the right tool can be about deciding what constraints do you *want* for a given job.
+As you can tell by now, working with new editing tools means navigating new kinds of constraints on your creativity. Picking the right tool can be about deciding what constraints you *want* for a given job.
 
 For instance, if you're doing heavy development editing, you want to be in a creative headspace, not thinking about the technicalities of perfect structure and tagging. Working in Google Docs is probably best, especially if you're collaborating with others.
 
@@ -95,9 +95,9 @@ When choosing your tools, you should also consider:
 
 ### Open-source software
 
-Open-source software is software that others can copy and modify without permission from their owner.
+Open-source software is software that others can copy and modify without permission from the owner.
 
-Open-source software has had a bad reputation in the past, because most earl open software was created by volunteers or academics without much investment of money.
+Open-source software has had a bad reputation in the past, because most early open software was created by volunteers or academics without much investment of money.
 
 These days, open-source software is important to all of the biggest technology companies in the world, and open-source products are increasingly the best you'll find.
 

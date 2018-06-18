@@ -76,7 +76,7 @@ Each time you take a snapshot (usually called a 'commit'), you describe what you
 
 That description and ID are saved in the project's history forever, and anyone can go back, find them, and revisit at the files at that point.
 
-In addition, each team member is working on *their own copy* of the original. When they check their work in, it is *merged* into the original document. This way, no history is lost, and one person can be given the tasks of vetting all changes before they're merged into the original.
+In addition, each team member is working on *their own copy* of the original. When they check their work in, it is *merged* into the original document. This way, no history is lost, and one person can be given the task of vetting all changes before they're merged into the original.
 
 This approach makes a bunch of useful things possible:
 
@@ -86,7 +86,7 @@ This approach makes a bunch of useful things possible:
 - Find old, hidden mistakes: sometimes you discover that a mistake was introduced a long time ago, and you want to see when and how that happened.
 - A story of changes: since everyone describes their changes as they make them, usually in a one-liner, it's easy to read the history of a project and see how it evolves.
 - Track attribution: each person's contributions carry their name. So you can easily see who changed what through a project's history.
-- Branches: a branch is a copy of your copy of a project. You use branches to to try new things in. If the changes in your branch work, you just merge them into your main project. Each branch tracks its changes separately.
+- Branches: a branch is a copy of your copy of a project. You use branches to try new things in. If the changes in your branch work, you just merge them into your main project. Each branch tracks its changes separately.
 
 The most popular software for this kind of version control is called **Git.** Git is very geeky, so it's not simple to use on its own. Luckily there are new software programs being developed that make Git easier to use, especially for non-technical teams. Electric Book Works is developing its [Electric Book Manager](https://electricbookworks.github.io/electric-book-gui/) for this. And Fog Creek is developing a tool called [Glitch Rewind](https://medium.com/glitch/reinventing-version-control-with-glitch-rewind-914c350da442) that makes Git very easy to use.
 

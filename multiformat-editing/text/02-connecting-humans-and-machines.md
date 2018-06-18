@@ -23,7 +23,7 @@ Anyone who worked in publishing twenty years ago remembers marking up manuscript
 > Today it's extremely rare for a book to be final at third pages. Later in this course we'll talk about how the publishing industry lost these skills when MS Word ruined everything, and how we might relearn them.
 {:.sidenote}
 
-In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for manuscript markup in a team, was not unusual for a book to be final at the third round of page proofs.
+In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for manuscript markup in a team, it was not unusual for a book to be final at the third round of page proofs.
 
 While we were doing that, around the world people were doing the same thing for web pages. Though rather than marking up content for typesetters, they were marking up content for web browsers: machines that would 'typeset' on the fly, on screen, on a user's computer.
 
@@ -47,7 +47,7 @@ A paragraph marked up with `<p></p>` tags is an 'element'. The word 'element' is
 
 #### Elements
 
-HTML includes about a hundren standard elements. In publishing, these are the most important ones:
+HTML includes about a hundred standard elements. In publishing, these are the most important ones:
 
 > As in everything, HTML gets more complicated than this. There are different kinds of HTML with slightly different tags. As en editor you will almost never have to worry about that.
 {:.sidenote}
@@ -216,7 +216,7 @@ But to a computer, and in terms of the tree structure here, those info boxes are
 
 The real solution here is to use `h3` as the correct *content structure*, and to make those info-box headings look less prominent in our *design stylesheets*.
 
-Maintaining a consisten tree structure is harder than it looks in theory. Keep your eyes peeled for broken tree structures in the documents you edit!
+Maintaining a consistent tree structure is harder than it looks in theory. Keep your eyes peeled for broken tree structures in the documents you edit!
 
 ## Accuracy and consistency
 
@@ -226,5 +226,5 @@ As an editor, you're already the kind of person who loves accuracy and consisten
 
 ## Further reading
 
-- [The Machine in Us/ing Us](https://www.youtube.com/watch?v=NLlGopyXT_g){:.show-url}, a video by Michael Wesch about how XML lets humans and machines 
-- [Person in Lotus Position](https://99percentinvisible.org/episode/person-lotus-position/){:.show-url}, a fun podcast from 99 Percent Invisible about adding new characters – and empjis in particular – to the Unicode character set.
+- [The Machine in Us/ing Us](https://www.youtube.com/watch?v=NLlGopyXT_g){:.show-url}, a video by Michael Wesch about how XML lets humans and machines communicate.
+- [Person in Lotus Position](https://99percentinvisible.org/episode/person-lotus-position/){:.show-url}, a fun podcast from 99 Percent Invisible about adding new characters – and emojis in particular – to the Unicode character set.

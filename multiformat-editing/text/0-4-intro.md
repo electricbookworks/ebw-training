@@ -21,7 +21,7 @@ Faced with such a plethora of options, publishing teams can struggle to make dec
 
 A good way to make decisions is to use personas. Personas are people you invent, with names, ages, backgrounds, and interests; and with specific devices, connectivity, and available money. They represent your target readers.
 
-Creating personas can seem like hard work. One reason is'a hard is because you really want your book to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
+Creating personas can seem like hard work. One reason it's hard is because you really want your book to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
 
 > ### Activity: Create a persona
 > 
@@ -85,7 +85,7 @@ Let's get to work.
 
 1. [**Context**](01-context.html)
 
-    The first section sets out some big, important features of multi-format world that we need to know about.
+    The first section sets out some big, important features of the multi-format world that we need to know about.
 
 2. [**Connecting humans and machines**](02-connecting-humans-and-machines.html)
 
@@ -117,4 +117,4 @@ Let's get to work.
 
 9. [**Data as content**](09-data-as-content.html)
 
-    Books often contain little databases, like glossaries, bibliographies, lists of abbreviations. Some books are big databases, like dictionaries and catalogues. We'll talk briefly about what this means for preparing and structuring manuscripts.
+    Books often contain little databases, like glossaries, bibliographies, and lists of abbreviations. Some books are big databases, like dictionaries and catalogues. We'll talk briefly about what this means for preparing and structuring manuscripts.
