@@ -85,6 +85,8 @@ For instance, if you're doing heavy development editing, you want to be in a cre
 
 But if you're doing copy editing or implementing proof corrections, it can be far better to work in a plain-text editor, with a monospace font (where all characters have the same width), so that structure and errors are easier to spot, without the distractions of design and formatting.
 
+That is, when you're *creating*, you need to use whatever tool feels most natural – to find the shortest distance between your brain and the words. But when you're preparing a manuscript for production, your brain is focused on structure and accuracy, and markdown comes into its own. Design disappears and you can really control exactly what goes into the text.
+
 ## Open software and standards
 
 When choosing your tools, you should also consider:
