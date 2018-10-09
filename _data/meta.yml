@@ -616,7 +616,7 @@ works:
             label: "Connecting humans and machines"
             children:
               - file: "02-connecting-humans-and-machines"
-                id: "defaultAccordionSection"
+                id: "separating-content-and-design"
                 label: "Separating content and design"
               - file: "02-connecting-humans-and-machines"
                 id: "basic-html-and-css"
@@ -884,7 +884,7 @@ works:
             label: "Connecting humans and machines"
             children:
               - file: "02-connecting-humans-and-machines"
-                id: "defaultAccordionSection"
+                id: "separating-content-and-design"
                 label: "Separating content and design"
               - file: "02-connecting-humans-and-machines"
                 id: "basic-html-and-css"
