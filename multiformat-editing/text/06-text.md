@@ -38,7 +38,7 @@ Many fonts do not include glyphs for many less common unicode characters. If the
 
 ## Non-breaking spaces
 
-If you text will reflow every time it appears on someone's screen, you can't control where lines will break. A line may break, for instance, in the space in `100 mm`, or the number `100 000`, or before an `…` ellipsis. To avoid this, use a non-breaking space.
+If your text will reflow every time it appears on someone's screen, you can't control where lines will break. A line may break, for instance, in the space in `100 mm`, or the number `100 000`, or before an `…` ellipsis. To avoid this, use a non-breaking space.
 
 A non-breaking space is a unicode character.
 
@@ -134,7 +134,7 @@ One of the common uses of purple numbers is in classroom settings, where differe
 
 ### Creating internal links
 
-How you create internal links depends on the software you're editing in. if you're writing in markdown or using an HTML editor, creating an internal link is fairly simple. The trick is knowing where you're linking to.
+How you create internal links depends on the software you're editing in. If you're writing in markdown or using an HTML editor, creating an internal link is fairly simple. The trick is knowing where you're linking to.
 
 In our books, we keep all book parts in files in the same folder. This makes internal links easy: we link to the document name (with an `html` file extension) followed by a `#` ID that identifies the text we're linking to. For instance, all of our headings automatically have an ID that is the 'slug' of the heading text. A slug is text reduced to lowercase letters and hyphens, and no spaces. So for this subsection's heading we use `#creating-internal-links`. To link to this subsection from another file in this book, we'd link to `06-text.html#creating-internal-links`.
 
