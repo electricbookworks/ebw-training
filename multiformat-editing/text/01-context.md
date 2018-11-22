@@ -73,7 +73,7 @@ In digital publishing, you'll often hear the terms **user experience** (UX); **u
 
 The user interface is what the user sees or hears as they encounter the publication. The user interface of a paper book would include its cover design, typography, page numbers and so on. On a website, things like text and buttons and where they lie.
 
-User patterns are the habits we form as we use publications – patterns of behaviour. In English, We open paper books on the right, and look for the book's description on the back cover. Those user patterns are so ingrained that it is very disorienting when a book defies them.
+User patterns are the habits we form as we use publications – patterns of behaviour. In English, we open paper books on the right, and look for the book's description on the back cover. Those user patterns are so ingrained that it is very disorienting when a book defies them.
 
 Common user patterns on the web include the placement of login buttons on the top right, and that we scroll vertically, not horizontally, through articles.
 
@@ -98,5 +98,5 @@ As you work in digital publishing, you will have more and more opportunities to 
 
 - ['Ebook'](https://www.britannica.com/technology/e-book){:.show-url} in the Encyclopaedia Britannica
 - [Ebooks for All: Building digital libraries in Ghana with Worldreader](https://craigmod.com/essays/worldreader/){:.show-url} by Craig Mod
-- [The Once and Future Ebook](https://electricbookworks.com/kb/abcs/the-once-and-future-e-book-by-john-siracusa/){:.show-url} by John Siracusa
+- [The Once and Future Ebook](https://electricbookworks.com/kb/abcs/the-once-and-future-ebook-by-john-siracusa/){:.show-url} by John Siracusa
 - [Better than Free](http://kk.org/thetechnium/better-than-fre/){:.show-url} by Kevin Kelly
