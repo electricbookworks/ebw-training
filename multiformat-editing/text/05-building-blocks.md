@@ -72,7 +72,9 @@ It is possible in some publishing systems to control how, say, your print PDF is
 
 ## Reading topography
 
-Another thing that digital formats can't (yet) reproduce is a reading topography. By reading topography I mean the mental map our minds and hands make of a printed book as we read it. When you remember a quote you read in a paperback, you remember where it was on the page and in the book. When you find that quote again, your hands know how many pages fell before and after it, and your eyes know to look for it in, say, the top of a right-hand page.
+Another thing that digital formats can't (yet) reproduce is a reading topography. By reading topography I mean the mental map our minds and hands make of a printed book as we read it. The way we form spatial memories as we read.
+
+When you remember a quote you read in a paperback, you remember where it was on the page and in the book. When you find that quote again, your hands know how many pages fell before and after it, and your eyes know to look for it in, say, the top of a right-hand page.
 
 Your minds makes a map of the book that is informed largely by the fixed, physical shape of the book.
 
