@@ -109,6 +109,8 @@ As we write and edit for digital products, we need to:
 
 The most neglected user experiences are those of people with disabilities. If you don't have full vision, you may use a screen reader to read text aloud; you might set your computer to a large-print, high-contrast display. If you have a physical disability, you might not be able to use a mouse, or type more than one letter every few seconds.
 
+{% include youtube id="iUCYPM6up9M" %}
+
 As you create digital products, you will find many opportunities to make your content more accessible to people with disabilities. This will include creating text descriptions of images that software can read aloud, and making sure that text isn't embedded in images where computers can't read it.
 
 It is very easy – even tempting – to cut costs during production by neglecting accessibility features. It's up to each of us to make ethical choices here when we create content, and to invest a little more in making sure our content is accessible.

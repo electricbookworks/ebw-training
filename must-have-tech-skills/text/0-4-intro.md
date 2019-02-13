@@ -42,7 +42,7 @@ We'll get back to the dev tools later. For now, let's quickly go over what we're
 
 1. [**Context**](01-context.html)
 
-    The first section sets out some big, important features of the multi-format world that we need to know about.
+    The first section sets out some big, important features of the multi-format world that we need to know about. We'll talk about personas, user experiences, and accessibility.
 
 2. [**Connecting humans and machines**](02-connecting-humans-and-machines.html)
 

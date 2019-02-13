@@ -8,109 +8,108 @@ title: Connecting humans and machines
 * TOC here
 {:toc}
 
-When you're editing for multi-format publishing, you never want to have to edit the same content again for each new format. You want to work on **one, master document,** and you expect that machines will convert that document into any number of formats later on.
+If you're creating content that a machine will process, we need to write in a way that both humans and machines can understand. This is not easy: humans are flexible and love breaking rules; machines are not flexible, and are literally made of rules.
 
-If you're creating content that a machine will process, we need to write in a way that both humans and machines can understand. This is not easy: humans are flexible and love breaking rules; machines are not flexible, and are made of rules.
+Luckily, in building the Internet, people have come up with all kinds of conventions and techniques for capturing human stories in ways that machines can process.
 
-Luckily, in building the Internet people have come up with all kinds of conventions and techniques for capturing human stories in ways that machines can handle.
-
-As editors, we need to learn about those techniques so that machines will do what we want, and not break our work.
+We need to learn those techniques to make machines do what we want, and not break our work.
 
 ## Separating content and design
 
 The fundamental rule in multi-format editing is that **we separate content and design**.
 
-For example, if our book includes an activity, some aspects of the activity belong to its content and some to its design.
+Let's say we're writing an article containing a case study. The case study is made of content and design:
 
-- **Content**: a heading, instructions, a numbered list of tasks.
-- **Design**: a surrounding box, a font change from the main text, the instructions in bold, decimal numbers used in the list.
+- **Content**: the heading and the story and maybe a picture.
+- **Design**: a surrounding box, a font change from the main text, the way the box sits to the right of the main text.
 
-In a different context, say on a small phone, we might use a completely different design that saves space and requires less processing power: a background colour rather than a box, the same font, instructions in italic, and whatever numbers are the default on the user's device.
+In a different context, say on a small phone, we might use a completely different design that saves space and requires less processing power: a background colour rather than a box, the same font as the main text, and the box will come after the main text in a single column.
 
 The idea here is that:
 
-- **Content** is up to the editor. It is constant (almost all the time).
-- **Design** is up to the user and their viewport. It is format- and context-based.
+- **Content** is determined entirely by its creator, and it doesn't change.
+- **Design** is guided by its creator, but ultimately determined by to the user and their viewport. It is format- and context-based.
 
-In multi-format book production, then, we aim to create:
+In digital production, then, we aim to create:
 
 - One master version of all content.
 - Any number of design stylesheets for different formats and contexts.
 
-**One master version of content** is especially important, because we *never* want to be maintaining the same content in more than one place. Imagine if, every time you made a reprint correction, you had to make it to the paperback, the large-print edition, the ebook, your website and your app? You'd be doing far more menial work than necessary, and very soon those versions could get out of sync.
+**One master version of content** is especially important, because we *never* want to be maintaining the same content in more than one place.
 
 What does separating content and design mean for day-to-day editing? Here are some examples:
 
-1. **Be on the lookout for subtle mixing up of content and design.** For instance, referring to the colours in a graph is risky: what if that graph appears in a black-and-white book? What if a reader is using a high-contrast display that changes colours?
+1. **Be on the lookout for subtle mixing up of content and design.** For instance, referring to the colours in a graph is risky: what if that graph appears on a black-and-white ereader? What if a reader is using a high-contrast display that changes the colours for readability? What if your reader is blind, and having a computer read the text to them?
 2. **Avoid using design features for semantic purposes.** For instance, in a textbook don't write 'learn the words in bold', because in some viewports those words might appear italic, or pink, or highlighted instead. Rather say 'learn the words emphasised *like this*', and tag the phrase in the same way you'd tag a word to learn.
-3. **Avoid positioning words** like 'above' and 'on the right'.
+3. **Avoid 'positioning' phrases.** like 'see above' and 'the figure on the right'.
 
 ## Basic HTML and CSS
 
-Anyone who worked in publishing twenty years ago remembers marking up manuscripts for typesetting: adding feature tags like `[start box]` and `[end box]` and inserting instructions for design like `[blank page]` or `[italics]`.
+Anyone who worked in publishing twenty years ago remembers marking up text for layout: adding tags like `[start box]` and `[end box]` and inserting instructions for design like `[pullquote]` or `[smallcaps]`.
 
-> Today it's extremely rare for a book to be final at third pages. Later in this course we'll talk about how the publishing industry lost these skills when MS Word ruined everything, and how we might relearn them.
-{:.sidenote}
+In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for markup in a team, it was not unusual for a book to be final at the third round of page proofs.
 
-In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for manuscript markup in a team, it was not unusual for a book to be final at the third round of page proofs.
+While we were doing that, around the world people were doing the same thing for web pages. Though, rather than marking up content for typesetters, they were marking up content for web browsers: machines that would 'typeset' on the fly, on screen, on a user's computer.
 
-While we were doing that, around the world people were doing the same thing for web pages. Though rather than marking up content for typesetters, they were marking up content for web browsers: machines that would 'typeset' on the fly, on screen, on a user's computer.
+There were many attempts to create markup languages. The technique that really caught on used labels in angle-brackets, like `<blockquote>`. A team could create and extend its own markup language for any kind of content. This technique became known as 'extensible markup language', or XML for short. 
 
-There were many attempts to create markup languages. The technique that really caught involved wrapping text in angle-bracket tags (like `<box>`). Your team could create and extend its own markup language for any kind of content. This technique became known as 'extensible markup language', or XML for short. 
-
-There are probably tens of thousands of markup languages created using the XML technique. The most popular by far is HTML, or hypertext markup language. Almost every web page you visit is delivered to your computer in HTML, and your web browser reads the HTML and 'typesets' the page for you automatically.
+There are probably tens of thousands of markup languages created using the XML technique. The most popular by far is HTML, which stands for 'hypertext markup language'. Almost every web page you visit is delivered to your computer in HTML. Your web browser reads the HTML and 'typesets' the page for you automatically.
 
 If well constructed, that HTML markup lets browsers lay out the same content differently, but readably, on an infinite number of viewport shapes and sizes, including printable pages.
 
-You don't need to be able to write HTML to be a multi-format editor. You only need to know, more or less, how it works.
+To work with digital content, you have to know at least basic HTML.
 
 ### Elements
 
-To tell a machine that a given string of characters is a paragraph, we use a `<p>` tag:
+Each tag in HTML marks up an 'element'. Web pages are made of elements.
 
-`<p>Hello World!</p>`
+A paragraph is one kind of element. To tell a machine that a given string of characters is a paragraph, we use a `<p>` tag:
 
-The `<p>` is a 'paragraph' tag. We use paragraph tags at the start and end of the paragraph, and the slash in the second tag indicates that it's closing the paragraph.
+```html
+<p>Hello World!</p>
+```
+
+The `<p>` is a 'paragraph' tag. We use paragraph tags at the start and end of the paragraph, and the slash in the second tag indicates that it's *closing* the paragraph.
 
 A paragraph marked up with `<p></p>` tags is an 'element'. The word 'element' is also useful in traditional book terms for any piece of a book, for what we often call a feature, like a figure or a blockquote.
 
-HTML includes about a hundred standard elements. In publishing, these are the most important ones:
+HTML includes about a hundred standard elements. Here are the most common ones:
 
-> As in everything, HTML gets more complicated than this. There are different kinds of HTML with slightly different tags. As en editor you will almost never have to worry about that.
+> As in everything, HTML gets more complicated than this. There are different kinds of HTML with slightly different tags. You will very rarely have to think about the differences.
 {:.sidenote}
 
 *   `<p>` for paragraph
-*   `<ul>` for unordered list (i.e. a bulleted list, but it might not actually have visible bullets)
-*   `<ol>` for ordered list (e.g. a 1, 2, 3 or a, b, c list)
-*   `<li>` for list item, an item in an ordered or unordered list
+*   `<ul>` for unordered list (like a bulleted list)
+*   `<ol>` for ordered list (like 1, 2, 3 or a, b, c)
+*   `<li>` for list item: an item in an ordered or unordered list
 *   `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` for six levels of heading
 *   `<img>` for image
 *   `<a>` for a clickable link (the 'a' happens to stand for anchor)
-*   `<em>` for emphasising words (as you might use italics in print)
-*   `<strong>` for making words stand out (as you might use bold in print)
-*   `<span>` for any string of letters you need to mark for any reason (as in, this span `<span>spans three words</span>`)
-*   `<div>` for division, any block of text or images you need to mark for any reason
+*   `<em>` for emphasising words (usually displayed as italics)
+*   `<strong>` for making words stand out (usually displayed as bold)
+*   `<span>` for any string of characters you need to mark for any reason (e.g. `<span>this span spans five words</span>`)
+*   `<div>` for 'division', any block of text or images you need to mark for any reason
 *   `<table>` for a table
 *   `<tr>` for a table row
 *   `<td>` for a table cell in a row (`td` stands for table data).
 
-When a web browser seels these tags, it *renders* the content inside them. That is, it processes and displays the content according to a stylesheet.
+When a web browser sees these tags, it *renders* the content inside them. That is, it processes and displays the content. To give the content a design, it follows a stylesheet.
 
 ### Stylesheets
 
-Note that none of those elements on their own describe what their content should look like when rendered for a user.
+You'll notice that none of those elements on their own describe what their content should *look like*.
 
-We define what elements *look like* with a stylesheet. Browsers come with basic, built-in stylesheets already, which do things like make headings big and bold. We then add our own styles on top of the built-in ones.
+We define what elements look like with a stylesheet. Browsers come with basic, built-in stylesheets already, which do things like make headings big and bold. We can then add our own styles on top of the built-in ones.
 
-To write a stylesheet we use a language called CSS (for 'Cascading Style Sheets'). In CSS, we write the element name, and then rules for rendering it in braces. For instance, this makes all paragraph text grey:
+To write stylesheets, we use a language called CSS (for 'Cascading Style Sheets'). In CSS, we write each rule by including the element name, and then its design properties in braces. For instance, this rule makes all paragraph text grey:
 
 ``` css
 p { color: grey; }
 ```
 
-(We must live with the American spelling.)
+(You'll eventually get used to the American spelling of 'color'.)
 
-We can add more rules, too. For instance, we can also indent the first line of each paragraph:
+We can use any number of properties in a rule. For instance, we can also indent the first line of each paragraph:
 
 ``` css
 p {
@@ -119,13 +118,33 @@ p {
 }
 ```
 
-See the extra line breaks at the braces? That's a code-layout convention for making CSS easier to read. The line breaks do not affect how the CSS works.
+See the extra line breaks at the braces? That's a code-layout convention for making CSS easier for us humans to read. The line breaks do not affect how the CSS works.
 
-The phrases we use for the rules (like `color` and `text-indent`) are defined in official specifications. Learning CSS is mostly about learning the names of the many rules you can use, and how they interact.
+The terms for the display properties (like `color` and `text-indent`) are defined in official specifications. Learning CSS is mostly about learning the names of the many properties you can use, and how they interact.
+
+There are about six hundred properties, so you're unlikely to ever learn them all. Just learn them as you need them, by Googling for the effect you want to create. Here are some very common CSS properties:
+
+- `background-color`: sets the colour that fills an element.
+- `border`: sets the thickness, style and colour of an element's border.
+- `color`: sets the colour of the text in an element.
+- `display`: defines the way an element fits on the page.
+- `float`: defines whether an element floats to the right or the left, wrapped by its surrounding elements.
+- `font-family`: sets the type face of an element's text.
+- `font-size`: sets the font size of an element's text.
+- `font-style`: mostly used to make text italic.
+- `font-weight`: sets the weight of the font, e.g. 'bold'.
+- `height`: sets the height of an element.
+- `line-height`: sets the height of an element's lines (much like leading in print design)
+- `margin`: the space around an element.
+- `padding`: the space between an element's content (e.g. text) and the edges of the element box.
+- `text-align`: defines whether text is aligned left or right, centred or justified.
+- `width`: sets the width of an element.
+
+The values of those properties can be set in different ways. For instance, `width` can be set in units (e.g. pixels) or as a percentage (e.g. `50%`).
 
 ### Classes
 
-As you may have guessed, in most books there are several different kinds of paragraph. Apart from default body text, a book might have lead-in text, taglines, epigraphs, dedications, and so on. These are all different kinds of paragraph.
+So now we know how to mark up and style paragraphs. As you may have guessed, though, there are any number of different *kinds* of paragraph. Apart from default body text, a publication might have lead-in text, taglines, epigraphs, dedications, and so on. These are all different kinds of paragraph.
 
 We can't have separate elements for all of them. So in HTML we say there are different *classes* of paragraph. You can just think up classes as you need them. The same goes for any of the elements I listed:
 
@@ -168,40 +187,61 @@ I can also make *any element* (not just paragraphs) with a `greeting` class uppe
 }
 ```
 
+### Inheritance
+
+Perhaps the most important feature of CSS is that styles can be inherited. What does this mean? Let's say I make all paragraphs grey and all greeting paragraphs uppercase:
+
+```css
+p {
+    color: grey;
+}
+p.greeting {
+    text-transform: uppercase;
+}
+```
+
+What colour will the greeting be? Grey. Because *all* paragraphs will inherit the rule for `p`. That's what the 'cascading' means in 'cascading style sheets'.
+
 ## Character encoding and unicode
 
-Character encoding is about the most technical thing we're going to cover. 
+Character encoding is about the most technical thing we're going to cover. We'll keep it short!
 
-So let's keep it short:
-
-1. **Computers are binary**. That means that, at their core (literally) they only have two modes: on and off. We humans refer to these two modes as 'yes and no', or 'true and false', or 'one and zero'. Everything computers do must be reduced, ultimately, to patterns of these ones and zeros.
-2. So, to a computer, **every letter or number is a pattern of ones and zeros,** e.g. `01000001` can represent the letter 'A', and `01000010` the letter 'B'.
-3. There are many characters to encode in this way. Over the years, official bodies have established conventions for sets of characters. The most important character set is called **Unicode,** which is a list of about 100&nbsp;000 characters (and growing, especially with emojis).
-4. The most common pattern for encoding these Unicode characters in ones and zeros is called **UTF-8**.
-5. In theory, every computer file should state its character encoding inside it, so that your computer knows how to display its characters. (Programs like MS Word should automatically add that information inside your files.)
+1. **Computers are binary**. That means that, at their core they only have two modes: on and off. We humans refer to these two modes as 'yes and no', or 'true and false', or 'one and zero'. Everything computers do must be reduced, ultimately, to patterns of these ones and zeros.
+2. So, to a computer, **every letter or number is understood as a pattern of ones and zeros,** e.g. `01000001` can represent the letter 'A', and `01000010` the letter 'B'.
+3. There are many characters to encode in this way. Over the years, various organisations have established different official sets of characters. The most important character set is called **Unicode,** which is a list of about 100&nbsp;000 characters (and growing, especially with emojis).
+4. The most common pattern for encoding characters in the Unicode set in ones and zeros is called **UTF-8**.
+5. In theory, every computer file should note its character encoding inside it, so that your computer knows how to display its characters. (Programs like MS Word should automatically add that information inside your files for you.)
 6. If you open a document, or a web page or ebook, and the characters look wrong, it's usually because the document and your computer are using different character sets.
 
-What does that mean for editors?
-
-When we're working in simple English, this means almost nothing. Just keep going and computers will do the rest.
+When we're working in simple English, we rarely have to worry. Just keep going and computers will do the work.
 
 But as soon as you start working with special characters, it's critical that you use Unicode characters.
 
-We'll cover this is more detail later in the [Text section](06-text.html#special-characters-fonts-unicode-glyphs-and-markup){:.show-page-number}.
+We'll cover this in more detail later in the [Text section](06-text.html#special-characters-fonts-unicode-glyphs-and-markup){:.show-page-number}.
 
 ## Naming design features
 
-When you mark up a document, you will have to name the features of your book. For a given book, it's very important to establish early on what features it will include. For instance, each chapter might have:
+When you mark up a document for publication, whether you're working in HTML or something else, you will have to *name its features*. It's very important to name things carefully and clearly. For instance, each article might have:
 
 - a list of learning objectives
-- ten activities
-- figures, each with a caption and a number
+- three activities
+- two figures, each with a caption and a number
 - a glossary
 - a bibliography.
 
-It is *very important* to set this list in stone early in a project, and to agree on the **exact name** you will use for each feature. And that name must describe the **purpose of the feature,** and not its design. That is, don't call a feature 'big red box' when you should call it 'key concept'.
+It is *very important* to set this list in stone early in a project, and to agree on the **exact name** you will use for each feature. And that name must describe the **purpose of the feature,** and not its design. That is, don't call a feature 'big red box' when you should call it 'key concept'. Also, avoid abbreviations that are confusing to newcomers.
 
 Usually, these features will be used as class names in CSS.
+
+|       Feature       | Good class name | Bad class name |
+|---------------------|-----------------|----------------|
+| Learning objectives | .objectives     | .list-1        |
+| Activities          | .activity       | .red-box       |
+| Figure              | .figure         | .fg            |
+| Figure caption      | .caption        | .centred-itals |
+| Figure number       | .figure-number  | .no            |
+| Glossary            | .glossary       | .defs          |
+| Bibliography        | .bibliography   | .hang-indent   |
 
 In the simple list above, that's easy. But it can get complicated quickly. In a big textbook we worked on, we had to allow for a range of features, each with potential design features. Here is a selection of those features.
 
@@ -220,7 +260,7 @@ In the simple list above, that's easy. But it can get complicated quickly. In a 
 | Footnotes                    | On web, these are popups, in print they are in the margin          |
 | Definition boxes             | Popups on web, in margins in print                                 |
 
-We discovered a few weeks into the project that team members had different ideas about what these features were called and how they were used. That set editing back severely.
+We discovered a few weeks into the project that team members had different ideas about what these features were called and how they were used. That was a huge problem!
 
 ## Document trees
 
@@ -233,18 +273,18 @@ As you can tell by now, communicating with machines is about keeping things supe
 
 We can map this outline to HTML elements:
 
-- Introduction **h1**
-- Part 1 **h1**
-  + Chapter 1 **h2**
-  + Chapter 2 **h2**
+- Introduction: `h1`
+- Part 1: `h1`
+  + Chapter 1: `h2`
+  + Chapter 2: `h2`
 
-That tree structure is a valid representation of the book's structure. However, think about the *design* of these elements. Visually, we will want the `h1` heading 'Introduction' to look like the `h2` 'Chapter 1'. And the `h1` heading 'Part 1' should be much bigger and heavier, and have its own page.
+That tree structure is a valid representation of the book's structure. However, think about the *design* of these elements. Visually, we will want the `h1` 'Introduction' to look like the `h2` 'Chapter 1'. And the `h1` 'Part 1' should be much bigger and heavier, and have its own page.
 
-As editors, we may be tempted to make 'Introduction' an `h2`; but this would break our tree structure.
+As editors, we may be tempted to make 'Introduction' an `h2`, so that it looks like the `h2` 'Chapter'; but this would break our tree structure. Computers can't appreciate our designs, they can only follow our structure. It's useful to think how a screen reader would speak out the structure of a page to a blind person: the structure of heading levels is a crucially important way for a blind person to follow the structure of the page.
 
-We have to look out for the human tendency to break the tree structure because we're thinking visually, and not separating content and design.
+So we have to look out for the human tendency to break the tree structure because we're thinking visually, and not separating content and design.
 
-The real solution here is to use `h1` for `Introduction`, and to make it look less prominent than 'Part 1' in our CSS stylesheets.
+The real solution here is to use `h1` for 'Introduction', and to make it *look* less prominent than 'Part 1' in our CSS stylesheets.
 
 Maintaining a consistent tree structure can be harder than it looks. Keep your eyes peeled for broken tree structures in the documents you edit!
 
@@ -252,7 +292,7 @@ Maintaining a consistent tree structure can be harder than it looks. Keep your e
 
 That was a lot to take in. It only remains to highlight what you've already noticed: communicating with computers requires absolute accuracy and consistency.
 
-As an editor, you're already the kind of person who loves accuracy and consistency, so you and computers should get along well. They will still test your patience often!
+If you're already the kind of person who loves accuracy and consistency, you and computers should get along well. They will still test your patience often!
 
 ## Further reading
 
