@@ -46,12 +46,21 @@ This course includes condensed versions of *Starting out with HTML and CSS* and 
 
 ## Multi-format editing
 
-This is a one-day course for publishing and editorial staff, and curious authors, on how to edit content for multi-format output. Increasingly, we're producing content that will be read on paper and on devices large and small, fast and slow, online and offline. How do we make sure our content makes sense in these different contexts?
+This is a two-day course for publishing and editorial staff, and curious authors, on how to edit content for multi-format output. Increasingly, we're producing content that will be read on paper and on devices large and small, fast and slow, online and offline. How do we make sure our content makes sense in these different contexts?
 
-*   Duration: one day
-*   Participants: minimum three, maximum twenty
+*   Duration: two days
+*   Participants: minimum five, maximum twenty
 
 [Read the course notes](multiformat-editing/text/0-3-contents.html){:.button} 
+
+## Must-have tech skills for publishing pros
+
+A two-day introductory course for publishing pros who need to understand digital production; collaborate on digital projects; work for web clients and app developers; and brief technical colleagues with confidence.
+
+*   Duration: two days
+*   Participants: minimum five, maximum twenty
+
+[Read the course notes](must-have-tech-skills/text/0-3-contents.html){:.button} 
 
 ## Digital Decisions
 

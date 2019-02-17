@@ -1,7 +1,7 @@
 ---
 title: Settings
 categories: setup
-order: 1
+order: 10
 ---
 
 # Settings
@@ -16,8 +16,10 @@ You can apply a range of settings to how your books build in `_data/settings.yml
 
 These settings are not yet used. In future, we expect to use this setting to allow or disallow Electric Book Manager servers to access your book project.
 
+``` yaml
 electric-book-manager: enable
 electric-book-manager-key: ""
+```
 
 ## Variants
 
@@ -34,7 +36,7 @@ These settings control the content of your masthead in web and app outputs. You 
 
 For example:
 
-```
+``` yaml
 web:
   masthead:
     content: page-title
@@ -53,6 +55,12 @@ You define pagination for `web` and `app` output separately, so that they can di
 
 See [Pagination](../layout/web-pagination.html) for details.
 
+## Annotation
+
+You can turn on open annotation with [Hypothes.is](https://hypothes.is) by setting the `annotator` settings for the development and/or live versions of your website to `true` (i.e. annotation on) or `false` (i.e. annotation off).
+
+By default, the template turns annotation for development, and off for live. This is because annotation can be useful during development for discussing changes within a team.
+
 ## Epub settings
 
 You'll need to adjust the epub settings if you want to embed fonts or hide the epub's nav element. See [Epub output](../output/epub-output.html) for details.
@@ -61,7 +69,7 @@ You'll need to adjust the epub settings if you want to embed fonts or hide the e
 
 Among other things, this is where you enable a Google Play expansion file, if you need one for a large app. This is a rare need, so by default this is off (`false`).
 
-```
+``` yaml
 google-play-expansion-file-enabled: false
 google-play-public-api-key: ""
 ```

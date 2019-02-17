@@ -56,7 +56,7 @@ Enter a number and hit enter. "
 		echo "_configs/_config.myconfig.yml"
 		echo "If not, just hit return."
 		read config
-		# Ask whether we're processing MathJax, to know whether to send the HTML via PhantomJS
+		# Ask whether we're processing MathJax, to know whether to pre-process the HTML
 		printpdfmathjax="unknown"
 		until [ "$printpdfmathjax" = "" ] || [ "$printpdfmathjax" = "y" ]
 		do
@@ -65,9 +65,9 @@ Enter a number and hit enter. "
 		done
 		# Set the PDF's filename
 		if [ "$printpdfsubdirectory" = "" ]; then
-			printpdffilename="$bookfolder"
+			printpdffilename="$bookfolder-print"
 		else
-			printpdffilename="$bookfolder-$printpdfsubdirectory"
+			printpdffilename="$bookfolder-$printpdfsubdirectory-print"
 		fi
 		# We're going to let users run this over and over by pressing enter
 		repeat=""
@@ -82,15 +82,16 @@ Enter a number and hit enter. "
 			else
 				bundle exec jekyll build --config="_config.yml,_configs/_config.print-pdf.yml,_configs/_config.mathjax-enabled.yml,$config"
 			fi
-			# If using, MathJax, let PhantomJS render the HTML
+			# If using, MathJax, preprocess the HTML
 			if [ "$printpdfmathjax" = "" ]; then
-				echo "No MathJax, skipping PhantomJS."
+				echo "No MathJax required."
 			else
-				echo "Rendering MathJax in HTML with PhantomJS. If you get an error, check that PhantomJS is installed."
-				# We have to go to the folder for Phantom to work
-				cd _site/assets/js
-				phantomjs render-mathjax.js
-				cd "$location"
+				echo "Processing MathJax in HTML."
+				if [ "$printpdfsubdirectory" = "" ]; then
+					gulp mathjax --book $bookfolder
+				else
+					gulp mathjax --book $bookfolder --language $printpdfsubdirectory
+				fi
 			fi
 			# Navigate into the book's text folder in _site
 			if [ "$printpdfsubdirectory" = "" ]; then
@@ -145,7 +146,7 @@ Enter a number and hit enter. "
 		echo "_configs/_config.myconfig.yml"
 		echo "If not, just hit return."
 		read config
-		# Ask whether we're processing MathJax, to know whether to send the HTML via PhantomJS
+		# Ask whether we're processing MathJax, to know whether to process the HTML
         screenpdfmathjax="unknown"
 		until [ "$screenpdfmathjax" = "" ] || [ "$screenpdfmathjax" = "y" ]
 		do
@@ -154,9 +155,9 @@ Enter a number and hit enter. "
 		done
 		# Set the PDF's filename
 		if [ "$screenpdfsubdirectory" = "" ]; then
-			screenpdffilename="$bookfolder"
+			screenpdffilename="$bookfolder-screen"
 		else
-			screenpdffilename="$bookfolder-$screenpdfsubdirectory"
+			screenpdffilename="$bookfolder-$screenpdfsubdirectory-screen"
 		fi
 		# We're going to let users run this over and over by pressing enter
 		repeat=""
@@ -171,15 +172,16 @@ Enter a number and hit enter. "
 			else
 				bundle exec jekyll build --config="_config.yml,_configs/_config.screen-pdf.yml,_configs/_config.mathjax-enabled.yml,$config"
 			fi
-			# If using, MathJax, let PhantomJS render the HTML
+			# If using MathJax, process the HTML
 			if [ "$screenpdfmathjax" = "" ]; then
-				echo "No MathJax, skipping PhantomJS."
+				echo "No MathJax required."
 			else
-				echo "Rendering MathJax in HTML with PhantomJS. If you get an error, check that PhantomJS is installed."
-				# We have to go to the folder for Phantom to work
-				cd _site/assets/js
-				phantomjs render-mathjax.js
-				cd "$location"
+				echo "Processing MathJax in HTML."
+				if [ "$printpdfsubdirectory" = "" ]; then
+					gulp mathjax --book $bookfolder
+				else
+					gulp mathjax --book $bookfolder --language $screenpdfsubdirectory
+				fi
 			fi
 			# Navigate into the book's text folder in _site
 			if [ "$screenpdfsubdirectory" = "" ]; then
@@ -340,13 +342,17 @@ You may need to reload the web page once this server is running."
 				echo "Copying files to epub folder..."
 				mkdir "$location"/_site/epub/text && cd "$location"/_site/$bookfolder/text && cp `cat file-list` "$location"/_site/epub/text/
 				cd "$location"
-				if [ -d "$location"/_site/$bookfolder/images ]; then
+				if [ -d "$location"/_site/$bookfolder/images/epub ]; then
 					echo "Copying images..."
-					mkdir "$location"/_site/epub/images && cp -a "$location"/_site/$bookfolder/images/. "$location"/_site/epub/images/
+					mkdir -p "$location"/_site/epub/images/epub && cp -a "$location"/_site/$bookfolder/images/epub/. "$location"/_site/epub/images/epub/
+				fi
+				if [ -d "$location"/_site/items/images/epub ]; then
+					echo "Found images in _items. Copying to epub..."
+					mkdir -p "$location"/_site/epub/items/images/epub && cp -a "$location"/_site/items/images/epub/. "$location"/_site/epub/items/images/epub/
 				fi
 				if [ "$epubfonts" = "y" ]; then
 					echo "Copying fonts..."
-					mkdir "$location"/_site/epub/fonts && cp -a "$location"/_site/$bookfolder/fonts/. "$location"/_site/epub/fonts/
+					mkdir -p "$location"/_site/epub/fonts && cp -a "$location"/_site/$bookfolder/fonts/. "$location"/_site/epub/fonts/
 				fi
 				if [ -d "$location"/_site/$bookfolder/styles ]; then
 					echo "Copying styles..."
@@ -373,24 +379,34 @@ You may need to reload the web page once this server is running."
 				# Copy translation images if they exist, otherwise
 				# copy the parent-language images.
 				if [ -e "$location"/_site/$bookfolder/$epubsubdirectory/images/. ]; then
-					mkdir "$location"/_site/epub/$epubsubdirectory/images && cd "$location"/_site/$bookfolder/$epubsubdirectory/images && cp -a "$location"/_site/$bookfolder/$epubsubdirectory/images/. "$location"/_site/epub/$epubsubdirectory/images/
+					mkdir -p "$location"/_site/epub/$epubsubdirectory/images/epub && cp -a "$location"/_site/$bookfolder/$epubsubdirectory/images/epub/. "$location"/_site/epub/$epubsubdirectory/images/epub/
 				else
-					mkdir "$location"/_site/epub/images && cp -a "$location"/_site/$bookfolder/images/. "$location"/_site/epub/images/
+					mkdir -p "$location"/_site/epub/images/epub && cp -a "$location"/_site/$bookfolder/images/epub/. "$location"/_site/epub/images/epub/
 				fi
-				# Copy translation styles if they exist, otherwise
+				if [ -d "$location"/_site/items/$epubsubdirectory/images/epub ]; then
+					echo "Found translated images in _items. Copying them to epub..."
+					mkdir -p "$location"/_site/epub/items/$epubsubdirectory/images/epub && cp -a "$location"/_site/items/$epubsubdirectory/images/epub/. "$location"/_site/epub/items/$epubsubdirectory/images/epub/
+				else
+					if [ -d "$location"/_site/items/images/epub ]; then
+						echo "Found images in _items. Copying them to epub..."
+						mkdir -p "$location"/_site/epub/items/images/epub && cp -a "$location"/_site/items/images/epub/. "$location"/_site/epub/items/images/epub/
+					fi
+				fi
+				# Copy translation styles if they exist, and
 				# copy the parent-language styles.
 				if [ -e "$location"/_site/$bookfolder/$epubsubdirectory/styles/. ]; then
-					mkdir "$location"/_site/epub/$epubsubdirectory/styles && cd "$location"/_site/$bookfolder/$epubsubdirectory/styles && cp -a "$location"/_site/$bookfolder/$epubsubdirectory/styles/. "$location"/_site/epub/$epubsubdirectory/styles/
+					mkdir -p "$location"/_site/epub/$epubsubdirectory/styles && cd "$location"/_site/$bookfolder/$epubsubdirectory/styles && cp -a "$location"/_site/$bookfolder/$epubsubdirectory/styles/. "$location"/_site/epub/$epubsubdirectory/styles/
+					mkdir -p "$location"/_site/epub/styles && cp -a "$location"/_site/$bookfolder/styles/. "$location"/_site/epub/styles/
 				else
-					mkdir "$location"/_site/epub/styles && cp -a "$location"/_site/$bookfolder/styles/. "$location"/_site/epub/styles/
+					mkdir -p "$location"/_site/epub/styles && cp -a "$location"/_site/$bookfolder/styles/. "$location"/_site/epub/styles/
 				fi
 				# Copy translation fonts if they exist, otherwise
 				# copy the parent-language fonts.
 				if [ "$epubfonts" = "y" ]; then
 					if [ -e "$location"/_site/$bookfolder/$epubsubdirectory/fonts/. ]; then
-						mkdir "$location"/_site/epub/$epubsubdirectory/fonts && cd "$location"/_site/$bookfolder/$epubsubdirectory/fonts && cp -a "$location"/_site/$bookfolder/$epubsubdirectory/fonts/. "$location"/_site/epub/$epubsubdirectory/fonts/
+						mkdir -p "$location"/_site/epub/$epubsubdirectory/fonts && cd "$location"/_site/$bookfolder/$epubsubdirectory/fonts && cp -a "$location"/_site/$bookfolder/$epubsubdirectory/fonts/. "$location"/_site/epub/$epubsubdirectory/fonts/
 					else
-						mkdir "$location"/_site/epub/fonts && cp -a "$location"/_site/$bookfolder/fonts/. "$location"/_site/epub/fonts/
+						mkdir -p "$location"/_site/epub/fonts && cp -a "$location"/_site/$bookfolder/fonts/. "$location"/_site/epub/fonts/
 					fi
 				fi
 				if [ -e "$location"/_site/$bookfolder/$epubsubdirectory/package.opf ]; then
@@ -452,12 +468,22 @@ You may need to reload the web page once this server is running."
 					if [ -d images ]; then
 						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "images"
 					fi
+					if [ -e $location/_site/items/images/epub/. ]; then
+						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "items/images"
+					fi
 				else
 					if [ -d "$epubsubdirectory/images" ]; then
 						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "$epubsubdirectory/images"
 					else
 						if [ -d images ]; then
 							zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "images"
+						fi
+					fi
+					if [ -e "$location/_site/items/$epubsubdirectory/images/epub/." ]; then
+						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "items/$epubsubdirectory/images"
+					else
+						if [ -e "$location/_site/items/images/epub/." ]; then
+							zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "items/images"
 						fi
 					fi
 			fi
@@ -477,20 +503,17 @@ You may need to reload the web page once this server is running."
 						fi
 					fi
 			fi
-			# Add either the parent styles folder or the translation's styles folder.
-			# If the translation has a styles folder, use it. Otherwise, use the parent's
-			# styles for the translation.
+			# Add the parent styles folder and the translation's styles folder if it exists.
 			if [ "$epubsubdirectory" = "" ]; then
 					if [ -d styles ]; then
 						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "styles"
 					fi
 				else
+					if [ -d styles ]; then
+						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "styles"
+					fi
 					if [ -d "$epubsubdirectory/styles" ]; then
 						zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "$epubsubdirectory/styles"
-					else
-						if [ -d styles ]; then
-							zip --recurse-paths --quiet "$location/_output/$epubfilename.zip" "styles"
-						fi
 					fi
 			fi
 			# If MathJax is enabled, copy the MathJax folder.
@@ -522,15 +545,16 @@ You may need to reload the web page once this server is running."
 			fi
 			echo "Epub created!"
 			# Validation
-			echo "To run validation now, enter the path to the EpubCheck folder on your machine. E.g. /usr/local/bin/epubcheck-4.0.2"
-			echo "Or hit enter to skip EpubCheck validation."
-			echo "(You can get EpubCheck from https://github.com/IDPF/epubcheck/releases)"
+			echo "To run validation, enter the path to the EpubCheck folder on your machine."
+			echo "Hit enter for the default: /usr/local/bin/epubcheck-4.0.2"
+			echo "(You can get EpubCheck from https://github.com/IDPF/epubcheck/releases"
+			echo "Or go to http://validator.idpf.org to validate online.)"
 			read pathtoepubcheck
 			if [ "$pathtoepubcheck" = "" ]; then
-				echo "Okay, skipping EpubCheck. Try http://validator.idpf.org to validate separately."
-			else
-				java -jar "$pathtoepubcheck"/epubcheck.jar "$epubfilename".epub
+				echo "Okay, using default EpubCheck location. "
+				pathtoepubcheck="/usr/local/bin/epubcheck-4.0.2"
 			fi
+			java -jar "$pathtoepubcheck"/epubcheck.jar "$epubfilename".epub
 			# Open file browser to see epub
 			# (for OSX, this is open, not xdg-open)
 			xdg-open .
@@ -709,6 +733,9 @@ You may need to reload the web page once this server is running."
 			bookfolder="book"
 		fi
 		echo "Okay, let's make Word files for $bookfolder..."
+		# Ask if we're outputting the files from a subdirectory (e.g. a translation)
+		echo "If you're outputting files in a subdirectory (e.g. a translation), type its name. Otherwise, hit enter. "
+		read wordsubdirectory
 		# Ask user which output format to work from
 		echo "Which format are we converting from? Enter a number or hit enter for the default 'print-pdf'. "
 		echo "1. Print PDF (default)"
@@ -757,10 +784,16 @@ You may need to reload the web page once this server is running."
 		do
 			# let the user know we're on it!
 			echo "Generating HTML..."
-			# ...and run Jekyll to build new HTML
-			bundle exec jekyll build --config="_config.yml,_configs/_config.$fromformat.yml,$config"
-			# Navigate into the book's folder in _site output
-			cd _site/$bookfolder/text
+			# ...and run Jekyll to build new HTML.
+			# We turn off the math engine so that we get raw TeX output,
+			# and because Pandoc does not support SVG output anyway.
+			bundle exec jekyll build --config="_config.yml,_configs/_config.$fromformat.yml,_configs/_config.math-disabled.yml,$config"
+			# Navigate into the book's text folder in _site
+			if [ "$wordsubdirectory" = "" ]; then
+				cd _site/$bookfolder/text
+			else
+				cd _site/$bookfolder/$wordsubdirectory/text
+			fi
 			# Update user
 			echo "Converting $bookfolder HTML to Word..."
 			# Before looping through file-list, remove blank lines.
@@ -860,7 +893,7 @@ You may need to reload the web page once this server is running."
 
 		# Check if refreshing web or app index
 		echo "To refresh the website search index, press enter."
-		echo "To refresh to app search index, type a and press enter."
+		echo "To refresh the app search index, type a and press enter."
 		searchIndexToRefresh=""
 		read searchIndexToRefresh
 

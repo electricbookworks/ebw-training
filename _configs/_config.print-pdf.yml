@@ -34,6 +34,14 @@ exclude:
   - /*/images/web
   - /*/images/epub
   - /*/images/app
+  # Not required for print
+  - downloads
+  # Courses
+  # - designing-for-digital
+  # - indesign-for-epub
+  # - making-ebooks
+  # - multiformat-editing
+  # - must-have-tech-skills
 # Populate the keep_files list for temporary faster builds
 # or to keep previously generated files for other formats.
 keep_files: []

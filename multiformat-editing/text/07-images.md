@@ -8,13 +8,13 @@ title: Images
 * TOC here
 {:toc}
 
-While as an editor you might not be creating images, you will probably be briefing authors and designers and checking the quality and appropriateness of images. Here are some guidelines on what to ask for and look for
+While as an editor you might not be creating images, you will probably be briefing authors and designers and checking the quality and appropriateness of images. Here are some guidelines on what to ask for and look for.
 
 ## Bitmap and vector images
 
 There are two kinds of image files: bitmap (or raster) images and vector images.
 
-- **Bitmap image files** are a set of pixels: a *map* of *bits*. Imagine a big grid where each square (each pixel) has a colour. The image file stores the colour of every pixel. If you enlarge bitmap images a lot, they pixelate: that is, you can start to see the individual pixels, and the image looks blocky abd blurry. Bitmap images are great for photographs or illustrations that contain many colours and shades.
+- **Bitmap image files** are a set of pixels: a *map* of *bits*. Imagine a big grid where each square (each pixel) has a colour. The image file stores the colour of every pixel. If you enlarge bitmap images a lot, they pixelate: that is, you can start to see the individual pixels, and the image looks blocky and blurry. Bitmap images are great for photographs or illustrations that contain many colours and shades.
 
     Bitmap file formats include JPEG, PNG, GIF, and TIFF. The safest bet for multi-format publishing is JPEG.
 

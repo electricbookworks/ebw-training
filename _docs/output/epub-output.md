@@ -31,7 +31,7 @@ Your epub will build correctly only if you have provided sufficient, accurate in
 5. Since EPUB3 requires a `nav` element, it is mandatory to include {% raw %}`{% include toc %}`{% endraw %} somewhere in your book, even if it's a file, listed at the end of your `epub` `files` list, that contains only:
 
 	{% raw %}
-	```
+	``` md
 	---
 	---
 
@@ -64,6 +64,18 @@ If you want the output script to run EpubCheck (recommended), [download it from 
 On Windows, extract the zip file and save the contents somewhere easy to find, like `C:\EpubCheck\`. Then [add that folder to your PATH](http://windowsitpro.com/systems-management/how-can-i-add-new-folder-my-system-path).
 
 On Mac or Linux, extract the zip file and save the contents somewhere sensible like `/usr/local/bin`. The output script will ask for the path to the EpubCheck `.jar` file.
+
+## Troubleshooting
+
+Epubs are notoriously hard to make, largely because validation is so strict. Here are some tips that may be useful when troubleshooting.
+
+1. If you get errors from EpubCheck, the error will usually report the file name, line and column number of the content with the error. For instance, `(1,4587)` means that the error is on line 1, column (or character) 4587.
+
+	Open the relevant file with the error in an editor that shows you the line and column/character position of your cursor. Then move your cursor to the relevant line and column number. When the error applies to a specific element, the column position is usually at the end of the offending element.
+
+2. If you've used named HTML entities like `&nbsp;` in HTML snippets, kramdown may not have processed those as markdown, and therefore will not have converted them to unicode characters. Named entities are not valid in epub 3, and you'll need to replace them with their numeric equivalents, such as `&#160;` instead of `&nbsp;`.
+3. If you get errors about your navigation or TOC (`nav`), see the guidelines on [Metadata and settings](#metadata-and-settings) above. The `toc.ncx` file is particularly sensitive.
+4. Make sure your book has a `package.opf` file in its book directory. You can copy this from the Electric Book template. (It uses the `epub-package` include to generate the epub's metadata and manifest.)
 
 > ## How epubs are generated
 > 

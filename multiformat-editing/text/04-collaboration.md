@@ -74,7 +74,7 @@ In the version control that software developers use, each team member:
 
 Each time you take a snapshot (usually called a 'commit'), you describe what you just changed and your snapshot gets a unique ID.
 
-That description and ID are saved in the project's history forever, and anyone can go back, find them, and revisit at the files at that point.
+That description and ID are saved in the project's history forever, and anyone can go back, find them, and revisit the files at that point.
 
 In addition, each team member is working on *their own copy* of the original. When they check their work in, it is *merged* into the original document. This way, no history is lost, and one person can be given the task of vetting all changes before they're merged into the original.
 

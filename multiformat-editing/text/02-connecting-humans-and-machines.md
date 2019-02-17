@@ -168,7 +168,7 @@ I can also make *any element* (not just paragraphs) with a `greeting` class uppe
 }
 ```
 
-## Character encoding and unicode
+## Character encoding and Unicode
 
 Character encoding is about the most technical thing we're going to cover. 
 
