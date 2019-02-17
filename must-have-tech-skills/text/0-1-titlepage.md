@@ -5,7 +5,7 @@ style: title-page
 
 {% include metadata %}
 
-{{ title }}
+Must-have tech&nbsp;skills for publishing&nbsp;pros
 {:.title-page-title}
 
 {{ subtitle }}

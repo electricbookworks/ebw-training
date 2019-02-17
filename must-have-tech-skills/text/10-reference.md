@@ -44,7 +44,7 @@ Security awareness
     - ecosystem security (such as chip vulnerabilities and cyber warfare).
 
 Shortcut keys 
-: Using your keyboard over your mouse wherever possible is fundamental to working efficiently on digital projects. It is important to constantly learn and refine your personal-efficiency toolkit, most of which involves learning and creating shortcut keys.
+: Using your keyboard over your mouse wherever possible is fundamental to working efficiently on digital projects. It is important to constantly learn and refine your personal-efficiency toolkit, much of which involves learning and creating shortcut keys.
 
 
 ## Software
@@ -56,13 +56,13 @@ Git
 : The most common software for version control on digital projects. Git lets each contributor work on their own copies of a project repository, and to merge their work into a single, common source of truth. Using Git involves taking snapshots of your project called commits, and pushing those commits to a shared repository online.
 
 Text editors
-: Also called code editors, text editors are programs that make it faster and easier to write in technical syntaxes, such as markdown, HTML, and Javascript. They are highly customisable. Over time, you will bond with your text editor, customising it to suit your needs exactly, and making you highly productive. Popular free text editors include VS Code, Sublime Text, Atom and Brackets.
+: Also called code editors, text editors are programs that make it faster and easier to write in technical syntaxes, such as markdown, HTML, and Javascript. They are highly customisable. Over time, you will bond with your text editor, customising it to suit your needs exactly, and making you highly productive. Popular free text editors include [VS Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/) and [Brackets](http://brackets.io/).
 
 
 ## Infrastructure
 
 Web servers 
-: Websites are made of files that are stored on a web server. Those files might be finished HTML, CSS and Javascript files, or the server might run software that assembles those files for you on the fly. Your browser connects to the web server via your ISP and a network of domain name servers (DNS). Each web server has a unique IP address ('Internet protocol address'). The top domain-name servers know the IP address for every domain name. So when your browser wants 'electricbookworks.com', they connect it to IP address '41.203.18.37'.
+: Websites are made of files that are stored on a web server. Those files might be finished HTML, CSS and Javascript files, or the server might run software that assembles those files for you on the fly. Your browser connects to the web server via your ISP and a network of domain name servers (DNS). Each web server has a unique IP address ('Internet protocol address'). The top domain-name servers know the IP address for every domain name. So when your browser wants 'electricbookworks.com', they connect it to the server that has IP address '41.203.18.37'.
 
 APIs
 : An API ('application progamming interface') is a set of instructions for getting information from a server. It's like a restaurant menu: a list of things you can order, and the names to order them by. Developers write scripts that can get data from others' servers using their API.
@@ -89,7 +89,7 @@ Smashing Magazine
 ## Services
 
 GitHub
-: GitHub is a website that vast numbers of people and organisations store and share code and plain-text content. Everything is stored and managed using Git, the version-control software, so repositories on GitHub are often the original, source-of-truth repositories for projects. GitHub repositories can be public, so that anyone can see their contents, or private, so that only your team members know they exist. Alternatives to GitHub include [GitLab](https://gitlab.com) and [Bitbucket](https://bitbucket.org/), and self-hosting with [Gitea](https://gitea.io/). It's possible to use all of them for free, and paying gets you extra functionality.
+: [GitHub](https://github.com) is a website that vast numbers of people and organisations use to store and share code and plain-text content. Everything is stored and managed using Git, the version-control software, so repositories on GitHub are often the original, source-of-truth repositories for projects. GitHub repositories can be public, so that anyone can see their contents, or private, so that only your team members know they exist. Alternatives to GitHub include [GitLab](https://gitlab.com) and [Bitbucket](https://bitbucket.org/), and self-hosting with [Gitea](https://gitea.io/). It's possible to use all of them for free, and paying gets you extra functionality.
 
 Google Docs, Sheets, Slides
 : Google offers the most popular service for creating documents, spreadsheets and slide presentations online. Collaboration features, version history, and APIs make these services far more useful than Word, Excel and Powerpoint. If you prefer not to use Google (which collects and may abuse vast amounts of data about its users), there are good alternatives, including [Microsoft Office Online](https://products.office.com/en-US/office-online/), [Zoho](https://www.zoho.com/), [OnlyOffice](https://www.onlyoffice.com/), [Authorea](https://www.authorea.com/), [Bit.ai](https://bit.ai/), [Dropbox Paper](https://www.dropbox.com/paper), [Etherpad](http://etherpad.org/), and [Nuclino](https://www.nuclino.com/).

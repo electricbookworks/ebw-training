@@ -12,7 +12,7 @@ To ensure good collaboration, you need two main things: good team communication,
 
 We've all sent someone a file named `…final.doc`, only to send them another one hours later called `…final v2.doc`, or `…final FINAL.doc`. Often we'll include a cover note in our email saying `I changed the numbers; please use this version!`.
 
-> Tip: The best way to name files is to use the date in `YYYMMDD` format. For instance, `proposal-20171201.doc`. This way, if you have multiple versions in a folder, they will be listed alphabetically. If you're creating several versions in one day, add the hour and minute as `HHMM`: `proposal-20171201-1530`.
+> Tip: The best way to name files is to use the date in `YYYMMDD` format, e.g. `proposal-20171201.doc`. If you have multiple versions in a folder, they will be listed alphabetically. If you're creating several versions in one day, add the hour and minute as `HHMM`: `proposal-20171201-1530`.
 {:.sidenote}
 
 That is a common, crude attempt at version control. There are two things we're trying to do here:

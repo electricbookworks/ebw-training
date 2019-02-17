@@ -36,7 +36,7 @@ Spreadsheets are also great for managing data. You can manage data in a Google S
 ```csv
 Name,Age,Place of birth
 Arthur,43,"Durban, South Africa"
-Aidan,6,"Cape Touwn, South Africa"
+Aidan,6,"Cape Town, South Africa"
 ```
 
 If you store content in a Google Sheet, it's also possible to fetch data from it automatically over the Internet, via the Google Sheets API. This makes is possible to populate web and ebook pages in real time with up-to-the-minute data. Creating a script that fetches data automatically is a fairly simple job for a developer.

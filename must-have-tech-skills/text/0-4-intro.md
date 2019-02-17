@@ -40,38 +40,32 @@ We'll get back to the dev tools later. For now, let's quickly go over what we're
 
 ## What we'll cover
 
-1. [**Context**](01-context.html)
-
+1. [**Context**](01-context.html)\\
     The first section sets out some big, important features of the multi-format world that we need to know about. We'll talk about personas, user experiences, and accessibility.
 
-2. [**Connecting humans and machines**](02-connecting-humans-and-machines.html)
-
+2. [**Connecting humans and machines**](02-connecting-humans-and-machines.html)\\
     As production and distribution becomes automated, we need to learn how to talk to machines. Here we'll talk about preparing documents that computers can process.
 
-3. [**Choosing tools**](03-tools.html)
-
+3. [**Choosing tools**](03-tools.html)\\
     Each of us need to refresh our toolboxes. We can throw out some old tools (like MS Word), and try out new ones till we find what works for us. There's no Swiss Army knife for multi-format editing. So what should we learn and look for?
 
-4. [**Version control**](04-version-control.html)
-
+4. [**Version control**](04-version-control.html)\\
     When we plug our work into the Internet, our new tools give us easier collaboration with proper version-control. We'll talk about different approaches to version control, and teach you some powerful new tricks.
 
-5. [**Building blocks of books**](05-building-blocks.html)
-
+5. [**Building blocks of books**](05-building-blocks.html)\\
     Books have long been made of well-established building blocks, like pages, chapters, frontmatter and endmatter. We'll quickly touch on the building blocks of multi-format books: what's the same, and what's changing?
 
-6. [**Text**](06-text.html)
-
+6. [**Text**](06-text.html)\\
     You might want to skip straight here: a list of common multi-format challenges and tricks for dealing with them, including links, cross-references, capitalisation, indexing and mathematics.
 
-7. [**Images**](07-images.html)
-
+7. [**Images**](07-images.html)\\
     In the past, we only had to get a 300dpi image to the setter. Things are a bit more complicated now. But fun! We'll cover a short list of image must-haves.
 
-8. [**Interactive elements**](08-interactive-elements.html)
-
+8. [**Interactive elements**](08-interactive-elements.html)\\
     'Interactivity' is publishing's favourite buzzword these days. We'll touch on some of the main ways that users might interact with books, and how those features might work in print and on screen.
 
-9. [**Data as content**](09-data-as-content.html)
-
+9. [**Data as content**](09-data-as-content.html)\\
     Books often contain little databases, like glossaries, bibliographies, and lists of abbreviations. Some books are big databases, like dictionaries and catalogues. We'll talk briefly about what this means for preparing and structuring manuscripts.
+
+10. [**Quick reference**](10-reference.html)\\
+    At the end of these notes there's a short list of foundational technical concepts that you need to know. We'll have raised them all by the time we've got through the course. So this list is for you to refer to later, if you need a quick reminder about a key concept.
