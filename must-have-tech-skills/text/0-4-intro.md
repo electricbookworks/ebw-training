@@ -52,9 +52,9 @@ We'll get back to the dev tools later. For now, let's quickly go over what we're
 
     Each of us need to refresh our toolboxes. We can throw out some old tools (like MS Word), and try out new ones till we find what works for us. There's no Swiss Army knife for multi-format editing. So what should we learn and look for?
 
-4. [**Collaboration**](04-collaboration.html)
+4. [**Version control**](04-version-control.html)
 
-    When we plug our work into the Internet, our new tools give us easier collaboration and proper version-control. We'll talk about how your editorial team might change, and about different approaches to version control.
+    When we plug our work into the Internet, our new tools give us easier collaboration with proper version-control. We'll talk about different approaches to version control, and teach you some powerful new tricks.
 
 5. [**Building blocks of books**](05-building-blocks.html)
 
