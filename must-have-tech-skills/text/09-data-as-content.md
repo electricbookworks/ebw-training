@@ -8,7 +8,7 @@ title: Data as content
 * TOC here
 {:toc}
 
-Once you start making multi-format books, and using web technologies to make them, you can also start managing some of your content less like a manuscript and more like a database. Good examples are glossaries and bibliographies in books and books that are directories and dictionaries.
+Once you start using web technologies to make content, you can also start managing some of that content less like a manuscript and more like a database. Good examples are glossaries, bibliographies, directories and dictionaries.
 
 For some books, you may also be managing search indexes.
 
@@ -18,9 +18,9 @@ In traditional, print-centric workflows, editors and proofreaders spend a lot of
 
 Glossaries and bibliographies are small databases: regular, repeatable elements of information that must be presented consistently, and often repeated in various places in a book.
 
-When we treat these lists like running text in manuscripts, we're relying on editors and proofreaders to do menial, painstaking work better suited to computers. That work can be made far easier by working with them as data.
+When we treat these lists like running text in manuscripts, we're relying on editors and proofreaders to do menial, painstaking work better suited to computers. That work can be made far easier by working with lists as data.
 
-Depending on your production software, you may be able to store glossaries and bibliographies in a spreadsheet or a list-like format like YAML. For example, this is a snippet of a glossary stored as a YAML list from a textbook:
+Depending on your production software, you may be able to store glossaries and bibliographies in a spreadsheet or CSV file, or in a list-like format like YAML. For example, this is a snippet of a glossary stored as a YAML list from a textbook:
 
 ``` yaml
 - term: "abatement"
@@ -31,17 +31,25 @@ Depending on your production software, you may be able to store glossaries and b
   cross-reference: "See also: abatement."
 ```
 
+Spreadsheets are also great for managing data. You can manage data in a Google Sheet, for instance, and then download it in CSV format for your production software to process. CSV stands for 'comma-separated values'. A CSV file is a plain-text version of a spreadsheet, where each spreadsheet row is on a new line. Each cell on a line is separated by a comma. If a cell contains a comma, its contents are wrapped in quotation marks. For example:
+
+```csv
+Name,Age,Place of birth
+Arthur,43,"Durban, South Africa"
+Aidan,6,"Cape Touwn, South Africa"
+```
+
+If you store content in a Google Sheet, it's also possible to fetch data from it automatically over the Internet, via the Google Sheets API. This makes is possible to populate web and ebook pages in real time with up-to-the-minute data. Creating a script that fetches data automatically is a fairly simple job for a developer.
+
 ## Directories and dictionaries
 
-Sometimes, entire books are databases. Directories and dictionaries are good examples. Established dictionary publishers already use databases to manage their content.
+Sometimes, entire publications are databases. Directories and dictionaries are good examples. Established dictionary publishers already use databases to manage their content.
 
 By storing entire books as databases, it becomes possible to create variations of the data that can become entirely new books. For instance, the same database that powers a school dictionary might be used to create a small book of science concepts for children.
 
 And digital versions of the book can become more interactive. For example, a dictionary of baby names could easily become a baby-names app; or extended into an app that tells you the meanings of your phone contacts' names.
 
-## Manuscripts as spreadsheets
-
-Most good book-production software provides ways to import data and lay it out largely automatically onto the pages of a book. Adobe InDesign can import XML and lay it out according to predefined style sheets. And our Electric Book template can import CSV or YAML data and lay it out on book pages and web pages automatically.
+Most good book-production software provides ways to import data and lay it out automatically in pages. Adobe InDesign can import XML and lay it out according to predefined style sheets. And our Electric Book template can import CSV or YAML data and lay it out on book pages and web pages automatically.
 
 To make this possible, look for opportunities to store book content in spreadsheets rather than text documents.
 
