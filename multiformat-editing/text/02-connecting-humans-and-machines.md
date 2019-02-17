@@ -94,7 +94,7 @@ HTML includes about a hundred standard elements. In publishing, these are the mo
 *   `<tr>` for a table row
 *   `<td>` for a table cell in a row (`td` stands for table data).
 
-When a web browser seels these tags, it *renders* the content inside them. That is, it processes and displays the content according to a stylesheet.
+When a web browser sees these tags, it *renders* the content inside them. That is, it processes and displays the content according to a stylesheet.
 
 ### Stylesheets
 
@@ -187,7 +187,7 @@ When we're working in simple English, this means almost nothing. Just keep going
 
 But as soon as you start working with special characters, it's critical that you use Unicode characters.
 
-We'll cover this is more detail later in the [Text section](06-text.html#special-characters-fonts-Unicode-glyphs-and-markup){:.show-page-number}.
+We'll cover this in more detail later in the [Text section](06-text.html#special-characters-fonts-unicode-glyphs-and-markup){:.show-page-number}.
 
 ## Naming design features
 
