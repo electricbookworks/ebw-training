@@ -52,8 +52,8 @@ We'll get back to the dev tools later. For now, let's quickly go over what we're
 4. [**Version control**](04-version-control.html)\\
     When we plug our work into the Internet, our new tools give us easier collaboration with proper version-control. We'll talk about different approaches to version control, and teach you some powerful new tricks.
 
-5. [**Building blocks of books**](05-building-blocks.html)\\
-    Books have long been made of well-established building blocks, like pages, chapters, frontmatter and endmatter. We'll quickly touch on the building blocks of multi-format books: what's the same, and what's changing?
+5. [**The shape of a publication**](05-shape.html)\\
+    We already know so much about how people read in print, and we're only beginning to understand how devices and software influence the way our readers experience our work on screens.
 
 6. [**Text**](06-text.html)\\
     You might want to skip straight here: a list of common multi-format challenges and tricks for dealing with them, including links, cross-references, capitalisation, indexing and mathematics.
