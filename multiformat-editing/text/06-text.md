@@ -10,39 +10,39 @@ title: Text
 
 In this section we'll get to the nitty gritty of dealing with text for multi-format publications. We'll cover practical tips for dealing with special characters, links, cross-references, capitalisation, indexing, and mathematics.
 
-## Special characters: fonts, unicode glyphs and markup
+## Special characters: fonts, Unicode glyphs and markup
 
-In the [Connecting humans and machines section](02-connecting-humans-and-machines.html#character-encoding-and-unicode){:.show-page-number} we explained how character encoding works.
+In the [Connecting humans and machines section](02-connecting-humans-and-machines.html#character-encoding-and-Unicode){:.show-page-number} we explained how character encoding works.
 
 What does that mean for editors?
 
 When we're working in simple English, this means almost nothing. Just keep going and computers will do the rest.
 
-But as soon as you start working with special characters, it's critical that you use unicode characters.
+But as soon as you start working with special characters, it's critical that you use Unicode characters.
 
 Let's say you want to insert a degrees symbol, '°'. That symbol is not on your keyboard, and you're not sure how to insert it. Authors will often insert an o (the lowercase letter 'oh'), and make it superscript using formatting tools. That is a Very Bad Idea!
 
 Let's say you send the file to someone else, who copies and pastes your `30°C` into a different software program. Their program handles superscript differently, or doesn't support it at all. Now they have an o where you intended a degree symbol: `30oC`!
 
-This is just one common example. As you work, you'll find many cases where authors misuse incorrect characters, rather than the correct unicode character. It happens most often in languages other than English, where it's hard to find specialised unicode characters, and ones with unusual diacritics. In South Africa, this is often a challenge in Tshivenda translations.
+This is just one common example. As you work, you'll find many cases where authors misuse incorrect characters, rather than the correct Unicode character. It happens most often in languages other than English, where it's hard to find specialised Unicode characters, and ones with unusual diacritics. In South Africa, this is often a challenge in Tshivenda translations.
 
-**So how do you find the correct character?** There are a host of clever software programs for this that you can use or install, but often the simplest technique is to search online for, say, 'unicode degrees symbol'. That will show you several official unicode pages you can copy and paste from.
+**So how do you find the correct character?** There are a host of clever software programs for this that you can use or install, but often the simplest technique is to search online for, say, 'Unicode degrees symbol'. That will show you several official Unicode pages you can copy and paste from.
 
 ### Helpful and unhelpful fonts
 
 Fonts can cause extra confusion.
 
-Some fonts *look* like they provide glyphs for special characters, but their characters do not map correctly to unicode code points. So a character that looks like, say, a '[letter f with hook](https://en.wikipedia.org/wiki/%C6%91)' in that font might actually be encoded as, say, the number 4. If you change the font, you end up with incorrect text.
+Some fonts *look* like they provide glyphs for special characters, but their characters do not map correctly to Unicode code points. So a character that looks like, say, a '[letter f with hook](https://en.wikipedia.org/wiki/%C6%91)' in that font might actually be encoded as, say, the number 4. If you change the font, you end up with incorrect text.
 
-Many fonts do not include glyphs for many less common unicode characters. If the font you are using in your editor does not show a character you have inserted, you might see a little box instead, as a [substitute character](https://en.wikipedia.org/wiki/Substitute_character) (sometimes called 'tofu'). You may need to set the font you are editing in to one that supports a bigger glyph set. A good option is [Noto](https://www.google.com/get/noto/){:.show-url}. 
+Many fonts do not include glyphs for many less-common Unicode characters. If the font you are using in your editor does not show a character you have inserted, you might see a little box instead, as a [substitute character](https://en.wikipedia.org/wiki/Substitute_character) (sometimes called 'tofu'). You may need to change the font you are using to one that supports a bigger glyph set. A good option is [Noto](https://www.google.com/get/noto/){:.show-url}. 
 
 ## Non-breaking spaces
 
 If your text will reflow every time it appears on someone's screen, you can't control where lines will break. A line may break, for instance, in the space in `100 mm`, or the number `100 000`, or before an `…` ellipsis. To avoid this, use a non-breaking space.
 
-A non-breaking space is a unicode character.
+A non-breaking space is a Unicode character.
 
-In many Mac programs, you type a non-breaking space with Alt + Space. On Windows they shortcut varies between programs. If you're editing in markdown (or actually editing raw HTML), you represent a non-breaking space by typing `&nbsp;`.
+In many Mac programs, you type a non-breaking space with Alt + Space. On Windows the shortcut varies between programs. If you're writing in markdown or raw HTML, you represent a non-breaking space by typing `&nbsp;`. (This is called an HTML entity. HTML entities always start with `&` and end with `;`.)
 
 ## Discretionary hyphens
 
@@ -50,7 +50,7 @@ If you need to break a long word with a hyphen, never use an actual hyphen chara
 
 Instead, insert a discretionary hyphen, also called a soft hyphen. A soft hyphen is a character that remains hidden until it's needed. If a word has a soft hyphen in it, you won't notice the hyphen unless the word can't fit at the end of a line, at which point the soft hyphen will show, and the word will break over the line.
 
-A soft hyphen is a unicode character. If you're editing markdown or raw HTML, type `&shy;` to represent a soft hyphen. (This is easy to remember, because a soft hyphen is shy.)
+A soft hyphen is a Unicode character. If you're editing markdown or raw HTML, type `&shy;` to represent a soft hyphen. (This is easy to remember, because a soft hyphen is shy.)
 
 ## Links and linking
 
@@ -194,3 +194,9 @@ MathML is a kind of XML (which we touched on in '[Connecting humans and machines
 LaTeX is much easier to write, if your software supports it. At Electric Book Works, we use LaTeX, because our software automatically converts it for each of our output formats. For instance, we write `$$E = mc^2$$` and we get *E* = *mc*². (The `$$` signs wrap any LaTeX maths we want converted.)
 
 It is very important to establish right at the beginning of a project, even before authors start writing, how maths will be created in the manuscript and processed through production.
+
+## Text in images
+
+As we mentioned in passing earlier, avoid including text in images where possible. Text in images can be unreadable on small screens, it can't be found by searching in a document, and it makes translation projects much more expensive, because images have to be recreated for each language.
+
+Sometimes you have to put text in images. For instance, graphs must have axes and labels. When that happens, you must create a detailed stylesheet for your team that defines image sizes, font sizes and styles, and colours to use when placing text in images.

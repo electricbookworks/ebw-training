@@ -168,7 +168,7 @@ I can also make *any element* (not just paragraphs) with a `greeting` class uppe
 }
 ```
 
-## Character encoding and unicode
+## Character encoding and Unicode
 
 Character encoding is about the most technical thing we're going to cover. 
 
@@ -187,7 +187,7 @@ When we're working in simple English, this means almost nothing. Just keep going
 
 But as soon as you start working with special characters, it's critical that you use Unicode characters.
 
-We'll cover this is more detail later in the [Text section](06-text.html#special-characters-fonts-unicode-glyphs-and-markup){:.show-page-number}.
+We'll cover this is more detail later in the [Text section](06-text.html#special-characters-fonts-Unicode-glyphs-and-markup){:.show-page-number}.
 
 ## Naming design features
 
