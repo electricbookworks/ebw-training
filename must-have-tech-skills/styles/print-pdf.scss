@@ -28,15 +28,15 @@
 $edition-suffix: null;
 
 // First, we set several variables related to overall page setup.
-$page-width: 152mm;
-$page-height: 229mm;
-$margin-top: 60pt; // by setting this in points, you align with your baseline grid
-$margin-bottom: 60pt;
+$page-width: 210mm;
+$page-height: 297mm;
+$margin-top: 75pt; // by setting this in points, you align with your baseline grid
+$margin-bottom: 75pt;
 $margin-outside: 20mm;
 $margin-inside: 20mm;
-$bleed: 3mm;
-$trim: 3mm;
-$crop-marks: crop; // crop | none
+$bleed: 0;
+$trim: 0;
+$crop-marks: none; // crop | none
 
 // Colours
 $colorspace: cmyk; // auto | none | rgb | cmyk | gray
@@ -293,17 +293,26 @@ $print-page-setup-lightning-source: false; // Removes crop marks and sets 3mm tr
 
 // Title page
 .title-page {
-	.title-page-logo {
-		max-width: 3em;
-	}
+    .title-page-title {
+        font-size: 5em;
+        line-height: 1;
+        padding-top: $start-depth;
+    }
+    .title-page-logo {
+        max-width: 3em;
+    }
 }
 .copyright-page {
-	& * {
-		text-align: left;
-	}
+    & * {
+        text-align: left;
+    }
+}
+.chapter {
+    // Make space for notes
+    margin-right: 50mm;
 }
 .sidenote {
-	& * {
-		text-align: left;
-	}
+    & * {
+        text-align: left;
+    }
 }
