@@ -1,8 +1,8 @@
 ---
-title: Text
+title: Working with text
 ---
 
-# Text
+# Working with text
 {:.no_toc}
 
 * TOC here
