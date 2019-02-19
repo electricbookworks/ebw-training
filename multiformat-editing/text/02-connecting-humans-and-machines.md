@@ -256,5 +256,5 @@ As an editor, you're already the kind of person who loves accuracy and consisten
 
 ## Further reading
 
-- [The Machine in Us/ing Us](https://www.youtube.com/watch?v=NLlGopyXT_g){:.show-url}, a video by Michael Wesch about how XML lets humans and machines communicate.
+- [The Machine is Us/ing Us](https://www.youtube.com/watch?v=NLlGopyXT_g){:.show-url}, an old but classic video by Michael Wesch about how XML lets humans and machines communicate.
 - [Person in Lotus Position](https://99percentinvisible.org/episode/person-lotus-position/){:.show-url}, a fun podcast from 99 Percent Invisible about adding new characters – and emojis in particular – to the Unicode character set.
