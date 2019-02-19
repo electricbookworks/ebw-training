@@ -12,7 +12,18 @@ Let's get into the nitty gritty of dealing with text in digital publications. We
 
 ## Special characters: fonts, Unicode glyphs and markup
 
-In the [Connecting humans and machines section](02-connecting-humans-and-machines.html#character-encoding-and-Unicode){:.show-page-number} we explained how character encoding works.
+### Character encoding and unicode
+
+Character encoding is about the most technical thing we're going to cover.
+
+1. **Computers are binary**. That means that, at their core they only have two modes: on and off. We humans refer to these two modes as 'yes and no', or 'true and false', or 'one and zero'. Everything computers do must be reduced, ultimately, to patterns of these ones and zeros.
+2. So, to a computer, **every letter or number is understood as a pattern of ones and zeros,** e.g. `01000001` can represent the letter 'A', and `01000010` the letter 'B'.
+3. There are many characters to encode in this way. Over the years, various organisations have established different official sets of characters. The most important character set is called **Unicode,** which is a list of about 100&nbsp;000 characters (and growing, especially with emojis).
+4. The most common pattern for encoding characters in the Unicode set in ones and zeros is called **UTF-8**.
+5. In theory, every computer file should note its character encoding inside it, so that your computer knows how to display its characters. (Programs like MS Word should automatically add that information inside your files for you.)
+6. If you open a document, or a web page or ebook, and the characters look wrong, it's usually because the document and your computer are using different character sets.
+
+When we're working in simple English, we rarely have to worry. Just keep going and computers will do the work.
 
 When we're working with special characters – anything beyond the Latin alphabet, numbers and English punctuation – it's critical that we use Unicode characters.
 

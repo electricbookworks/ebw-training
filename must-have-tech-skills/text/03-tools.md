@@ -94,37 +94,6 @@ There is no good reason to ask *authors* to change their writing tools. If an au
 
 Plain-text markdown is one useful way to do this, because markdown forces us to be explicit about things like headings (and blockquotes, italics, links, and more). Alternatively, responsible editors should learn how to use their WYSIWYG editor's styling functions to 'tag' things like headings, so that those elements are correctly marked up in the file's underlying code.
 
-## Open software and standards
-
-When choosing your tools, you should also consider:
-
-- who creates and owns them, and under what terms
-- do they follow common standards, and
-- how much do they cost?
-
-### Open-source software
-
-Open-source software is software that others can copy and modify without permission from the owner.
-
-Open-source software has had a bad reputation in the past, because most early open software was created by volunteers or academics without much investment of money.
-
-These days, open-source software is important to all of the biggest technology companies in the world, and open-source products are increasingly the best you'll find.
-
-For organisations, it's often safest to use good, open tools, because you can't get locked in with a specific vendor. That said, when evaluating open software, make sure that your choice of tool has a big, strong, happy community behind it. This will mean it will keep getting better, and you'll be able to find support online easily.
-
-### Open standards
-
-Open standards are agreements on how things work. For instance, PDF is an open standard: anyone can read and contribute to the official documents that define how PDFs work, and build PDF software.
-
-> That was not always the case. The PDF specification was owned by Adobe for many years, and Adobe charged companies to use it. In a surprising and wonderful move, Adobe made the standard open in 2008. It suited them at that point, too, because they were becoming the premier provider of proprietary software for creating PDFs (with InDesign and Acrobat especially). By making the standard open, they made PDF more important, which made it easier to sell their software. It was a win–win.
-{:.box}
-
-For long-term sustainability, look for tools that follow popular open standards. For instance, an editor that stores text as clean HTML is a far safer choice than an editor that stores text in a clever but obscure flavour of XML.
-
-There are standards for almost everything: metadata standards (many of which, like ONIX, are not open), scholarly publishing standards, data standards, textbook standards, accessibility standards, and so on.
-
-You'll never have time to find and understand them all, but before you make choices about editorial tools and processes, *make time* to learn what big standards exist in your field.
-
 ## Regular expressions
 
 'Regular expressions', or regex, is a tool that comes built into your text editor.
@@ -199,3 +168,34 @@ Many regex engines also let us use a `\` instead of a `$`. So we might also have
 While it's tempting to click 'Replace All' on a document, that's very risky! It's hard to know for sure that you won't change something you don't mean to change. It's usually best to use regex to find each instance quickly and eyeball it before clicking 'Replace'.
 
 There is more to learn about regex. As you do, you'll come across character grouping, positive and negative lookaheads and lookbehinds, and multi-line searches. You'll also get to know differences between regex differences between computer programs and languages.
+
+## Open software and standards
+
+When choosing your tools, you should also consider:
+
+- who creates and owns them, and under what terms
+- do they follow common standards, and
+- how much do they cost?
+
+### Open-source software
+
+Open-source software is software that others can copy and modify without permission from the owner.
+
+Open-source software has had a bad reputation in the past, because most early open software was created by volunteers or academics without much investment of money.
+
+These days, open-source software is important to all of the biggest technology companies in the world, and open-source products are increasingly the best you'll find.
+
+For organisations, it's often safest to use good, open tools, because you can't get locked in with a specific vendor. That said, when evaluating open software, make sure that your choice of tool has a big, strong, happy community behind it. This will mean it will keep getting better, and you'll be able to find support online easily.
+
+### Open standards
+
+Open standards are agreements on how things work. For instance, PDF is an open standard: anyone can read and contribute to the official documents that define how PDFs work, and build PDF software.
+
+> That was not always the case. The PDF specification was owned by Adobe for many years, and Adobe charged companies to use it. In a surprising and wonderful move, Adobe made the standard open in 2008. It suited them at that point, too, because they were becoming the premier provider of proprietary software for creating PDFs (with InDesign and Acrobat especially). By making the standard open, they made PDF more important, which made it easier to sell their software. It was a win–win.
+{:.box}
+
+For long-term sustainability, look for tools that follow popular open standards. For instance, an editor that stores text as clean HTML is a far safer choice than an editor that stores text in a clever but obscure flavour of XML.
+
+There are standards for almost everything: metadata standards (many of which, like ONIX, are not open), scholarly publishing standards, data standards, textbook standards, accessibility standards, and so on.
+
+You'll never have time to find and understand them all, but before you make choices about editorial tools and processes, *make time* to learn what big standards exist in your field.

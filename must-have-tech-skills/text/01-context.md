@@ -26,14 +26,12 @@ Creating personas can seem like hard work. One reason it's hard is because you r
 > 4. Location
 > 5. Profession
 > 6. Interests
-> 7. Family situation
-> 8. What motivates them?
-> 9. What would they willingly pay for your book?
-> 10. In what formats would they most like to read your book? (This might relate to price, convenience or other factors.)
-> 11. How will they acquire your book? (E.g. a bookstore, their workplace, an app on their phone, a book club, etc.)
-> 12. If they are getting it digitally, what device will they use? Name an actual device model.
+> 7. What device will they read your site on?
+> 8. What do they need from you?
+> 9. How will they find your site?
+> 10. How will they know that they have what they need from you?
 > 
-> Be very specific. Remember that you are not describing how *everyone* might read your book. You're describing how *this particular person* will read it. If you can imagine a very different person reading it another way, create a second persona.
+> Be very specific. If possible, explain exactly what they need to see on your site to know they've come to the right place, and what they need to read and click to get what they need. Remember that you are not describing how *everyone* might use your site. You're describing how *this particular person* will.
 {:.box} 
 
 Once you have created at least one persona, you should *make all your decisions in their best interests*.
@@ -41,8 +39,6 @@ Once you have created at least one persona, you should *make all your decisions 
 If you have to make money from your product, personas are also useful for predicting sales, and therefore in creating project budgets. For example: let's say your persona's name is Elizabeth. How many people like Elizabeth can your sales and marketing reach? If that's not enough people, do you need to change your persona, or add more personas?
 
 Lots of personas isn't necessarily a good thing. The more you have, the harder it will be to make decisions, because your personas may have competing interests.
-
-And when those people step out into the Internet, they are stepping into a wild, wild world.
 
 ## Change and the living Internet
 
@@ -118,10 +114,3 @@ It is very easy – even tempting – to cut costs during production by neglecti
 In digital publishing, the term 'accessibility' most often refers to making content accessible to people with disabilities. It's valuable to extend this to include anyone who might struggle to access content: people who can't afford data; who have small, cheap phones; who live in rural areas; or who live under oppressive regimes.
 
 As you work in digital publishing, you will have more and more opportunities to make accessibility decisions.
-
-## Further reading
-
-- ['Ebook'](https://www.britannica.com/technology/e-book){:.show-url} in the Encyclopaedia Britannica
-- [Ebooks for All: Building digital libraries in Ghana with Worldreader](https://craigmod.com/essays/worldreader/){:.show-url} by Craig Mod
-- [The Once and Future Ebook](https://electricbookworks.com/kb/abcs/the-once-and-future-ebook-by-john-siracusa/){:.show-url} by John Siracusa
-- [Better than Free](http://kk.org/thetechnium/better-than-fre/){:.show-url} by Kevin Kelly

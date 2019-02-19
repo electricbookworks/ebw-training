@@ -73,35 +73,155 @@ The `<p>` is a 'paragraph' tag. We use paragraph tags at the start and end of th
 
 A paragraph marked up with `<p></p>` tags is an 'element'. The word 'element' is also useful in traditional book terms for any piece of a book, for what we often call a feature, like a figure or a blockquote.
 
-HTML includes about a hundred standard elements. Here are the most common ones:
+HTML includes about a hundred standard elements. Here are the most common ones.
 
-> As in everything, HTML gets more complicated than this. There are different kinds of HTML with slightly different tags. You will very rarely have to think about the differences.
-{:.sidenote}
+#### `<p>` for paragraph
 
-*   `<p>` for paragraph
-*   `<ul>` for unordered list (like a bulleted list)
-*   `<ol>` for ordered list (like 1, 2, 3 or a, b, c)
-*   `<li>` for list item: an item in an ordered or unordered list
-*   `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` for six levels of heading
-*   `<img>` for image
-*   `<a>` for a clickable link (the 'a' happens to stand for anchor)
-*   `<em>` for emphasising words (usually displayed as italics)
-*   `<strong>` for making words stand out (usually displayed as bold)
-*   `<span>` for any string of characters you need to mark for any reason (e.g. `<span>this span spans five words</span>`)
-*   `<div>` for 'division', any block of text or images you need to mark for any reason
-*   `<table>` for a table
-*   `<tr>` for a table row
-*   `<td>` for a table cell in a row (`td` stands for table data).
+```html
+<p>
+  Hello World!
+</p>
+```
 
-When a web browser sees these tags, it *renders* the content inside them. That is, it processes and displays the content. To give the content a design, it follows a stylesheet.
+Note that here we've used line breaks and indentation to make the code easier for humans to read. This could be also be on one line.
+
+#### `<ul>` for unordered list
+
+A list with no particular order.
+
+```html
+<ul>
+  <li>Apples</li>
+  <li>Pears</li>
+</ul>
+```
+
+A bulleted list is an example of an unordered list. The list marker – bullets, discs, little pictures – depends on the CSS. Solid bullets are the default.
+
+#### `<ol>` for ordered list
+
+A list with a particular order, like 1, 2, 3 or a, b, c.
+
+```html
+<ol>
+  <li>Down the passage.</li>
+  <li>Turn left.</li>
+</ol>
+```
+
+The markers' scheme depends on the CSS. The default is called 'decimal' and displays as 1., 2., 3. and so on.
+
+#### `<li>` for list item
+
+As you can see in the examples above, the items in a list are marked up with an `<li>` tag.
+
+#### Six levels of heading
+
+```html
+<h1>Great Expectations</h1>
+  <h2>Part 1</h2>
+    <h3>Chapter 1</h3>
+```
+
+These heading levels go to `<h6>`.
+
+#### `<em>` for emphasis
+
+The `<em>` element is for emphasising words.
+
+```html
+You <em>must</em> try this.
+```
+
+By default, browsers display these words in italics.
+
+#### `<strong>` for standing out
+
+The `<strong>` element makes words stand out.
+
+```html
+‘Dog’ is a <strong>noun</strong>.
+```
+
+Browsers usually display this as bold.
+
+#### `<span>` for any string of characters
+
+Sometimes you need to mark up a particular string of characters for a purpose that existing HTML tags don't cover. For instance, if you want to display the opening words of a passage in small caps.
+
+```html
+<span>It was the best of times,</span>, it was the worst of times …
+```
+
+In this case, we might write CSS thats displays the first span in a chapter in small caps. We'll get to writing CSS later.
+
+#### `<div>` for 'division'
+
+Much like a `span`, a `div` is for any block of content that you need to mark up, and for which there isn't an existing HTML element. For example, a warning message:
+
+```html
+<div>
+  This is a warning!
+</div>
+```
+
+We might then write CSS that displays this `div` with a red background.
+
+#### `<table>` for table
+
+At its simplest, an HTML table is made of a `<table>` element, which contains table rows (`<tr>`); and each table row contains table data (`<td>`) elements. Each `<td>` is a table cell.
+
+```html
+<table>
+  <tr>
+       <td>One data cell.</td>
+  </tr>
+</table>
+```
+
+#### `<a>` for a link
+
+To create a link we use an `<a>` element. The 'a' happens to stand for 'anchor' (for reasons we don't need to get into now).
+
+The link tag need extra information: the URL to link to. When we need to give a tag extra information, we include that info as an 'attribute'. In this case, an `href` for 'hyperlink reference':
+
+```html
+<a href="http://example.com">
+  An example web page.
+</a>
+```
+
+That will make the phrase '[An example web page.](http://example.com)' clickable. Note how the attribute sits inside the opening tag.
+
+#### `<img>` for image
+
+The image tag also needs an attribute, a `src` for the source image file.
+
+```html
+<img src="selfie.jpg" />
+```
+
+Note that the `<img>` tag doesn't wrap around anything. It is self-standing. So it should also close itself with a slash. We call it a self-closing tag.
+
+For accessibility, we should also include an `alt` attribute: text that is the *alternative* to seeing the image. The best `alt` tags describe the image.
+
+```html
+<img src="selfie.jpg" alt="A selfie photo of Arthur in the mountains of Slovenia." />
+```
+
+A screen reader might read that `alt` text out. And if a browser can't find the image file, it will display the `alt` text instead.
 
 ### Stylesheets
 
+When a web browser sees those HTML tags, it *renders* the content inside them. That is, it processes and displays the content.
+
 You'll notice that none of those elements on their own describe what their content should *look like*.
 
-We define what elements look like with a stylesheet. Browsers come with basic, built-in stylesheets already, which do things like make headings big and bold. We can then add our own styles on top of the built-in ones.
+To give the content a design, it follows a stylesheet. Browsers have a very basic, built-in stylesheet, which does things like make headings big and bold.
 
-To write stylesheets, we use a language called CSS (for 'Cascading Style Sheets'). In CSS, we write each rule by including the element name, and then its design properties in braces. For instance, this rule makes all paragraph text grey:
+We then define our own design by adding our own stylesheet. 
+
+To write stylesheets, we use a language called CSS (for 'Cascading Style Sheets'). In CSS, we write each rule by including the element name, and then its design properties in curly braces. For instance, this rule makes all paragraph text grey:
 
 ``` css
 p { color: grey; }
@@ -109,25 +229,26 @@ p { color: grey; }
 
 (You'll eventually get used to the American spelling of 'color'.)
 
-We can use any number of properties in a rule. For instance, we can also indent the first line of each paragraph:
+We can use any number of properties in a rule. For instance, we can also increase the font-size. A font-size of 120% is 20 per cent larger than the default font size:
 
 ``` css
 p {
   color: grey;
-  text-indent: 12pt;
+  font-size: 120%;
 }
 ```
 
+(We could also set font size in units, like `16pt`.)
+
 See the extra line breaks at the braces? That's a code-layout convention for making CSS easier for us humans to read. The line breaks do not affect how the CSS works.
 
-The terms for the display properties (like `color` and `text-indent`) are defined in official specifications. Learning CSS is mostly about learning the names of the many properties you can use, and how they interact.
+The terms for the display properties (like `color` and `font-size`) are defined in official specifications. Learning CSS is mostly about learning the names of the many properties you can use, and how they interact.
 
 There are about six hundred properties, so you're unlikely to ever learn them all. Just learn them as you need them, by Googling for the effect you want to create. Here are some very common CSS properties:
 
 - `background-color`: sets the colour that fills an element.
 - `border`: sets the thickness, style and colour of an element's border.
 - `color`: sets the colour of the text in an element.
-- `display`: defines the way an element fits on the page.
 - `float`: defines whether an element floats to the right or the left, wrapped by its surrounding elements.
 - `font-family`: sets the type face of an element's text.
 - `font-size`: sets the font size of an element's text.
@@ -164,7 +285,7 @@ So HTML lets us invent our own classes, and gives us a way to say what class an 
 We could have called the class anything we liked, even something silly:
 
 ``` html
-<p class="frabjous-day">Hello World!</p>
+<p class="frabjous">Hello World!</p>
 ```
 
 It's best to use class names that are easy to remember and that describe their *purpose* clearly. And it's good to reuse the same classes in your team and across your publications, for consistency.
@@ -201,23 +322,6 @@ p.greeting {
 ```
 
 What colour will the greeting be? Grey. Because *all* paragraphs will inherit the rule for `p`. That's what the 'cascading' means in 'cascading style sheets'.
-
-## Character encoding and unicode
-
-Character encoding is about the most technical thing we're going to cover. We'll keep it short!
-
-1. **Computers are binary**. That means that, at their core they only have two modes: on and off. We humans refer to these two modes as 'yes and no', or 'true and false', or 'one and zero'. Everything computers do must be reduced, ultimately, to patterns of these ones and zeros.
-2. So, to a computer, **every letter or number is understood as a pattern of ones and zeros,** e.g. `01000001` can represent the letter 'A', and `01000010` the letter 'B'.
-3. There are many characters to encode in this way. Over the years, various organisations have established different official sets of characters. The most important character set is called **Unicode,** which is a list of about 100&nbsp;000 characters (and growing, especially with emojis).
-4. The most common pattern for encoding characters in the Unicode set in ones and zeros is called **UTF-8**.
-5. In theory, every computer file should note its character encoding inside it, so that your computer knows how to display its characters. (Programs like MS Word should automatically add that information inside your files for you.)
-6. If you open a document, or a web page or ebook, and the characters look wrong, it's usually because the document and your computer are using different character sets.
-
-When we're working in simple English, we rarely have to worry. Just keep going and computers will do the work.
-
-But as soon as you start working with special characters, it's critical that you use Unicode characters.
-
-We'll cover this in more detail later in the [Text section](06-text.html#special-characters-fonts-unicode-glyphs-and-markup){:.show-page-number}.
 
 ## Naming design features
 
@@ -287,14 +391,3 @@ So we have to look out for the human tendency to break the tree structure becaus
 The real solution here is to use `h1` for 'Introduction', and to make it *look* less prominent than 'Part 1' in our CSS stylesheets.
 
 Maintaining a consistent tree structure can be harder than it looks. Keep your eyes peeled for broken tree structures in the documents you edit!
-
-## Accuracy and consistency
-
-That was a lot to take in. It only remains to highlight what you've already noticed: communicating with computers requires absolute accuracy and consistency.
-
-If you're already the kind of person who loves accuracy and consistency, you and computers should get along well. They will still test your patience often!
-
-## Further reading
-
-- [The Machine in Us/ing Us](https://www.youtube.com/watch?v=NLlGopyXT_g){:.show-url}, a video by Michael Wesch about how XML lets humans and machines communicate.
-- [Person in Lotus Position](https://99percentinvisible.org/episode/person-lotus-position/){:.show-url}, a fun podcast from 99 Percent Invisible about adding new characters – and emojis in particular – to the Unicode character set.

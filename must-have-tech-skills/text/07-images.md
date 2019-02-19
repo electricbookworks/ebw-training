@@ -102,7 +102,3 @@ A PDF document can also contain a colour profile for the whole document. Any PDF
 Most publishing teams don't think about colour profiles as they work, and things work out fine. If you're working on a book where colour accuracy is important, such as photography, agree on the colour profile you'll use for all original images and documents.
 
 There are any number of colour profiles in the world, including open and proprietary ones. It is possible to get common ones from the [International Colour Consortium](http://www.color.org){:.show-url} and the [European Colour Initiative](http://eci.org){:.show-url}. Good software ships with colour profiles already.
-
-## Further reading
-
-- [Colour models, XKCD](https://xkcd.com/1882/), a funny take on learning about colour.
