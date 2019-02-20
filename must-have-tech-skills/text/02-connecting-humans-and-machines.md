@@ -75,7 +75,7 @@ A paragraph marked up with `<p></p>` tags is an 'element'. The word 'element' is
 
 HTML includes about a hundred standard elements. Here are the most common ones.
 
-#### `<p>` for paragraph
+#### Paragraph
 
 ```html
 <p>
@@ -85,7 +85,7 @@ HTML includes about a hundred standard elements. Here are the most common ones.
 
 Note that here we've used line breaks and indentation to make the code easier for humans to read. This could be also be on one line.
 
-#### `<ul>` for unordered list
+#### Unordered list
 
 A list with no particular order.
 
@@ -98,7 +98,7 @@ A list with no particular order.
 
 A bulleted list is an example of an unordered list. The list marker – bullets, discs, little pictures – depends on the CSS. Solid bullets are the default.
 
-#### `<ol>` for ordered list
+#### Ordered list
 
 A list with a particular order, like 1, 2, 3 or a, b, c.
 
@@ -111,7 +111,7 @@ A list with a particular order, like 1, 2, 3 or a, b, c.
 
 The markers' scheme depends on the CSS. The default is called 'decimal' and displays as 1., 2., 3. and so on.
 
-#### `<li>` for list item
+#### List item
 
 As you can see in the examples above, the items in a list are marked up with an `<li>` tag.
 
@@ -125,7 +125,7 @@ As you can see in the examples above, the items in a list are marked up with an 
 
 These heading levels go to `<h6>`.
 
-#### `<em>` for emphasis
+#### Emphasis
 
 The `<em>` element is for emphasising words.
 
@@ -135,7 +135,7 @@ You <em>must</em> try this.
 
 By default, browsers display these words in italics.
 
-#### `<strong>` for standing out
+#### Strong text
 
 The `<strong>` element makes words stand out.
 
@@ -145,7 +145,7 @@ The `<strong>` element makes words stand out.
 
 Browsers usually display this as bold.
 
-#### `<span>` for any string of characters
+#### A span for any string of characters
 
 Sometimes you need to mark up a particular string of characters for a purpose that existing HTML tags don't cover. For instance, if you want to display the opening words of a passage in small caps.
 
@@ -155,7 +155,7 @@ Sometimes you need to mark up a particular string of characters for a purpose th
 
 In this case, we might write CSS thats displays the first span in a chapter in small caps. We'll get to writing CSS later.
 
-#### `<div>` for 'division'
+#### A div for any division
 
 Much like a `span`, a `div` is for any block of content that you need to mark up, and for which there isn't an existing HTML element. For example, a warning message:
 
@@ -167,7 +167,7 @@ Much like a `span`, a `div` is for any block of content that you need to mark up
 
 We might then write CSS that displays this `div` with a red background.
 
-#### `<table>` for table
+#### Tables
 
 At its simplest, an HTML table is made of a `<table>` element, which contains table rows (`<tr>`); and each table row contains table data (`<td>`) elements. Each `<td>` is a table cell.
 
@@ -179,7 +179,7 @@ At its simplest, an HTML table is made of a `<table>` element, which contains ta
 </table>
 ```
 
-#### `<a>` for a link
+#### Links
 
 To create a link we use an `<a>` element. The 'a' happens to stand for 'anchor' (for reasons we don't need to get into now).
 
@@ -193,7 +193,7 @@ The link tag need extra information: the URL to link to. When we need to give a 
 
 That will make the phrase '[An example web page.](http://example.com)' clickable. Note how the attribute sits inside the opening tag.
 
-#### `<img>` for image
+#### Images
 
 The image tag also needs an attribute, a `src` for the source image file.
 
