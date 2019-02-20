@@ -81,11 +81,11 @@ You should keep your master versions of images in a lossless format. For bitmap 
 
 For instance, we might use large 300 DPI JPEG images for print output, and 96 DPI images at 80 per cent quality for screen formats. We adjust these defaults for each project, depending on the best interests of our project personae.
 
-## Color spaces
+## Colour spaces
 
 As you may know, colour printing uses four inks to create colours: cyan, magenta, yellow and black. These four colours are printed over one another on the printing press to create full-colour images.
 
-This is called the **CMYK colour space** (the K actually stands for 'key plate' in printing, and by convention uses black ink). By default, a CMYK colour space assumes you're printing on white paper. Colours are expressed as percentages of each of C, M, Y and K. So true black is `0, 0, 0, 100`. A light green could be `50, 0 50, 0`.
+This is called the **CMYK colour space** (the K actually stands for 'key plate' in printing, and by convention uses black ink). By default, a CMYK colour space assumes you're printing on white paper. Colours are expressed as percentages of each of C, M, Y and K. So true black is `0, 0, 0, 100`. A light green could be `50, 0, 50, 0`.
 
 Screens are different. When screen pixels are off, they are black. So colours on screen are made of three colours of light: red, green and blue. This is called the **RGB colour space.** Colours are expressed as a combination of these, in increments from 0 to 255. So a light, bright purple would be `200, 0, 200`, and pure white is `255, 255, 255`.
 

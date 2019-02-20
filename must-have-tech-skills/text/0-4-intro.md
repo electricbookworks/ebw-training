@@ -50,7 +50,7 @@ First things first, let's have a sneak peak at what you're going to understand b
 That window that just opened is showing you the code behind the web page. In the code view, you should see something like this:
 
 ```html
-<h2>Multi-format publishing</h2>
+<h1>Multi-format publishing</h1>
 ```
 
 Double-click that code, and change the text between the `h` tags. Then click anywhere else. You should see the heading on the actual web page change. If so, well done! You just edited a web page.

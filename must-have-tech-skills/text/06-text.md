@@ -40,7 +40,7 @@ This is just one common example. As you work, you'll find many cases where autho
 
 Fonts can cause extra confusion.
 
-Some fonts *look* like they provide glyphs for special characters, but their characters do not map correctly to Unicode code points. So a character that looks like, say, a '[letter f with hook](https://en.wikipedia.org/wiki/%C6%91)' in that font might actually be encoded as, say, the number 4. If you change the font, you end up with incorrect text.
+Some fonts *look* like they provide glyphs for special characters, but their characters do not map correctly to Unicode code points. So a character that looks like, say, a '[letter f with hook](https://en.wikipedia.org/wiki/%C6%91)' in that font might actually be encoded as, say, the number 5. If you change the font, you end up with incorrect text.
 
 Many fonts do not include glyphs for many less-common Unicode characters. If the font you are using in your editor does not show a character you have inserted, you might see a little box instead, as a [substitute character](https://en.wikipedia.org/wiki/Substitute_character) (sometimes called 'tofu'). You may need to change the font you are using to one that supports a bigger glyph set. A good option is [Noto](https://www.google.com/get/noto/){:.show-url}. 
 
@@ -124,6 +124,17 @@ This text outputs like this (in whichever format you're reading this):
 
 Those tags are only possible if you're using kramdown, a particular version of markdown that supports tags.
 
+### Creating internal links
+
+How you create internal links depends on the software you're editing in. If you're writing in markdown or using an HTML editor, creating an internal link is fairly simple. The trick is knowing where you're linking to.
+
+In our books, we keep all book parts in files in the same folder. This makes internal links easy: we link to the document name (with an `html` file extension) followed by a `#` ID that identifies the text we're linking to. For example:
+
+``` md
+[Change and the living Internet](01-context.html#change-and-the-living-internet)
+```
+
+All of our headings automatically have an ID that is the *slug* of the heading text. A slug is text reduced to lowercase letters and hyphens, and no spaces. For this subsection's heading we would use `#creating-internal-links`. To link to this subsection from another file in this book, we'd link to `06-text.html#creating-internal-links`.
 
 ## Cross references: page numbers and purple numbers
 
@@ -154,23 +165,11 @@ And if you're reading this on the web or in an ebook, you'll just see that the w
 
 ### Purple numbers
 
-'Purple numbers' are regular numbers that site alongside passages of text. Each numbers stays alongside its passage in every format. When they were first described, they were purple, hence their name. They are a kind of digital equivalent of traditional page numbers, and you can use them to refer to parts of a document.
+'Purple numbers' are regular numbers that site alongside passages of text. Each number stays alongside its passage in every format. When they were first described, they were purple, hence their name. They are a kind of digital equivalent of traditional page numbers, and you can use them to refer to parts of a document.
 
 For some publications, this might be an appropriate way to create multi-platform cross-referencing scheme.
 
 One of the common uses of purple numbers is in classroom settings, where different students might be using different formats of a textbook. By referring to purple numbers, a teacher can point all students to the same place in the book across all formats.
-
-### Creating internal links
-
-How you create internal links depends on the software you're editing in. If you're writing in markdown or using an HTML editor, creating an internal link is fairly simple. The trick is knowing where you're linking to.
-
-In our books, we keep all book parts in files in the same folder. This makes internal links easy: we link to the document name (with an `html` file extension) followed by a `#` ID that identifies the text we're linking to. For example:
-
-``` md
-[Change and the living Internet](01-context.html#change-and-the-living-internet)
-```
-
-All of our headings automatically have an ID that is the *slug* of the heading text. A slug is text reduced to lowercase letters and hyphens, and no spaces. For this subsection's heading we would use `#creating-internal-links`. To link to this subsection from another file in this book, we'd link to `06-text.html#creating-internal-links`.
 
 ## Capitalisation
 

@@ -8,38 +8,6 @@ title: "Context"
 * TOC here
 {:toc}
 
-## Focusing on people
-
-Like any publication, web-based products are for people. We create everything in the service of the user. So it's very important to have a super clear picture of who that user is! The most common, concrete approach to putting users front and centre as you create web products is to use personas.
-
-Personas are people you invent in excruciating detail: their names, ages, backgrounds, and interests; their devices, connectivity, and available money; and importantly their journey through your product.
-
-Creating personas can seem like hard work. One reason it's hard is because you really want your product to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
-
-> ### Creating a persona
-> 
-> The more detail you add to a persona, the better. To get you started, here are some pieces of information might include about the person you create.
-> 
-> 1. Full name
-> 2. Age
-> 3. Gender
-> 4. Location
-> 5. Profession
-> 6. Interests
-> 7. What device will they read your site on?
-> 8. What do they need from you?
-> 9. How will they find your site?
-> 10. How will they know that they have what they need from you?
-> 
-> Be very specific. If possible, explain exactly what they need to see on your site to know they've come to the right place, and what they need to read and click to get what they need. Remember that you are not describing how *everyone* might use your site. You're describing how *this particular person* will.
-{:.box} 
-
-Once you have created at least one persona, you should *make all your decisions in their best interests*.
-
-If you have to make money from your product, personas are also useful for predicting sales, and therefore in creating project budgets. For example: let's say your persona's name is Elizabeth. How many people like Elizabeth can your sales and marketing reach? If that's not enough people, do you need to change your persona, or add more personas?
-
-Lots of personas isn't necessarily a good thing. The more you have, the harder it will be to make decisions, because your personas may have competing interests.
-
 ## Change and the living Internet
 
 The Internet has got so big and complex that understanding it is more like biology than engineering. Creating anything on it – whether a blog post or an ebook – is like launching an origami boat on a great lake. For a while, it will float along just fine on the still water, but at some stage things will change for our little boat.
@@ -114,3 +82,35 @@ It is very easy – even tempting – to cut costs during production by neglecti
 In digital publishing, the term 'accessibility' most often refers to making content accessible to people with disabilities. It's valuable to extend this to include anyone who might struggle to access content: people who can't afford data; who have small, cheap phones; who live in rural areas; or who live under oppressive regimes.
 
 As you work in digital publishing, you will have more and more opportunities to make accessibility decisions.
+
+## Focusing on people
+
+Like any publication, web-based products are for people. We create everything in the service of the user. So it's very important to have a super clear picture of who that user is! The most common, concrete approach to putting users front and centre as you create web products is to use personas.
+
+Personas are people you invent in excruciating detail: their names, ages, backgrounds, and interests; their devices, connectivity, and available money; and importantly their journey through your product.
+
+Creating personas can seem like hard work. One reason it's hard is because you really want your product to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
+
+> ### Creating a persona
+> 
+> The more detail you add to a persona, the better. To get you started, here are some pieces of information might include about the person you create.
+> 
+> 1. Full name
+> 2. Age
+> 3. Gender
+> 4. Location
+> 5. Profession
+> 6. Interests
+> 7. What device will they read your site on?
+> 8. What do they need from you?
+> 9. How will they find your site?
+> 10. How will they know that they have what they need from you?
+> 
+> Be very specific. If possible, explain exactly what they need to see on your site to know they've come to the right place, and what they need to read and click to get what they need. Remember that you are not describing how *everyone* might use your site. You're describing how *this particular person* will.
+{:.box} 
+
+Once you have created at least one persona, you should *make all your decisions in their best interests*.
+
+If you have to make money from your product, personas are also useful for predicting sales, and therefore in creating project budgets. For example: let's say your persona's name is Elizabeth. How many people like Elizabeth can your sales and marketing reach? If that's not enough people, do you need to change your persona, or add more personas?
+
+Lots of personas isn't necessarily a good thing. The more you have, the harder it will be to make decisions, because your personas may have competing interests.
