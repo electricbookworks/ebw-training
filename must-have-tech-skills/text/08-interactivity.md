@@ -1,8 +1,8 @@
 ---
-title: Interactive elements
+title: Interactivity
 ---
 
-# Interactive elements
+# Interactivity
 {:.no_toc}
 
 * TOC here
