@@ -28,7 +28,7 @@ Javascript
 ## Concepts
 
 UI, UX and user patterns
-: A user interface (UI) is the layout of a given website. The user experience (UX) describes the whole experience of using a given website. And user patterns are the common ways that users expect to use websites. For instance, user expect login and logout buttons to be in the top right.
+: A user interface (UI) is the layout of a given website. The user experience (UX) describes the whole experience of using a given website. And user patterns are the common ways that users expect to use websites. For instance, users expect login and logout buttons to be in the top right.
 
 Personae 
 : Personae are fictional users of a website, with rich descriptions of their lives and priorities. They are our ideal users, whose needs come before all other considerations. Personae are created at the beginning of planning a new digital project.
@@ -71,7 +71,7 @@ APIs
 ## Resources
 
 Stack Exchange
-: A family of website forums for asking and answering technical questions. The biggest Stack Exchange forum is [Stack Overflow](https://stackoverflow.com), where people ask and answer programming questions. There are also fora for computer tips ([Super User](https://superuser.com/)), [Graphic Design](https://graphicdesign.stackexchange.com), [Ebooks](https://ebooks.stackexchange.com/) and more. On Stack Exchange websites you earn points for participating, and as you earn points you get new privileges. Stack Exchange's clever incentives system has led to an extraorinarily valuable resource for technical knowledge.
+: A family of website forums for asking and answering technical questions. The biggest Stack Exchange forum is [Stack Overflow](https://stackoverflow.com), where people ask and answer programming questions. There are also fora for computer tips ([Super User](https://superuser.com/)), [Graphic Design](https://graphicdesign.stackexchange.com), [Ebooks](https://ebooks.stackexchange.com/) and more. On Stack Exchange websites you earn points for participating, and as you earn points you get new privileges. Stack Exchange's clever incentives system has led to an extraordinarily valuable resource for technical knowledge.
 
 MDN
 : [MDN](https://developer.mozilla.org) (Mozilla Developer Network) is widely regarded as the authority for reading up on web standards. Need to know exactly how a CSS property works? What goes into an HTML `meta` tag? MDN is the authority. Another site, [W3Schools](https://www.w3schools.com/), is actually easier to read, but many technical folk reckon MDN is more accurate and trustworthy.

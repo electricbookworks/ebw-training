@@ -59,9 +59,9 @@ Don't worry, your changes are just temporary, and only exist in your browser for
 
 Those little windows show you three main things about the web page you're on:
 
-1. Its HTML: this is the content of the page
-2. Its CSS: this is the design of the page
-3. Its Javascript: this is code that can change anything about the change, especially if it is an interactive page.
+1. Its HTML: the content on the page
+2. Its CSS: the design of the page
+3. Its Javascript: code that can change anything about the page, often used to add interactivity.
 
 The inspector windows, which are also called the dev tools, are the *single most important tool* in your web-development life. It is miraculous that the Web developed in a way that lets anyone learn openly from anyone else's website code. It is a privilege we treasure!
 

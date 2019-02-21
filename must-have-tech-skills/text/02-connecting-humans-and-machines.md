@@ -183,7 +183,7 @@ At its simplest, an HTML table is made of a `<table>` element, which contains ta
 
 To create a link we use an `<a>` element. The 'a' happens to stand for 'anchor' (for reasons we don't need to get into now).
 
-The link tag need extra information: the URL to link to. When we need to give a tag extra information, we include that info as an 'attribute'. In this case, an `href` for 'hyperlink reference':
+The link tag needs extra information: the URL to link to. When we need to give a tag extra information, we include that info as an 'attribute'. In this case, an `href` for 'hyperlink reference':
 
 ```html
 <a href="http://example.com">

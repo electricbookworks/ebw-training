@@ -47,7 +47,7 @@ Many fonts do not include glyphs for many less-common Unicode characters. If the
 
 ## Non-breaking spaces
 
-If your text will reflow every time it appears on someone's screen, you can't control where lines will break. A line may break, for instance, in the space in `100&nbsp;mm`, or the number `100&nbsp;000`, or around an ellipsis, `…`. To avoid this, use a non-breaking space.
+If your text will reflow every time it appears on someone's screen, you can't control where lines will break. A line may break, for instance, in the space in `100 mm`, or the number `100 000`, or around an ellipsis, `…`. To avoid this, use a non-breaking space.
 
 A non-breaking space is a Unicode character.
 
@@ -165,7 +165,7 @@ And if you're reading this on the web or in an ebook, you'll just see that the w
 
 ### Purple numbers
 
-'Purple numbers' are regular numbers that site alongside passages of text. Each number stays alongside its passage in every format. When they were first described, they were purple, hence their name. They are a kind of digital equivalent of traditional page numbers, and you can use them to refer to parts of a document.
+'Purple numbers' are regular numbers that sit alongside passages of text. Each number stays alongside its passage in every format. When they were first described, they were purple, hence their name. They are a kind of digital equivalent of traditional page numbers, and you can use them to refer to parts of a document.
 
 For some publications, this might be an appropriate way to create multi-platform cross-referencing scheme.
 

@@ -93,7 +93,7 @@ Creating personas can seem like hard work. One reason it's hard is because you r
 
 > ### Creating a persona
 > 
-> The more detail you add to a persona, the better. To get you started, here are some pieces of information might include about the person you create.
+> The more detail you add to a persona, the better. To get you started, here are some pieces of information you might include about the person you create.
 > 
 > 1. Full name
 > 2. Age

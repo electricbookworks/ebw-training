@@ -70,7 +70,7 @@ Since each team member is working on *their own copy* of the original, team memb
 
 This approach makes a bunch of useful things possible:
 
-- Backup and restore: each snapshop (commit) is saved, usually to a safe place online, and you can find and roll back to it.
+- Backup and restore: each snapshot (commit) is saved, usually to a safe place online, and you can find and roll back to it.
 - Synchronization: each team member can get the latest version of a project online anywhere, any time.
 - Reset your work: if you really break your own copy of a project, you can just throw it away and check out the last working version of the original again.
 - Find old, hidden mistakes: sometimes you discover that a mistake was introduced a long time ago, and you want to see when and how that happened. You can see the history of *any one paragraph of text*.
@@ -86,6 +86,7 @@ Git can be used from the command line or with Git software that provides a graph
 
 Here are the most common Git commands, and what they do. If you're using Git from the command line, you'd type these in while in the project folder.
 
+- `git status`: the current state of the repository. Use this often!
 - `git init`: starts Git tracking the contents of the folder, by creating a `.git` folder inside it. You do this once per project.
 - `git add`: tell Git to start tracking a new file, as in `git add chapter1.md`.
 - `git commit`: take a snapshot of the project.
@@ -93,6 +94,6 @@ Here are the most common Git commands, and what they do. If you're using Git fro
    It's best to add your description of your changes here, too, in this command: `git commit -m "Your description here."`
 
 - `git pull`: get the latest changes from the origin (e.g. changes from your collaborators).
-- `git push`: send your committed changed to the origin.
+- `git push`: send your committed changes to the origin.
 
 There is much more to Git, but you'll use just those commands 90 per cent of the time.

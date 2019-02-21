@@ -36,7 +36,7 @@ First we must understand what '300 DPI' means, since it's the most commonly requ
 
 DPI stands for 'dots per inch'. This phrase comes from printing, because printing presses fill colour by printing thousands of tiny dots. High quality printing often fits 300 dots into an inch. That means that every square inch of high-quality printing contains 300 × 300 dots, or 90&nbsp;000 tiny dots!
 
-In printing, these dots are round, so there are actually tiny white spaces between them (unless on absorbent papers the ink soaks out beyond the width each dot).
+In printing, these dots are round, so there are actually tiny white spaces between them (unless, on absorbent paper, the ink soaks beyond the width of each dot).
 
 Sometimes you'll hear the term PPI, for 'pixels per inch'. This is the screen equivalent of DPI, and a more accurate measurement for digital images. Measures of pixel density like this only apply to bitmap images, not to vector images.
 
@@ -44,14 +44,14 @@ Each pixel used to be a single colour: a solid square dot. In the last few years
 
 For now, let's put this complication aside and think of each pixel as a single dot of colour.
 
-Inside an image file is some information, or metadata, about the image, including its pixel density (PPI). For instance, let's say an image has a pixel density of 300 DPI. That means at its 'normal size', with no zoom, the image should display 300 pixels for every inch of your screen.
+Inside an image file is some information, or metadata, about the image, including its pixel density (PPI). For instance, let's say an image has a pixel density of 300 PPI. That means at its 'normal size', with no zoom, the image should display 300 pixels for every inch of your screen.
 
 Now, an image has a fixed number of pixels high and wide. There are only so many pixels saved in the image. So, let's say our designer provides an image file that is 600 pixels across and 1200 pixels high.
 
 We can work out how big the image will be at 'normal size' when we open it:
 
-- 600 pixels ÷ 300 DPI = 2 inches wide
-- 1200 pixels ÷ 300 DPI = 4 inches high
+- 600 pixels ÷ 300 PPI = 2 inches wide
+- 1200 pixels ÷ 300 PPI = 4 inches high
 
 Two inches is about 5 centimetres. If we need to use that image across an A4 page, it will be much too small. If we stretched it to the width of an A4 sheet, which is 21 centimetres, it would pixelate horribly. Each dot of colour would be over four times its normal size.
 

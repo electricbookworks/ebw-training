@@ -29,7 +29,7 @@ There is potential for confusion on multi-format projects about what we mean by 
 
 Reading topography is the mental map that our minds and hands make of a printed publication as we read it. It lets us form spatial memories as we read.
 
-For instance, when you remember a passage in a paper book, you remember where it was on the page and in the book. When you look for that passage again, your hands can sense many pages fell before and after it, and your eyes know to look for it in, say, the top of a right-hand page.
+For instance, when you remember a passage in a paper book, you remember where it was on the page and in the book. When you look for that passage again, your hands can sense how many pages fell before and after, and your eyes know to look for it in, say, the top of a right-hand page.
 
 Your minds makes a map of the book that is informed largely by the fixed, physical shape of the book.
 

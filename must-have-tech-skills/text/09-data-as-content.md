@@ -39,7 +39,7 @@ Arthur,43,"Durban, South Africa"
 Aidan,6,"Cape Town, South Africa"
 ```
 
-If you store content in a Google Sheet, it's also possible to fetch data from it automatically over the Internet, via the Google Sheets API. This makes is possible to populate web and ebook pages in real time with up-to-the-minute data. Creating a script that fetches data automatically is a fairly simple job for a developer.
+If you store content in a Google Sheet, it's also possible to fetch data from it automatically over the Internet, via the Google Sheets API. This makes it possible to populate web and ebook pages in real time with up-to-the-minute data. Creating a script that fetches data automatically is a fairly simple job for a developer.
 
 ## Directories and dictionaries
 

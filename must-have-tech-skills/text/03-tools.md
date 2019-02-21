@@ -167,7 +167,7 @@ Many regex engines also let us use a `\` instead of a `$`. So we might also have
 
 While it's tempting to click 'Replace All' on a document, that's very risky! It's hard to know for sure that you won't change something you don't mean to change. It's usually best to use regex to find each instance quickly and eyeball it before clicking 'Replace'.
 
-There is more to learn about regex. As you do, you'll come across character grouping, positive and negative lookaheads and lookbehinds, and multi-line searches. You'll also get to know differences between regex differences between computer programs and languages.
+There is more to learn about regex. As you do, you'll come across character grouping, positive and negative lookaheads and lookbehinds, and multi-line searches. You'll also get to know how regex can differ between computer programs and languages.
 
 ## Open software and standards
 
