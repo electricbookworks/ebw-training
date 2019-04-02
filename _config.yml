@@ -123,9 +123,12 @@ exclude:
 - /*/styles/epub*
 - /*/styles/app*
 # Books
-# - book
-# - samples
-# - assets
+# - designing-for-digital
+# - digital-decisions
+# - indesign-for-epub
+# - making-ebooks
+# - multiformat-editing
+# - must-have-tech-skills
 
 # Can be useful to stop Jekyll overwriting files in _site.
 # E.g. generate CSS once, then exclude above but keep here

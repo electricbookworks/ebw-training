@@ -1853,3 +1853,195 @@ works:
       app:
         date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
+  - directory: "digital-decisions"
+    title: "Digital decisions"
+    subtitle: "Priorities for publishers in a digital world"
+    creator: "Arthur Attwell" # E.g. the author
+    contributor: "" # E.g. other contributors
+    subject: "Publishing" # E.g. BISAC terms (https://bisg.org/page/BISACEdition) or BIC (http://editeur.dyndns.org/bic_categories)
+    description: >
+      ‘Digital decisions’ is a day-long course for publishing staff. 
+      We paint a picture of the digital publishing landscape, 
+      and take the unfamiliarity out of key digital-publishing concepts. 
+      We range from big concepts to workflow nitty-gritty.
+    publisher: "Electric Book Works" # E.g. the publisher, imprint or brand name
+    publisher-url: "https://electricbookworks.com"
+    date: "2019-04-02" # YYYY-MM-DD e.g. publication date
+    modified: "2019-04-02" # YYYY-MM-DD e.g. date of last revision
+    type: "Training material" # e.g. Novel, Poetry, Memoir
+    identifier: "" # e.g. ISBN or UUID
+    source: "" # e.g. parent ISBN or ISTC
+    language: "en" # use ISO 639-1, 639-2, or 639-3 codes (in that order of preference)
+    relation: "" # e.g. other edition ISBN
+    coverage: "" # e.g. geographic place or chronological time span
+    rights: "This work is licenced under a Creative Commons Attribution licence. See [creativecommons.org/licenses/by/3.0/za/](https://creativecommons.org/licenses/by/3.0/za/)"
+    image: "cover.jpg"
+    products: # Metadata for each product for this title (only use values that override parent metadata)
+      print-pdf: 
+        date: "2019-04-02" # YYYY-MM-DD e.g. publication or creation date
+        format: "Print" # e.g. Paperback, Digital download, Digital online
+        identifier: "" # e.g. ISBN or UUID
+        image: "cover.jpg"
+        files:
+          - "0-1-titlepage"
+          - "0-2-copyright"
+          - "0-3-contents"
+          - "01-00-intro"
+          - "02-00-what-is-an-ebook"
+          - "03-00-exercise-what-do-you-sell-when-copies-are-free"
+          - "04-00-technology-decisions"
+          - "04-01-file-formats"
+          - "04-02-data-asset-management-systems"
+          - "04-03-metadata"
+          - "04-04-digital-rights-management"
+          - "05-00-rights-and-royalty-decisions"
+          - "05-01-territory"
+          - "05-02-royalties"
+          - "06-00-product-decisions"
+          - "06-01-backlist-conversions-vs-frontlist-plans"
+          - "06-02-publishing-and-software-development"
+          - "07-00-administrative-decisions"
+          - "07-01-identifiers-isbns-uuids-urls"
+          - "07-02-reporting-and-tracking-sales"
+          - "07-03-tracking-production-and-marketing-costs"
+          - "08-00-workflow-decisions"
+          - "08-01-changes-to-editorial-and-design-processes"
+          - "08-02-managing-in-house-learning-and-knowledge"
+          - "08-03-expertise-and-functional-authority"
+          - "08-04-a-format-agnostic-workflow"
+          - "09-00-sales-and-marketing-decisions"
+          - "09-01-pricing-models"
+          - "09-02-partners"
+          - "09-03-sales-and-delivery-processes"
+          - "10-00-what-are-your-priorities"
+          - "11-00-conclusion"
+        toc: # For each menu item, include at least label and file. Optionally add id (for deep linking) and children.
+          - file: "0-4-intro"
+            id: "introduction"
+            label: "Introduction"
+      web:
+        date: "2019-04-02" # YYYY-MM-DD e.g. publication date or last revision
+        format: "Digital online" # e.g. Paperback, Digital download, Digital online
+        identifier: "" # e.g. ISBN or UUID
+        image: "cover.jpg"
+        files:
+          - "index"
+          - "0-1-titlepage"
+          - "0-2-copyright"
+          - "0-3-contents"
+          - "01-00-intro"
+          - "02-00-what-is-an-ebook"
+          - "03-00-exercise-what-do-you-sell-when-copies-are-free"
+          - "04-00-technology-decisions"
+          - "04-01-file-formats"
+          - "04-02-data-asset-management-systems"
+          - "04-03-metadata"
+          - "04-04-digital-rights-management"
+          - "05-00-rights-and-royalty-decisions"
+          - "05-01-territory"
+          - "05-02-royalties"
+          - "06-00-product-decisions"
+          - "06-01-backlist-conversions-vs-frontlist-plans"
+          - "06-02-publishing-and-software-development"
+          - "07-00-administrative-decisions"
+          - "07-01-identifiers-isbns-uuids-urls"
+          - "07-02-reporting-and-tracking-sales"
+          - "07-03-tracking-production-and-marketing-costs"
+          - "08-00-workflow-decisions"
+          - "08-01-changes-to-editorial-and-design-processes"
+          - "08-02-managing-in-house-learning-and-knowledge"
+          - "08-03-expertise-and-functional-authority"
+          - "08-04-a-format-agnostic-workflow"
+          - "09-00-sales-and-marketing-decisions"
+          - "09-01-pricing-models"
+          - "09-02-partners"
+          - "09-03-sales-and-delivery-processes"
+          - "10-00-what-are-your-priorities"
+          - "11-00-conclusion"
+        nav: # For each menu item, include at least label and file. Optionally add id (for deep linking) and children.
+          - file: "0-4-intro"
+        start-page: "0-3-contents" # At which file should users start reading?
+        contents-page: "0-3-contents" # Your contents-page file, if you have one.
+      epub:
+        date: "2019-04-02" # YYYY-MM-DD e.g. publication date or last revision
+        format: "Digital download" # e.g. Paperback, Digital download, Digital online
+        identifier: "5ab091d5-49e6-4506-bc5a-b3fed31e70a1" # e.g. ISBN or UUID
+        image: "cover.jpg"
+        start-page: "0-3-contents"
+        contents-page: "0-3-contents"
+        files: # add a value to any file to set any of the guide types listed in http://www.idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.6
+          - "0-0-cover": "cover"
+          - "0-1-titlepage": "title-page"
+          - "0-2-copyright": "copyright"
+          - "0-3-contents": "toc"
+          - "01-00-intro": "text"
+          - "02-00-what-is-an-ebook"
+          - "03-00-exercise-what-do-you-sell-when-copies-are-free"
+          - "04-00-technology-decisions"
+          - "04-01-file-formats"
+          - "04-02-data-asset-management-systems"
+          - "04-03-metadata"
+          - "04-04-digital-rights-management"
+          - "05-00-rights-and-royalty-decisions"
+          - "05-01-territory"
+          - "05-02-royalties"
+          - "06-00-product-decisions"
+          - "06-01-backlist-conversions-vs-frontlist-plans"
+          - "06-02-publishing-and-software-development"
+          - "07-00-administrative-decisions"
+          - "07-01-identifiers-isbns-uuids-urls"
+          - "07-02-reporting-and-tracking-sales"
+          - "07-03-tracking-production-and-marketing-costs"
+          - "08-00-workflow-decisions"
+          - "08-01-changes-to-editorial-and-design-processes"
+          - "08-02-managing-in-house-learning-and-knowledge"
+          - "08-03-expertise-and-functional-authority"
+          - "08-04-a-format-agnostic-workflow"
+          - "09-00-sales-and-marketing-decisions"
+          - "09-01-pricing-models"
+          - "09-02-partners"
+          - "09-03-sales-and-delivery-processes"
+          - "10-00-what-are-your-priorities"
+          - "11-00-conclusion"
+      screen-pdf:
+        date: "2019-04-02" # YYYY-MM-DD e.g. publication date or last revision
+        format: "Digital download" # e.g. Paperback, Digital download, Digital online
+        identifier: "" # e.g. ISBN or UUID
+        image: "cover.jpg"
+        files:
+          - "0-0-cover"
+          - "0-1-titlepage"
+          - "0-2-copyright"
+          - "0-3-contents"
+          - "01-00-intro"
+          - "02-00-what-is-an-ebook"
+          - "03-00-exercise-what-do-you-sell-when-copies-are-free"
+          - "04-00-technology-decisions"
+          - "04-01-file-formats"
+          - "04-02-data-asset-management-systems"
+          - "04-03-metadata"
+          - "04-04-digital-rights-management"
+          - "05-00-rights-and-royalty-decisions"
+          - "05-01-territory"
+          - "05-02-royalties"
+          - "06-00-product-decisions"
+          - "06-01-backlist-conversions-vs-frontlist-plans"
+          - "06-02-publishing-and-software-development"
+          - "07-00-administrative-decisions"
+          - "07-01-identifiers-isbns-uuids-urls"
+          - "07-02-reporting-and-tracking-sales"
+          - "07-03-tracking-production-and-marketing-costs"
+          - "08-00-workflow-decisions"
+          - "08-01-changes-to-editorial-and-design-processes"
+          - "08-02-managing-in-house-learning-and-knowledge"
+          - "08-03-expertise-and-functional-authority"
+          - "08-04-a-format-agnostic-workflow"
+          - "09-00-sales-and-marketing-decisions"
+          - "09-01-pricing-models"
+          - "09-02-partners"
+          - "09-03-sales-and-delivery-processes"
+          - "10-00-what-are-your-priorities"
+          - "11-00-conclusion"
+      app:
+        date: "2019-04-02" # YYYY-MM-DD e.g. publication date or last revision
+        format: "Digital download" # e.g. Paperback, Digital download, Digital online
