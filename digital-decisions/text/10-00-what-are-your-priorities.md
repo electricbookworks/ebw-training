@@ -16,7 +16,7 @@ Which kinds of books (by genres or any other classification) published by your o
 
 Should you digitise your whole backlist, or only some of it? If the latter, how should you go about choosing which books to digitise?
 
-Can your current systems for managing book files and metadata handle ebooks? If not, what&#8217;s the main reason?
+Can your current systems for managing book files and metadata handle ebooks? If not, what's the main reason?
 
 How will your customers read their ebooks? (When, where and on what?)
 
@@ -24,7 +24,7 @@ Should your organisation use DRM for all, some, or none of its books?
 
 Should electronic rights be negotiated book by book, or should your organisation make a tactful rights land-grab for the sake of efficiency?
 
-Can you realistically expect your designers and typesetters to create ebook files? (Giving them, say, three months&#8217; notice.)
+Can you realistically expect your designers and typesetters to create ebook files? (Giving them, say, three months' notice.)
 
 How do you share new knowledge and skills across your organisation? Will this system be enough as you learn to make and sell ebooks?
 
