@@ -62,7 +62,7 @@ mathjax-font: "Gyre-Pagella"
 # turned on by those formats' _config files.
 collections:
   docs:
-    output: true
+    output: false
 
 # --------------------------------------------
 # CHANGE THESE SETTINGS ONLY IF/WHEN NECESSARY

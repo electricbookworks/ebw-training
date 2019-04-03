@@ -80,4 +80,4 @@ Over two days, the workshop can serve as a strategy session, getting everyone on
 *   Duration: one or two days
 *   Participants: minimum six, maximum fifteen
 
-[Course notes](http://electricbookworks.com/kb/digital-decisions-what-book-publishers-should-know-about-ebooks/){:.button}  on the EBW Knowledge Base
+[Course notes](digital-decisions){:.button}
