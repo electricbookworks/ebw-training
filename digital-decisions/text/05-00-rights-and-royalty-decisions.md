@@ -27,3 +27,18 @@ These suggestions do not cover permissions for third-party content, like poems o
 > Note: We&#8217;re not going to discuss [Google Books](http://books.google.com/) in this course, except to say that you should take the time to know about the Google service, and how you can use any of three key services it provides: free digitisation (low quality, for books you want available but don&#8217;t want to spend money on); indexing (so that people can find the book by its text but not read it), and sales (Google Editions will operate like an ebookstore).
 
 
+## Territory
+
+To date, most ebook distributors let you determine which territories your ebooks will sell into. Of course, try to get world rights in any negotiations. (This also offers the opportunity to create territory-based pricing strategies, such as low-priced editions for developing countries.)
+
+## Royalties
+
+This is a contentious area. Many authors think ebook royalties should be higher, since the publisher is saving on production and distribution costs. Publishers know things are often more complicated than that, and that they may be forced to pass any savings on to consumers, under pressure from large retailers.
+
+Moreover, under some contracts, electronic rights may fall under subsidiary rights clauses that give the author a far higher share of revenue than their royalty rate. A demanding author could even argue that they deserve a high subsidiary-rights percentage of revenue if you outsource most of your ebook creation and distribution, to the point that you&#8217;re effectively licensing your ebook business to a third party.
+
+My recommendation:
+
+1. Offer authors the same royalty as the highest print-sales royalty in their contract, or offer all your authors the same, generous royalty (but not as high as a subsidiary-rights share would be). [It may be increasingly common to offer 20–25% of net receipts](http://www.ereads.com/2010/02/and-new-macmillan-e-book-royalty-is.html).
+
+2. Always treat ebook creation as an in-house responsibility, even if you outsource parts of the ebook-creation and distribution process.

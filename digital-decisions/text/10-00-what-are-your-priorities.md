@@ -1,6 +1,6 @@
 ---
 order: 263
-title: 'Survey: What are you thinking?'
+title: 'Survey: What are your priorities?'
 date: 2010-04-16T18:08:48+00:00
 author: Arthur Attwell
 parent-page: digital-decisions-what-book-publishers-should-know-about-ebooks
@@ -8,7 +8,7 @@ previous-page: sales-and-delivery-processes
 next-page: conclusion
 ---
 
-# Survey: What are you thinking?
+# Survey: What are your priorities?
 
 > This is an anonymous questionnaire on key issues. The idea is to see what people here are thinking right now, and to share those ideas with the group without worrying what your peers might be thinking. Take five minutes to note down quick ideas in response to each question.
 
