@@ -89,7 +89,7 @@ DRM is any technical measure that restricts what you can do with a file. Usually
 There are, broadly speaking, two kinds of DRM:
 
 - Technical DRM physically stops someone from sharing a file. Usually, the file is encrypted, and can only be opened by dedicated software where the legal owner of the ebook is logged in.
-- Social DRM encourages people not to share by making them uncomfortable about sharing. For instance, the ebook might be generated with the words 'This ebook belongs to Patricia Doyle and may not be shared' on the title page.
+- [Social DRM](https://twitter.com/jeremyfelt/status/1114708069345153024?s=19) encourages people not to share by making them uncomfortable about sharing. For instance, the ebook might be generated with the words 'This ebook belongs to Patricia Doyle and may not be shared' on the title page.
 
 A common form of ebook DRM that publishers and some booksellers use is the Adobe Content Server, which can add DRM to PDF and epub files. That DRM then only lets you open those files in an application that supports Adobe DRM (such as Adobe Digital Editions), and only when that application has been registered with your Adobe username and password. It is extremely expensive, so only big distributors use it.
 
