@@ -10,7 +10,7 @@ Must-have tech&nbsp;skills for publishing&nbsp;pros
 
 {{ subtitle }}
 {:.title-page-subtitle}
-
+^
 {{ creator }}
 {:.title-page-author}
 

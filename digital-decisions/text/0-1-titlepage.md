@@ -6,10 +6,13 @@ style: title-page
 {% include metadata %}
 
 {{ title }}
-{:.titlepage-title}
+{:.title-page-title}
 
 {{ subtitle }}
-{:.titlepage-subtitle}
-
+{:.title-page-subtitle}
+^
 {{ creator }}
-{:.titlepage-author}
+{:.title-page-author}
+
+{% include image file="publisher-logo.jpg" %}
+{:.title-page-logo}
