@@ -21,6 +21,7 @@ $web-video: true !default;
             // Add play button before iframe loads
             &:before {
                 content: "\25b6";
+                cursor: pointer;
                 position: absolute;
                 font-size: $font-size-default * 3;
                 top: 50%;
@@ -36,7 +37,7 @@ $web-video: true !default;
                 width: 100%;
                 padding-bottom: 56.25%;
                 background-color: $color-mid;
-                border-radius: $button-border-radius;
+                border-radius: $box-border-radius;
             }
             // JS will add an iframe here; when it does:
             &.contains-iframe {

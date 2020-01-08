@@ -8,9 +8,9 @@
 //
 // 1. Use CSS selectors to list the headings that will
 //    define each accordion section, e.g. '#content h2'
-var accordionHeads = '#content h2';
+var accordionHeads = '#content > h2';
 // 2. Which heading's section should we show by default?
-var defaultAccordionHead = '#content h2:first-of-type';
+var defaultAccordionHead = '#content > h2:first-of-type, #content header > h2:first-of-type';
 // --------------------------------------------------------------
 
 function ebAccordionInit() {
@@ -516,11 +516,11 @@ function ebAccordify() {
         return;
     }
 
-    // exit if this isn't a chapter
-    var thisIsNotAChapter = (document.querySelector('body').getAttribute('class').indexOf('chapter') === -1);
+    // exit if this shouldn't have an accordion
+    var thisIsNotAccordiable = (document.querySelector('body').getAttribute('class').indexOf('no-accordion') !== -1);
     var thisHasNoH2s = (document.querySelector(accordionHeads) === null);
     var thisIsEndmatter = (document.querySelector('body').getAttribute('class').indexOf('endmatter') !== -1);
-    if (thisIsNotAChapter || thisHasNoH2s || thisIsEndmatter) {
+    if (thisIsNotAccordiable || thisHasNoH2s || thisIsEndmatter) {
         return;
     }
 

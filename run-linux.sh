@@ -225,7 +225,7 @@ Enter a number and hit enter. "
 		echo "If not, just hit return."
 		read config
 		# Ask the user to set a baseurl if needed
-		echo "Do you need a baseurl?"
+		echo "Do you need to set a baseurl?"
 		echo "If yes, enter it with no slashes at the start or end, e.g."
 		echo "my/base"
 		read baseurl
@@ -249,7 +249,7 @@ You may need to reload the web page once this server is running."
 			# ...and run Jekyll
 			if [ "$baseurl" = "" ]
 				then
-				bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,$config" --baseurl=""
+				bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,$config"
 			else
 				bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,$config" --baseurl="/$baseurl"
 			fi
@@ -428,6 +428,18 @@ You may need to reload the web page once this server is running."
 				echo "Copying Javascript..."
 				mkdir "$location"/_site/epub/js && cp -a "$location"/_site/js/. "$location"/_site/epub/js/
 			fi
+			# Convert all .html files and internal links to .xhtml
+			echo "Renaming .html to .xhtml..."
+			cd "$location"
+			if [ "$epubsubdirectory" = "" ]; then
+				gulp epub:xhtmlLinks
+				gulp epub:xhtmlFiles
+				gulp epub:cleanHtmlFiles
+			else
+				gulp epub:xhtmlLinks --language $epubsubdirectory
+				gulp epub:xhtmlFiles --language $epubsubdirectory
+				gulp epub:cleanHtmlFiles --language $epubsubdirectory
+			fi
 			# Now to create a compressed epub.
 			# First, though, if they exist, remove previous .zip and .epub files that we will replace.
 			echo "Removing previous zips or epubs..."
@@ -546,13 +558,13 @@ You may need to reload the web page once this server is running."
 			echo "Epub created!"
 			# Validation
 			echo "To run validation, enter the path to the EpubCheck folder on your machine."
-			echo "Hit enter for the default: /usr/local/bin/epubcheck-4.0.2"
+			echo "Hit enter for the default: /usr/local/bin/epubcheck-4.2.2"
 			echo "(You can get EpubCheck from https://github.com/IDPF/epubcheck/releases"
 			echo "Or go to http://validator.idpf.org to validate online.)"
 			read pathtoepubcheck
 			if [ "$pathtoepubcheck" = "" ]; then
 				echo "Okay, using default EpubCheck location. "
-				pathtoepubcheck="/usr/local/bin/epubcheck-4.0.2"
+				pathtoepubcheck="/usr/local/bin/epubcheck-4.2.2"
 			fi
 			java -jar "$pathtoepubcheck"/epubcheck.jar "$epubfilename".epub
 			# Open file browser to see epub
@@ -737,9 +749,9 @@ You may need to reload the web page once this server is running."
 		echo "If you're outputting files in a subdirectory (e.g. a translation), type its name. Otherwise, hit enter. "
 		read wordsubdirectory
 		# Ask user which output format to work from
-		echo "Which format are we converting from? Enter a number or hit enter for the default 'print-pdf'. "
-		echo "1. Print PDF (default)"
-		echo "2. Screen PDF"
+		echo "Which format are we converting from? Enter a number or hit enter for the default (screen PDF). "
+		echo "1. Print PDF"
+		echo "2. Screen PDF (default)"
 		echo "3. Web"
 		echo "4. Epub"
 		echo "Enter a number and/or hit enter. "
@@ -750,7 +762,7 @@ You may need to reload the web page once this server is running."
 		do
 			if [ "$fromformat" = "" ]
 				then
-				fromformat="print-pdf"
+				fromformat="screen-pdf"
 				wordformatchoice="1"
 			elif [ "$fromformat" = "1" ]
 				then
@@ -897,13 +909,20 @@ You may need to reload the web page once this server is running."
 		searchIndexToRefresh=""
 		read searchIndexToRefresh
 
+		# Ask the user to add any extra Jekyll config files, e.g. _config.live.yml
+		echo "Any extra config files?"
+		echo "Enter filenames (including any relative path), comma separated, no spaces. E.g."
+		echo "_configs/_config.live.yml"
+		echo "If not, just hit return."
+		read searchIndexConfig
+
 		# Generate HTML with Jekyll
 		echo "Generating HTML with Jekyll..."
 		if [ "$searchIndexToRefresh" = "a" ]
 			then
-			bundle exec jekyll build --config="_config.yml,_configs/_config.app.yml"
+			bundle exec jekyll build --config="_config.yml,_configs/_config.app.yml,$searchIndexConfig"
 		else
-			bundle exec jekyll build --config="_config.yml,_configs/_config.web.yml"
+			bundle exec jekyll build --config="_config.yml,_configs/_config.web.yml,$searchIndexConfig"
 		fi
 
 		# Run PhantomJS script from scripts directory

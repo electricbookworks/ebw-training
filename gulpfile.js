@@ -18,44 +18,60 @@ var gulp = require('gulp'),
     mathjax = require('gulp-mathjax-page'),
     fs = require('fs'),
     yaml = require('js-yaml'),
-    debug = require('gulp-debug');
+    debug = require('gulp-debug'),
+    del = require('del'),
+    cheerio = require('gulp-cheerio');
 
 // Get arrays of possible book and language paths
-var metadata = yaml.load(fs.readFileSync('_data/meta.yml', 'utf8'));
-var works = metadata.works;
-function loadMetadata() {
-    'use strict';
-    var paths = [];
-    var filePaths = [];
-    var books = [];
-    var languages = [];
-    var i;
-    var j;
-    for (i = 0; i < works.length; i += 1) {
-        books.push(works[i].directory);
-        paths.push('_site/' + works[i].directory + '/text/');
-        filePaths.push('_site/' + works[i].directory + '/text/*.html');
-        if (works[i].translations) {
-            for (j = 0; j < works[i].translations.length; j += 1) {
-                languages.push(works[i].translations[j].directory);
-                paths.push('_site/' + works[i].directory + '/' + works[i].translations[j].directory + '/text/');
-                filePaths.push('_site/' + works[i].directory + '/' + works[i].translations[j].directory + '/text/*.html');
+if (fileExists.sync('_data/meta.yml')) {
+    var metadata = yaml.load(fs.readFileSync('_data/meta.yml', 'utf8'));
+    var works = metadata.works;
+    function loadMetadata() {
+        'use strict';
+        var paths = [];
+        var filePaths = [];
+        var books = [];
+        var languages = [];
+        var i;
+        var j;
+        for (i = 0; i < works.length; i += 1) {
+            books.push(works[i].directory);
+            paths.push('_site/' + works[i].directory + '/text/');
+            filePaths.push('_site/' + works[i].directory + '/text/*.html');
+            if (works[i].translations) {
+                for (j = 0; j < works[i].translations.length; j += 1) {
+                    languages.push(works[i].translations[j].directory);
+                    paths.push('_site/' + works[i].directory + '/' + works[i].translations[j].directory + '/text/');
+                    filePaths.push('_site/' + works[i].directory + '/' + works[i].translations[j].directory + '/text/*.html');
+                }
             }
         }
+        return {
+            books: books,
+            languages: languages,
+            paths: paths,
+            filePaths: filePaths
+        };
     }
-    return {
-        books: books,
-        languages: languages,
-        paths: paths,
-        filePaths: filePaths
-    };
+    loadMetadata();
 }
-loadMetadata();
+
+// Load image settings if they exist
+var imageSettings = [];
+if (fs.existsSync('_data/images.yml')) {
+    imageSettings = yaml.load(fs.readFileSync('_data/images.yml', 'utf8'));
+}
 
 // Get the book we're processing
 var book = 'book';
 if (args.book && args.book.trim !== '') {
     book = args.book;
+}
+
+// let '--folder' be an alias for '--book',
+// to make sense for gulping 'assets' and '_items'
+if (args.folder && args.folder.trim !== '') {
+    book = args.folder;
 }
 
 // Reminder on usage
@@ -92,6 +108,10 @@ var paths = {
         src: '_site/' + book + language + '/text/*.html',
         dest: '_site/' + book + language + '/text/'
     },
+    epub: {
+        src: '_site/epub' + language + '/text/*.html',
+        dest: '_site/epub' + language + '/text/'
+    },
     js: {
         src: [],
         dest: 'assets/js/'
@@ -110,13 +130,21 @@ gulp.task('images:svg', function (done) {
     gulp.src(paths.img.source + '*.svg')
         .pipe(debug({title: 'Processing SVG '}))
         .pipe(svgmin({
-            plugins: [{
-                removeAttrs: {attrs: 'data.*'}
-            }, {
-                removeUnknownsAndDefaults: {
-                    defaultAttrs: false
+            plugins: [
+                {
+                    removeViewBox: false
+                },
+                {
+                    removeDimensions: true
+                },
+                {
+                    removeAttrs: {attrs: 'data.*'}
+                }, {
+                    removeUnknownsAndDefaults: {
+                        defaultAttrs: false
+                    }
                 }
-            }]
+            ]
         }).on('error', function (e) {
             console.log(e);
         }))
@@ -135,6 +163,8 @@ gulp.task('images:printpdf', function (done) {
     // Options
     var printPDFColorProfile = 'PSOcoated_v3.icc';
     var printPDFColorSpace = 'cmyk';
+    var printPDFColorProfileGrayscale = 'Grey_Fogra39L.icc';
+    var printPDFColorSpaceGrayscale = 'gray';
 
     console.log('Processing print-PDF images from ' + paths.img.source);
     if (fileExists.sync('_tools/profiles/' + printPDFColorProfile)) {
@@ -142,7 +172,24 @@ gulp.task('images:printpdf', function (done) {
             .pipe(newer(paths.img.printpdf))
             .pipe(debug({title: 'Creating print-PDF version of '}))
             .pipe(gm(function (gmfile) {
-                return gmfile.profile('_tools/profiles/' + printPDFColorProfile).colorspace(printPDFColorSpace);
+
+                // Check for grayscale
+                var thisColorProfile = printPDFColorProfile; // set default/fallback
+                var thisColorSpace = printPDFColorSpace; // set default/fallback
+                var thisFilename = gmfile.source.split('\/').pop(); // for unix slashes
+                thisFilename = thisFilename.split('\\').pop(); // for windows backslashes
+
+                // Look up image colour settings
+                imageSettings.forEach(function (image) {
+                    if (image.file === thisFilename) {
+                        if (image['print-pdf'].colorspace === 'gray') {
+                            thisColorProfile = printPDFColorProfileGrayscale;
+                            thisColorSpace = printPDFColorSpaceGrayscale;
+                        }
+                    }
+                });
+
+                return gmfile.profile('_tools/profiles/' + thisColorProfile).colorspace(thisColorSpace);
             }).on('error', function (e) {
                 console.log(e);
             }))
@@ -337,6 +384,33 @@ gulp.task('images:xlarge', function (done) {
     done();
 });
 
+// Make full-quality images in RGB
+gulp.task('images:max', function (done) {
+    'use strict';
+
+    // Options
+    var imagesMaxColorProfile = 'sRGB_v4_ICC_preference_displayclass.icc';
+    var imagesMaxColorSpace = 'rgb';
+
+    console.log('Creating max-quality web images from ' + paths.img.source);
+    if (fileExists.sync('_tools/profiles/' + imagesMaxColorProfile)) {
+        gulp.src(paths.img.source + '*.{' + filetypes + '}')
+            .pipe(newer(paths.img.web))
+            .pipe(debug({title: 'Creating max-quality '}))
+            .pipe(gm(function (gmfile) {
+                return gmfile.quality(100).profile('_tools/profiles/' + imagesMaxColorProfile).colorspace(imagesMaxColorSpace);
+            }).on('error', function (e) {
+                console.log(e);
+            }))
+            .pipe(rename({suffix: "-max"}))
+            .pipe(gulp.dest(paths.img.web));
+    } else {
+        console.log('Colour profile _tools/profiles/' + imagesMaxColorProfile + ' not found. Exiting.');
+        return;
+    }
+    done();
+});
+
 // Minify JS files to make them smaller,
 // using the drop_console option to remove console logging
 gulp.task('js', function (done) {
@@ -436,6 +510,66 @@ gulp.task('mathjax:all', function (done) {
     }
 });
 
+// Convert all file names in internal links from .html to .xhtml.
+// This is required for epub output to avoid EPUBCheck warnings.
+gulp.task('epub:xhtmlLinks', function (done) {
+    'use strict';
+
+    gulp.src([paths.epub.src, '_site/epub/package.opf', '_site/epub/toc.ncx'], {base: './'})
+        .pipe(cheerio({
+            run: function ($) {
+                var target, newTarget;
+                $('[href*=".html"], [src*=".html"]').each(function () {
+                    if ($(this).attr('href')) {
+                        target = $(this).attr('href');
+                    } else if ($(this).attr('src')) {
+                        target = $(this).attr('src');
+                    } else {
+                        return;
+                    }
+
+                    if (target.includes('.html') && !target.includes('http')) {
+                        newTarget = target.replace('.html', '.xhtml');
+                        if ($(this).attr('href')) {
+                            $(this).attr('href', newTarget);
+                        } else if ($(this).attr('src')) {
+                            $(this).attr('src', newTarget);
+                        }
+                    }
+                });
+            },
+            parserOptions: {
+                xmlMode: true
+            }
+        }))
+        .pipe(debug({title: 'Converting internal links to .xhtml in '}))
+        .pipe(gulp.dest('./'));
+    done();
+});
+
+// Rename epub .html files to .xhtml.
+// Creates a copy of the file that must then be cleaned out
+// with the subsequent gulp task `epub:cleanHtmlFiles``
+gulp.task('epub:xhtmlFiles', function (done) {
+    'use strict';
+
+    console.log('Renaming *.html to *.xhtml in ' + paths.epub.src);
+    gulp.src(paths.epub.src)
+        .pipe(debug({title: 'Renaming '}))
+        .pipe(rename({
+            extname: '.xhtml'
+        }))
+        .pipe(gulp.dest(paths.epub.dest));
+    done();
+});
+
+// Clean out renamed .html files
+gulp.task('epub:cleanHtmlFiles', function () {
+    'use strict';
+    console.log('Removing old *.html files in ' + paths.epub.src);
+    return del(paths.epub.src);
+});
+
 // when running `gulp`, do the image tasks
 gulp.task('default', gulp.series(
     'images:svg',
@@ -444,5 +578,6 @@ gulp.task('default', gulp.series(
     'images:small',
     'images:medium',
     'images:large',
-    'images:xlarge'
+    'images:xlarge',
+    'images:max'
 ));
