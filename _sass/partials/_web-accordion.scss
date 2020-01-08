@@ -21,10 +21,14 @@ $web-accordion: true !default;
         }
     }
 
+    // Don't let floating elements from previous section
+    // overlap with next section.
+    [role="tabpanel"] {
+        clear: both;
+    }
+
     [data-accordion="closed"] {
-        @media (min-width: $break-point-width) {
-            font-size: $font-size-default;
-        }
+        font-size: $font-size-default;
         &:after {
             content: $nav-bar-children-prompt;
         }

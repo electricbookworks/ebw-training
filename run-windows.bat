@@ -287,7 +287,7 @@ set /p process=Enter a number and hit return.
         echo.
 
         :: Ask the user to set a baseurl if needed
-        echo Do you need a baseurl?
+        echo Do you need to set a baseurl?
         echo If yes, enter it with no slashes at the start or end, e.g.
         echo my/base
         echo.
@@ -335,10 +335,10 @@ set /p process=Enter a number and hit return.
 
                 :: Run Jekyll, with MathJax enabled if necessary
                 if not "%webmathjax%"=="y" goto webnomathjax
-                call bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,_configs/_config.mathjax-enabled.yml,%config%" --baseurl=""
+                call bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,_configs/_config.mathjax-enabled.yml,%config%"
                 goto webjekyllservednobaseurl
                 :webnomathjax
-                call bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,%config%" --baseurl=""
+                call bundle exec jekyll serve --config="_config.yml,_configs/_config.web.yml,%config%"
 
                 :webjekyllservednobaseurl
 
@@ -620,6 +620,19 @@ set /p process=Enter a number and hit return.
             :: Now step back into the folder before continuing
             cd %location%/_site/epub
 
+        :: Rename .html to .xhtml in files and links
+        :epubRenameHtmlXhtml
+            echo Renaming .html to .xhtml...
+
+            cd %location%
+            if "%subdirectory%"=="" call gulp epub:xhtmlLinks
+            if "%subdirectory%"=="" call gulp epub:xhtmlFiles
+            if "%subdirectory%"=="" call gulp epub:cleanHtmlFiles
+            if not "%subdirectory%"=="" call gulp epub:xhtmlLinks --language %subdirectory%
+            if not "%subdirectory%"=="" call gulp epub:xhtmlFiles --language %subdirectory%
+            if not "%subdirectory%"=="" call gulp epub:cleanHtmlFiles --language %subdirectory%
+            cd %location%/_site/epub
+
         :: Now to zip the epub files. Important: mimetype first.
         :epubCompressing
             echo Compressing files...
@@ -679,7 +692,7 @@ set /p process=Enter a number and hit return.
             for /f "tokens=2-8 delims=.:/, " %%a in ("%date% %time%") do set timestamp=%%c-%%a-%%bT%%d-%%e-%%f
             set epubCheckLogFile=epubcheck-log-%timestamp%
             echo Found EpubCheck at %epubchecklocation%, running validation...
-            call java -jar %epubchecklocation% %epubFileName%.epub 2>> %epubCheckLogFile%.txt
+            call java -Xss1024k -jar %epubchecklocation% %epubFileName%.epub 2>> %epubCheckLogFile%.txt
             echo Opening EpubCheck log...
             start %epubCheckLogFile%.txt
 
@@ -821,15 +834,15 @@ set /p process=Enter a number and hit return.
             echo.
 
         :: Ask user which output type to work from
-        echo Which format are we converting from? Enter a number or hit enter for the default:
-        echo 1. Print PDF (default)
-        echo 2. Screen PDF
+        echo Which format are we converting from? Enter a number or hit enter for the default (screen PDF):
+        echo 1. Print PDF
+        echo 2. Screen PDF (default)
         echo 3. Web
         echo 4. Epub
         set /p fromformat=
 
         :: Turn that choice into the name of an output format for our config
-        if "%fromformat%"=="" set fromformat=print-pdf
+        if "%fromformat%"=="" set fromformat=screen-pdf
         if "%fromformat%"=="1" set fromformat=print-pdf
         if "%fromformat%"=="2" set fromformat=screen-pdf
         if "%fromformat%"=="3" set fromformat=web
@@ -974,18 +987,31 @@ set /p process=Enter a number and hit return.
         echo To refresh the app search index, type a and press enter.
         set /p searchIndexToRefresh=
 
+
+        :: Ask the user to add any extra Jekyll config files,
+        :: e.g. _config.live.yml
+        :searchIndexOtherConfigs
+            echo.
+            echo Any extra config files?
+            echo Enter filenames (including any relative path), comma separated, no spaces. E.g.
+            echo _configs/_config.live.yml
+            echo If not, just hit return.
+            echo.
+            set /p searchIndexConfig=
+            echo.
+
         :: Generate HTML with Jekyll
         echo Generating HTML with Jekyll...
         if "%searchIndexToRefresh%"=="a" goto buildForAppSearchIndex
 
         :buildForWebSearchIndex
 
-            call bundle exec jekyll build --config="_config.yml,_configs/_config.web.yml"
+            call bundle exec jekyll build --config="_config.yml,_configs/_config.web.yml,%searchIndexConfig%"
             goto refreshSearchIndexRenderWithPhantom
 
         :buildForAppSearchIndex
 
-            call bundle exec jekyll build --config="_config.yml,_configs/_config.app.yml"
+            call bundle exec jekyll build --config="_config.yml,_configs/_config.app.yml,%searchIndexConfig%"
             goto refreshSearchIndexRenderWithPhantom
 
         :: Run phantomjs script from scripts directory

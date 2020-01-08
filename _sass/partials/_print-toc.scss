@@ -14,8 +14,7 @@ $print-toc: true !default;
 			list-style-type: none;
 			text-align: left; // overrides possible justify applied in Sass configs
 			ul, ol {
-				margin-bottom: 0;
-				margin-left: $line-height-default;
+				margin-left: $paragraph-indent;
 			}
 		}
 		li {
@@ -55,7 +54,7 @@ $print-toc: true !default;
 				ol, ul {
 					list-style-type: none;
 					margin-bottom: 0;
-					margin-left: $line-height-default;
+					margin-left: $paragraph-indent;
 				}
 			}
 		a::after {
