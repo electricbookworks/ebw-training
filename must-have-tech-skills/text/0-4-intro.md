@@ -50,14 +50,14 @@ First things first, let's have a sneak peak at what you're going to understand b
 That window that just opened is showing you the code behind the web page. In the code view, you should see something like this:
 
 ```html
-<h1>Multi-format publishing</h1>
+<h1>Strategic publishing for thought leaders</h1>
 ```
 
-Double-click that code, and change the text between the `h` tags. Then click anywhere else. You should see the heading on the actual web page change. If so, well done! You just edited a web page.
+Double-click that code, and change the text between the `<h1>` and `</h1>` tags. Then click anywhere else. You should see the heading on the actual web page change. If so, well done! You just edited a web page.
 
 Don't worry, your changes are just temporary, and only exist in your browser for the moment. Refresh the page, and the site will go back to normal.
 
-Those little windows show you three main things about the web page you're on:
+Those Inspector windows show you three main things about the web page you're on:
 
 1. Its HTML: the content on the page
 2. Its CSS: the design of the page
