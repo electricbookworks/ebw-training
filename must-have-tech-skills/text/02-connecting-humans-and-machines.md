@@ -12,7 +12,7 @@ If you're creating content that a machine will process, we need to write in a wa
 
 Luckily, in building the Internet, people have come up with all kinds of conventions and techniques for capturing human stories in ways that machines can process.
 
-We need to learn those techniques to make machines do what we want, and not break our work.
+We need to learn those techniques to make machines deliver what we intend.
 
 ## Separating content and design
 
@@ -20,44 +20,44 @@ The fundamental rule in multi-format editing is that **we separate content and d
 
 Let's say we're writing an article containing a case study. The case study is made of content and design:
 
-- **Content**: the heading and the story and maybe a picture.
-- **Design**: a surrounding box, a font change from the main text, the way the box sits to the right of the main text.
+- **Content**: the text of the heading and the story and maybe a photo.
+- **Design**: a surrounding box, a font change from the main text, the way the image sits to the right of the main text.
 
-In a different context, say on a small phone, we might use a completely different design that saves space and requires less processing power: a background colour rather than a box, the same font as the main text, and the box will come after the main text in a single column.
+In a different context, say on a small phone, we might use a completely different design that saves space and requires less processing power: a background colour rather than a box, the same font as the main text, and the image might come after the main text in a single column.
 
 The idea here is that:
 
-- **Content** is determined entirely by its creator, and it doesn't change.
-- **Design** is guided by its creator, but ultimately determined by to the user and their viewport. It is format- and context-based.
+- **content** is determined entirely by its creator, and it doesn't change
+- **design** is guided by its creator, but ultimately determined by the user and their viewport. It is format- and context-dependent.
 
 In digital production, then, we aim to create:
 
-- One master version of all content.
-- Any number of design stylesheets for different formats and contexts.
+- one master version of all content (text and images)
+- any number of designs for different formats and contexts.
 
 **One master version of content** is especially important, because we *never* want to be maintaining the same content in more than one place.
 
 What does separating content and design mean for day-to-day editing? Here are some examples:
 
 1. **Be on the lookout for subtle mixing up of content and design.** For instance, referring to the colours in a graph is risky: what if that graph appears on a black-and-white ereader? What if a reader is using a high-contrast display that changes the colours for readability? What if your reader is blind, and having a computer read the text to them?
-2. **Avoid using design features for semantic purposes.** For instance, in a textbook don't write 'learn the words in bold', because in some viewports those words might appear italic, or pink, or highlighted instead. Rather say 'learn the words emphasised *like this*', and tag the phrase in the same way you'd tag a word to learn.
+2. **Avoid using design features for semantic purposes.** For instance, in a textbook don't write 'learn the words in bold', because in some viewports those words might appear italic, or pink, or highlighted instead. Rather say 'learn the words emphasised *like this*', and tag the phrase `like this` in the same way you'd tag the emphasised words.
 3. **Avoid 'positioning' phrases.** like 'see above' and 'the figure on the right'.
 
 ## Basic HTML and CSS
 
 Anyone who worked in publishing twenty years ago remembers marking up text for layout: adding tags like `[start box]` and `[end box]` and inserting instructions for design like `[pullquote]` or `[smallcaps]`.
 
-In well-organised teams, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for markup in a team, it was not unusual for a book to be final at the third round of page proofs.
+In well-organised teams back then, we standardised those tags so that typesetting would be fast and hopefully error-free. With a standardised language for markup in a team, it was not unusual for a book to be final at the third round of page proofs. (Later, MS Word's poor interface for styles would ruin that and set us back decades!)
 
-While we were doing that, around the world people were doing the same thing for web pages. Though, rather than marking up content for typesetters, they were marking up content for web browsers: machines that would 'typeset' on the fly, on screen, on a user's computer.
+While we were adding tags in manuscripts, around the world people were doing the same thing for web pages. Though, rather than marking up content for typesetters, they were marking up content for web browsers: machines that would 'typeset' on the fly: laying out text and images on a user's computer screen.
 
-There were many attempts to create markup languages. The technique that really caught on used labels in angle-brackets, like `<blockquote>`. A team could create and extend its own markup language for any kind of content. This technique became known as 'extensible markup language', or XML for short. 
+A particular set of tags and the logic behind them forms a 'markup language', and there have been many attempts to standardise markup languages. One technique that caught on used labels in angle-brackets, like `<blockquote>`. This technique became known as 'extensible markup language', or XML for short. Following some basic rules, any team could create and extend its own markup language for any kind of content.
 
-There are probably tens of thousands of markup languages created using the XML technique. The most popular by far is HTML, which stands for 'hypertext markup language'. Almost every web page you visit is delivered to your computer in HTML. Your web browser reads the HTML and 'typesets' the page for you automatically.
+There are probably tens of thousands of markup languages created using the XML technique. The most popular by far is HTML, which stands for 'hypertext markup language'. Almost every web page you visit is delivered to your web browser as HTML. Your browser reads the HTML and 'typesets' the page for you automatically.
 
 If well constructed, that HTML markup lets browsers lay out the same content differently, but readably, on an infinite number of viewport shapes and sizes, including printable pages.
 
-To work with digital content, you have to know at least basic HTML.
+To work with digital content, you have to know some basic HTML.
 
 ### Elements
 
@@ -96,7 +96,7 @@ A list with no particular order.
 </ul>
 ```
 
-A bulleted list is an example of an unordered list. The list marker – bullets, discs, little pictures – depends on the CSS. Solid bullets are the default.
+A bulleted list is an example of an unordered list. The list marker – bullets, discs, little pictures – depends on the styles created for the page. Solid bullets are the default. Styles are written in CSS code, which we'll talk about later.
 
 #### Ordered list
 
@@ -167,6 +167,8 @@ Much like a `span`, a `div` is for any block of content that you need to mark up
 
 We might then write CSS that displays this `div` with a red background.
 
+The difference between a `span` and a `div` is that a `span` is *inline* – e.g. mid-sentence – while a `div` has a line-break before and after it.
+
 #### Tables
 
 At its simplest, an HTML table is made of a `<table>` element, which contains table rows (`<tr>`); and each table row contains table data (`<td>`) elements. Each `<td>` is a table cell.
@@ -174,7 +176,12 @@ At its simplest, an HTML table is made of a `<table>` element, which contains ta
 ```html
 <table>
   <tr>
-       <td>One data cell.</td>
+     <td>Name</td>
+     <td>Age</td>
+  </tr>
+  <tr>
+    <td>Arthur</td>
+    <td>46</td>
   </tr>
 </table>
 ```
@@ -191,7 +198,7 @@ The link tag needs extra information: the URL to link to. When we need to give a
 </a>
 ```
 
-That will make the phrase '[An example web page.](http://example.com)' clickable. Note how the attribute sits inside the opening tag.
+That will make the phrase '[An example web page.](http://example.com)' clickable. Note how the attribute sits *inside the opening tag*.
 
 #### Images
 
@@ -201,7 +208,7 @@ The image tag also needs an attribute, a `src` for the source image file.
 <img src="selfie.jpg" />
 ```
 
-Note that the `<img>` tag doesn't wrap around anything. It is self-standing. So it should also close itself with a slash. We call it a self-closing tag.
+Note that the `<img>` tag doesn't have a separate closing tag to wrap around any text. It is self-standing. It closes itself with a slash, in one tag. We call it a self-closing tag.
 
 For accessibility, we should also include an `alt` attribute: text that is the *alternative* to seeing the image. The best `alt` tags describe the image.
 
@@ -221,7 +228,7 @@ To give the content a design, it follows a stylesheet. Browsers have a very basi
 
 We then define our own design by adding our own stylesheet. 
 
-To write stylesheets, we use a language called CSS (for 'Cascading Style Sheets'). In CSS, we write each rule by including the element name, and then its design properties in curly braces. For instance, this rule makes all paragraph text grey:
+To write a stylesheet, we use a language called CSS (for 'Cascading Style Sheets'). In CSS, we write each rule by including the element name, and then its design properties in curly braces. For instance, this rule makes all paragraph text grey:
 
 ``` css
 p { color: grey; }
@@ -240,7 +247,7 @@ p {
 
 (We could also set font size in units, like `16pt`.)
 
-See the extra line breaks at the braces? That's a code-layout convention for making CSS easier for us humans to read. The line breaks do not affect how the CSS works.
+See the extra line breaks at the braces, and the indentation? Those are code-layout conventions for making CSS easier for us humans to read. They do not affect how the CSS works.
 
 The terms for the display properties (like `color` and `font-size`) are defined in official specifications. Learning CSS is mostly about learning the names of the many properties you can use, and how they interact.
 
@@ -276,7 +283,7 @@ We can't have separate elements for all of them. So in HTML we say there are dif
 
 And much more.
 
-So HTML lets us invent our own classes, and gives us a way to say what class an element belongs to. We do this by adding an *attribute* to the element's opening tag. Let's say we want to call our paragraph a 'greeting' paragraph:
+HTML lets us invent our own classes, and gives us a way to say what class an element belongs to. We do this by adding an *attribute* to the element's opening tag. Let's say we want to call our paragraph a 'greeting' paragraph:
 
 ``` html
 <p class="greeting">Hello World!</p>
@@ -288,7 +295,7 @@ We could have called the class anything we liked, even something silly:
 <p class="frabjous">Hello World!</p>
 ```
 
-It's best to use class names that are easy to remember and that describe their *purpose* clearly. And it's good to reuse the same classes in your team and across your publications, for consistency.
+It's best to use class names that are easy to remember and that describe their *purpose* clearly. And it's efficient to reuse the same classes in your team and across your publications, for consistency.
 
 To define what content in a class looks like in CSS, we use a dot before its name. For example:
 
@@ -308,6 +315,12 @@ I can also make *any element* (not just paragraphs) with a `greeting` class uppe
 }
 ```
 
+Now I can write this HTML to make the word 'hello' appear in uppercase:
+
+```html
+I saw her and said <span class="greeting">hello</span>.
+```
+
 ### Inheritance
 
 Perhaps the most important feature of CSS is that styles can be inherited. What does this mean? Let's say I make all paragraphs grey and all greeting paragraphs uppercase:
@@ -316,16 +329,17 @@ Perhaps the most important feature of CSS is that styles can be inherited. What 
 p {
     color: grey;
 }
+
 p.greeting {
     text-transform: uppercase;
 }
 ```
 
-What colour will the greeting be? Grey. Because *all* paragraphs will inherit the rule for `p`. That's what the 'cascading' means in 'cascading style sheets'.
+What colour will the greeting be? Grey. Because *all* paragraphs will inherit the rule for `p`. That's what the 'cascading' means in 'cascading style sheets': styles can cascade from one element to another.
 
-## Naming design features
+## How to name design features
 
-When you mark up a document for publication, whether you're working in HTML or something else, you will have to *name its features*. It's very important to name things carefully and clearly. For instance, each article might have:
+When you mark up a document for publication, whether you're working in HTML or something else, you will have to *name its features*. It's very important to name things carefully, clearly and consistently. For instance, each article might have:
 
 - a list of learning objectives
 - three activities
@@ -337,15 +351,15 @@ It is *very important* to set this list in stone early in a project, and to agre
 
 Usually, these features will be used as class names in CSS.
 
-|       Feature       | Good class name | Bad class name |
-|---------------------|-----------------|----------------|
-| Learning objectives | .objectives     | .list-1        |
-| Activities          | .activity       | .red-box       |
-| Figure              | .figure         | .fg            |
-| Figure caption      | .caption        | .centred-itals |
-| Figure number       | .figure-number  | .no            |
-| Glossary            | .glossary       | .defs          |
-| Bibliography        | .bibliography   | .hang-indent   |
+|       Feature       | Good class name   | Bad class name   |
+|---------------------|-------------------|------------------|
+| Learning objectives | `.objectives`     | `.list-1`        |
+| Activities          | `.activity`       | `.red-box`       |
+| Figure              | `.figure`         | `.fg`            |
+| Figure caption      | `.caption`        | `.centred-itals` |
+| Figure number       | `.figure-number`  | `.no`            |
+| Glossary            | `.glossary`       | `.defs`          |
+| Bibliography        | `.bibliography`   | `.hang-indent`   |
 
 In the simple list above, that's easy. But it can get complicated quickly. In a big textbook we worked on, we had to allow for a range of features, each with potential design features. Here is a selection of those features.
 
@@ -384,10 +398,10 @@ We can map this outline to HTML elements:
 
 That tree structure is a valid representation of the book's structure. However, think about the *design* of these elements. Visually, we will want the `h1` 'Introduction' to look like the `h2` 'Chapter 1'. And the `h1` 'Part 1' should be much bigger and heavier, and have its own page.
 
-As editors, we may be tempted to make 'Introduction' an `h2`, so that it looks like the `h2` 'Chapter'; but this would break our tree structure. Computers can't appreciate our designs, they can only follow our structure. It's useful to think how a screen reader would speak out the structure of a page to a blind person: the structure of heading levels is a crucially important way for a blind person to follow the structure of the page.
+As editors, we may be tempted to make 'Introduction' an `h2`, so that it *looks like* the `h2` 'Chapter'; but this would break our tree structure. Computers can't appreciate our designs, they can only follow our structure. It's useful to think how a screen reader would speak out the structure of a page to a blind person: the structure of heading levels is a crucially important way for a blind person to follow the structure of the page.
 
 So we have to look out for the human tendency to break the tree structure because we're thinking visually, and not separating content and design.
 
-The real solution here is to use `h1` for 'Introduction', and to make it *look* less prominent than 'Part 1' in our CSS stylesheets.
+The real solution here is to use `h1` for 'Introduction', and to make it *look* less prominent than 'Part 1' in our *CSS stylesheets*.
 
 Maintaining a consistent tree structure can be harder than it looks. Keep your eyes peeled for broken tree structures in the documents you edit!

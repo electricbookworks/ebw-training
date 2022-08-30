@@ -20,21 +20,21 @@ Our job is to do our best to create content that travels and lasts. Luckily, the
 
 Before we continue, we should quickly put a common misunderstanding to rest. That misunderstanding is about whether reading or publishing on paper or screen is better.
 
-For over fifteen years, publishers have been pulled in two directions: you’re a print person or you’re a digital person. This is largely a practical matter: the skills and tools for each have been completely different. Which meant the workflows for creating each format were completely different, as were their distribution channels. In most publishing companies, digital teams are still separated from print-production teams, and often this separation breeds in each team a measure of suspicion and anxiety about the other.
+For decades, publishers have been pulled in two directions: you’re a print person or you’re a digital person. This is largely a practical matter: the skills, tools and workflows for each have been completely different, as were their distribution channels. In most publishing companies, digital teams are still separated from print-production teams, and often this separation breeds in each team a measure of suspicion and anxiety about the other.
 
-So the practical matter of skills has framed the evolution of publishing as ‘print vs digital’, when of course the conversation should be about print and digital. Not just because we’re stuck with a multi-format world whether we like it or not, but because print and digital formats are symbiotic. In ambitious publishing projects, especially where we want to make a social impact, neither can be successful without the other.
+So the practical matter of skills has framed the evolution of publishing as ‘print vs digital’, when of course the conversation should be about print *and* digital. This is not just because we live in a multi-format world, but because print and digital formats are symbiotic. In ambitious publishing projects, especially where we want to make a social impact, neither can be successful without the other.
 
 Print generates instant credibility. Books and magazines carry a sense of permanence and authority that digital formats cannot muster.
 
-Notice how print books have remained ad-free in an age when every other available surface carries advertising – something about print books has kept them immune from the disease of advertising. Libraries, despite their own digital transformation, still stand revered as churches to printed books. In a Wikipedian world, we’re nostalgic about being able to cite the printed Britannica. And notice how experts only become thought-leaders when they can talk about their latest book, which only means anything if you can buy it in paper.
+Notice how print books have remained ad-free in an age when every other available surface carries advertising – something about print books has kept them immune from the disease of advertising. Libraries, despite their own digital transformation, still stand revered as churches to printed books. And notice how experts only become thought-leaders when they can talk about their latest book, which only means anything if you can buy it in paper.
 
-But print does not scale, and it’s locked into a funding model where the end-user pays for every copy.
+But print does not scale, and it usually depends on a funding model where the end-user pays for each copy.
 
-Digital formats, and websites in particular, are the opposite. Web publications struggle to muster the authority of print, but they scale instantly and allow for a range of funding models.
+Digital formats, and websites in particular, are completely different. Web publications struggle to muster the authority of print, but they scale instantly and allow for a range of funding models.
 
-Most importantly, they let us shift the costs of development from many end-users to just a few institutions. Books as websites can be public goods in a way that printed books cannot, especially for the poor.
+Most importantly, they allow us more flexible funding models. Since institutions can now fund the development and distribution of websites centrally, books as websites can be public goods in a way that printed books cannot, especially for the poor.
 
-**So, when a publication needs to make an impact, it should be in print and digital formats.** It cannot have impact without the authority of print. And it cannot have impact without the scale of the web.
+**So, when a publication needs to make an impact, it should be in print and digital formats.** It may not have impact without the authority of print. And it may not have impact without the scale of the web.
 
 ## Formats and reading contexts
 
@@ -60,18 +60,18 @@ In digital publishing, you'll often hear the terms **user experience** (UX); **u
 
 The user interface is what the user sees or hears as they encounter the publication. The user interface of a paper book would include its cover design, typography, page numbers and so on. On a website, things like text and buttons and where they lie.
 
-User patterns are the habits we form as we use publications – patterns of behaviour. In English, we open paper books on the right, and look for the book's description on the back cover. Those user patterns are so ingrained that it is very disorienting when a book defies them.
+User patterns are the habits we form as we use publications – patterns of behaviour. In English, we open paper books on the right, and look for the book's description on the back cover. Those user patterns are so ingrained that it is very disorienting when a book doesn't follow them.
 
 Common user patterns on the web include the placement of login buttons on the top right, and that we scroll vertically, not horizontally, through articles.
 
 As we write and edit for digital products, we need to:
 
-1. be aware that we're contributing to a user experience, but not in control of it, and
-2. know as much as we can about user patterns in different reading contexts.
+1. be aware that we're creating a user experience, but not entirely in control of it, and
+2. know and think as much as we can about user patterns in different reading contexts.
 
 ## Accessibility
 
-The most neglected user experiences are those of people with disabilities. If you don't have full vision, you may [use a screen reader](https://www.youtube.com/watch?v=iUCYPM6up9M&t=8s) to read text aloud; you might set your computer to a large-print, high-contrast display. If you have a physical disability, you might not be able to use a mouse, or type more than one letter every few seconds.
+Publishing teams often neglect the user experiences of people with disabilities. If you don't have full vision, you may [use a screen reader](https://www.youtube.com/watch?v=iUCYPM6up9M&t=8s) to read text aloud; you might set your computer to a large-print, high-contrast display. If you have a physical disability, you might not be able to use a mouse, or type more than one letter every few seconds. You might use any number of alternative devices and software to help you read.
 
 {% include youtube id="iUCYPM6up9M" class="non-printing" %}
 
@@ -85,9 +85,9 @@ As you work in digital publishing, you will have more and more opportunities to 
 
 ## Focusing on people
 
-Like any publication, web-based products are for people. We create everything in the service of the user. So it's very important to have a super clear picture of who that user is! The most common, concrete approach to putting users front and centre as you create web products is to use personas.
+Like any publication, web-based products are for people. We create everything in the service of the user. So it's very important to have a super clear picture of who that user is! The most common, concrete approach to putting users front and centre as you create web products is to use *personas*.
 
-Personas are people you invent in excruciating detail: their names, ages, backgrounds, and interests; their devices, connectivity, and available money; and importantly their journey through your product.
+Personas are fictional people you invent in excruciating detail: their names, ages, backgrounds, and interests; their devices, connectivity, and available money; and importantly their journey through your product.
 
 Creating personas can seem like hard work. One reason it's hard is because you really want your product to be for everyone, and narrowing down your audience can be painful. Be assured that your entire project will be better off for it.
 
