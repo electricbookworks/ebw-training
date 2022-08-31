@@ -8,7 +8,7 @@ title: Data as content
 * TOC here
 {:toc}
 
-Once you start using web technologies to make content, you can also start managing some of that content less like a manuscript and more like a database. Good examples are glossaries, bibliographies, directories and dictionaries.
+Once you start using web technologies to make content, you can also start managing some of that content less like a manuscript and more like a database. Good examples are glossaries, bibliographies, directories, and dictionaries.
 
 For some books, you may also be managing search indexes.
 
@@ -39,7 +39,7 @@ Arthur,43,"Durban, South Africa"
 Aidan,6,"Cape Town, South Africa"
 ```
 
-If you store content in a Google Sheet, it's also possible to fetch data from it automatically over the Internet, via the Google Sheets API. This makes it possible to populate web and ebook pages in real time with up-to-the-minute data. Creating a script that fetches data automatically is a fairly simple job for a developer.
+If you store content in a Google Sheet, it's also possible to fetch data from it automatically over the Internet using the Google Sheets API. This makes it possible to populate web and ebook pages in real time with up-to-the-minute data. Creating a script that fetches data automatically is a fairly simple job for a developer.
 
 ## Directories and dictionaries
 
@@ -64,6 +64,6 @@ When you do, you may be involved in ensuring that its search index is up to date
 1. all the words, phrases, or parts of words and phrases, in a book, and
 2. a list of where those words or phrases appear.
 
-They are usually generated automatically by software, which runs through the whole book and assembles the search index. An editor or web developer can usually adjust settings for that software, for instance giving extra importance to words in headings, or excluding certian common words (like 'and') from the search index.
+They are usually generated automatically by software, which runs through the whole book and assembles the search index. An editor or web developer can usually adjust settings for that software, for instance giving extra importance to words in headings, or excluding certain common words (like 'and') from the search index.
 
 In ebooks, a search function is usually built into the ereader software.
