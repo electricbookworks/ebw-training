@@ -8,9 +8,9 @@ title: Interactivity
 * TOC here
 {:toc}
 
-The great promise of digital formats, especially in educational books, is interactivity. Everyone defines interactivity differently. Usually, we simply mean that the user gets to *do something* other than read text and look at pictures.
+The great promise of digital formats, especially in educational books, is interactivity. Everyone defines interactivity differently. Usually, we mean that the user gets to *do something* other than read text and look at pictures.
 
-Depending on time, talent and budgets, we might mean adding video and audio, slides, self-marking questions, charts that change as you mouse over or tap them, or embedding small games and applications into the pages.
+Depending on time, talent and budgets, interactivity might mean video and audio, slides, self-marking questions, charts that change as you mouse over or tap them, or even small games and apps.
 
 ## Video and audio
 
@@ -21,15 +21,15 @@ Video and audio files are very similar technically, and we can treat them in sim
 
 When we add video or audio to a publication, we have three options:
 
-- save or **embed** the video or audio file on our webserver or in the ebook package
+- **embed** the video or audio file, saving it on our webserver or inside the ebook package
 - use an HTML **iframe** element, which streams the video or audio over the Internet
 - simply include a **link** to a website that hosts the video or audio track.
 
 If we **embed** the actual file, it will always be available to our readers, even when they are offline. But the file will make our ebook *very* big, and our website very data heavy. We will also have to provide playback controls on our website, which might cost money, or depend on our users having devices that provide built-in controls, which may not always be the case.
 
-If we include an **iframe** (such as from YouTube, Vimeo or Soundcloud), our readers must be online to watch or listen. And we have to rely on the host site always being available. The iframe includes the controls. Luckily, good video and audio host sites handle data streaming intelligently, automatically sending lower-quality streams over low-bandwidth connections.
+If we include an **iframe** (such as from YouTube, Vimeo or Soundcloud), our readers must be online to watch or listen. And we have to rely on the host site always being available. The iframe includes the controls. Luckily, good video- and audio-hosting sites handle data streaming intelligently, automatically sending lower-quality streams over low-bandwidth connections and to small screens.
 
-If we decide to simply provide a **link** to a website that hosts the video or track, we're hoping our users' devices can follow links, and that they are online.
+If we decide to simply provide a **link** to a website that hosts the video or track, we're hoping our users' devices can follow links, and that they are online and have sufficient data and bandwidth available.
 
 Of these three options, we usually recommend the **iframe,** but you will need to make a case-by-case decision in your persona's best interests.
 
@@ -37,7 +37,7 @@ Of these three options, we usually recommend the **iframe,** but you will need t
 
 Once we've decided how video and audio will work in our screen formats, we have to decide how to treat them in print output. This is a case-by-case decision.
 
-In educational material, a key question is whether the videos are crucial to the learning process. If they are, you can include a big screenshot of the video in the body text area, followed by a short URL that users can type into a web browser to take them to the video online. If the video is not crucial, you could omit videos completely or describe them in sidenotes.
+In educational material, a key question is whether the videos are crucial to the learning process. If they are, you can include a screenshot of the video and a short URL that users can type into a web browser to take them to the video online. If the video is not crucial, you could omit videos completely or describe them in sidenotes.
 
 When choosing or developing your production workflow and software, investigate whether they allow for automating these alternative layouts. For instance, in our Electric Book workflow, we can create alternative templates for each output format, so that the same source files produce different treatments of videos in, say, print, epub and web versions.
 
@@ -55,7 +55,7 @@ Depending on your production software, it should be possible for multiple-choice
 
 In some formats, interactive questions may even be able to send users' scores to a server online. This can be useful for analysis. Just keep in mind that there are ethical and legal obligations to consider when you collect data from users like this.
 
-Your production software may have certain requirements for how questions are set up. Wherever possible, establish very early on whether you need authors to create their questions in a particular way. For instance, can your multiple-choice questions have more than one correct answer? How many answer options are allowed? Can you include images in questions and answers? Do you want to give users more feedback than simply whether they are right or wrong?
+Your production software may have certain requirements for how questions are set up. Wherever possible, establish early on whether you need authors to create their questions in a particular way. For instance, can your multiple-choice questions have more than one correct answer? How many answer options are allowed? Can you include images in questions and answers? Do you want to give users more feedback than simply whether they are right or wrong?
 
 ## Charts
 
