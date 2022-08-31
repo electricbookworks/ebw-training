@@ -1146,7 +1146,7 @@ works:
     publisher: "Electric Book Works" # E.g. the publisher, imprint or brand name
     publisher-url: "https://electricbookworks.com"
     date: "2015-12-31" # YYYY-MM-DD e.g. publication date
-    modified: "2016-06-09" # YYYY-MM-DD e.g. date of last revision
+    modified: "2022-08-31" # YYYY-MM-DD e.g. date of last revision
     type: "Training material" # e.g. Novel, Poetry, Memoir
     identifier: "" # e.g. ISBN or UUID
     source: "" # e.g. parent ISBN or ISTC
@@ -1157,7 +1157,7 @@ works:
     image: "cover.jpg"
     products: # Metadata for each product for this title (only use values that override parent metadata)
       print-pdf: 
-        date: "2016-05-07" # YYYY-MM-DD e.g. publication or creation date
+        date: "2022-08-31" # YYYY-MM-DD e.g. publication or creation date
         format: "Print" # e.g. Paperback, Digital download, Digital online
         identifier: "" # e.g. ISBN or UUID
         image: "cover.jpg"
@@ -1481,7 +1481,7 @@ works:
                 id: "services"
                 label: "Services"
       web:
-        date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
+        date: "2022-08-31" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital online" # e.g. Paperback, Digital download, Digital online
         identifier: "" # e.g. ISBN or UUID
         image: "cover.jpg"
@@ -1807,7 +1807,7 @@ works:
         start-page: "0-3-contents" # At which file should users start reading?
         contents-page: "0-3-contents" # Your contents-page file, if you have one.
       epub:
-        date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
+        date: "2022-08-31" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
         identifier: "5ab091d5-49e6-4506-bc5a-b3fed31e70a1" # e.g. ISBN or UUID
         image: "cover.jpg"
@@ -1830,7 +1830,7 @@ works:
           - "09-data-as-content"
           - "10-reference"
       screen-pdf:
-        date: "2016-05-07" # YYYY-MM-DD e.g. publication date or last revision
+        date: "2022-08-31" # YYYY-MM-DD e.g. publication date or last revision
         format: "Digital download" # e.g. Paperback, Digital download, Digital online
         identifier: "" # e.g. ISBN or UUID
         image: "cover.jpg"
