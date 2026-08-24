@@ -1,0 +1,63 @@
+name: Index EBW training into the assistant
+
+# On every push that touches Markdown, re-index this training material into the
+# Basecamp Assistant's shareable `docs` vector database, so the assistant can
+# answer from the EBW training courses. The ingester lives in the (private)
+# basecamp-assistant repo, so we check that out alongside this content and run it
+# here — a GitHub runner sits close to the Neon database, so the many small write
+# round-trips are far faster than running it from a laptop.
+#
+# The ingest is idempotent: only changed heading sections are re-embedded, and a
+# full walk prunes sections (or files) that no longer exist. So a whole-repo walk
+# on each push is cheap after the first run.
+
+on:
+  push:
+    branches: [master]
+    paths: ['**/*.md']
+  # Manual trigger for a full re-index (e.g. after a URL-builder change).
+  workflow_dispatch:
+
+# Don't let two indexing runs of this repo overlap and race the same database;
+# a newer push waits for the current run to finish.
+concurrency:
+  group: index-ebw-training
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # This content repo → ./content
+      - uses: actions/checkout@v5
+        with:
+          path: content
+
+      # The (private) ingester code → ./assistant. Needs a token with read
+      # access to electricbookworks/basecamp-assistant (a fine-grained PAT with
+      # Contents: read is enough), stored as the ASSISTANT_REPO_TOKEN secret.
+      - uses: actions/checkout@v5
+        with:
+          repository: electricbookworks/basecamp-assistant
+          token: ${{ secrets.ASSISTANT_REPO_TOKEN }}
+          path: assistant
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: assistant/package-lock.json
+
+      - run: npm ci
+        working-directory: assistant
+
+      - name: Index EBW training
+        working-directory: assistant
+        env:
+          # Gemini (to embed) and the shareable `docs` Neon database. Use the
+          # UNPOOLED Neon URL — the ingester runs DDL and a bulk write session,
+          # which wants a direct connection.
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          DOCS_DATABASE_URL: ${{ secrets.DOCS_DATABASE_URL }}
+        run: node src/ref-backfill.js ebw-training "$GITHUB_WORKSPACE/content"
